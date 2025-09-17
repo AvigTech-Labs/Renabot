@@ -1,0 +1,522 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Construcción del RENA-BOT &mdash; documentación de Documentación RENA-BOT 4en1 - 0.1</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=23a32747" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=9c9b61ad"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../_static/copybutton.js?v=f281be69"></script>
+      <script src="../../_static/translations.js?v=f85f4cfb"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../../search.html" />
+    <link rel="next" title="Componentes Electrónicos" href="../tema_2/0_electronica.html" />
+    <link rel="prev" title="RENA-BOT Estándar" href="../tema_0/0_intro.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Documentación RENA-BOT 4en1
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introducción</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tema_0/0_intro.html">RENA-BOT Estándar</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Construcción</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Construcción del RENA-BOT</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#inventario-de-piezas-y-herramientas">Inventario de piezas y herramientas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#modo-velocista">Modo Velocista</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#modo-velocista-transportador">Modo Velocista transportador</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#modo-todoterreno">Modo Todoterreno</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#modo-equilibrista">Modo Equilibrista</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#modo-explorador">Modo Explorador</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#revision-final">Revisión final</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#prueba-basica-de-movimiento">Prueba básica de movimiento</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Electrónica</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tema_2/0_electronica.html">Componentes Electrónicos</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Software</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tema_3/0_software.html">API Blockly + MQTT</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Configuración y Uso</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tema_4/0_conf.html">Conexión del RENA-BOT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tema_4/1_ejemplos.html">Prácticas RENA-Bot</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Documentación RENA-BOT 4en1</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Construcción del RENA-BOT</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="construccion-del-rena-bot">
+<h1>Construcción del RENA-BOT<a class="headerlink" href="#construccion-del-rena-bot" title="Link to this heading"></a></h1>
+<p>En esta sección aprenderá a ensamblar paso a paso el <strong>RENA-BOT Estándar</strong>, desde la preparación del chasis hasta la primera prueba de movimiento.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Se recomienda realizar el armado en un área amplia y bien iluminada. Mantenga organizadas las piezas y herramientas para facilitar el proceso.</p>
+</div>
+<section id="inventario-de-piezas-y-herramientas">
+<h2>Inventario de piezas y herramientas<a class="headerlink" href="#inventario-de-piezas-y-herramientas" title="Link to this heading"></a></h2>
+<p>Lista completa de componentes incluidos en el kit:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13.0%" />
+<col style="width: 17.4%" />
+<col style="width: 17.4%" />
+<col style="width: 52.2%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>N°</p></th>
+<th class="head"><p>Elemento</p></th>
+<th class="head"><p>Cantidad</p></th>
+<th class="head"><p>Imagen de referencia</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Chasis</p></td>
+<td><p>1</p></td>
+<td><a class="reference internal image-reference" href="../../_images/chasis.jpg"><img alt="../../_images/chasis.jpg" class="align-center" src="../../_images/chasis.jpg" style="width: 120px;" />
+</a>
+</td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Soporte ultrasónico</p></td>
+<td><p>1</p></td>
+<td><a class="reference internal image-reference" href="../../_images/soporte_ultrasonico.jpg"><img alt="../../_images/soporte_ultrasonico.jpg" class="align-center" src="../../_images/soporte_ultrasonico.jpg" style="width: 120px;" />
+</a>
+</td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Guardafangos</p></td>
+<td><p>2</p></td>
+<td><a class="reference internal image-reference" href="../../_images/guardafangos.jpg"><img alt="../../_images/guardafangos.jpg" class="align-center" src="../../_images/guardafangos.jpg" style="width: 120px;" />
+</a>
+</td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>Frente</p></td>
+<td><p>1</p></td>
+<td><a class="reference internal image-reference" href="../../_images/frente.jpg"><img alt="../../_images/frente.jpg" class="align-center" src="../../_images/frente.jpg" style="width: 120px;" />
+</a>
+</td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>Extensión 1</p></td>
+<td><p>1</p></td>
+<td><a class="reference internal image-reference" href="../../_images/frente.jpg"><img alt="../../_images/frente.jpg" class="align-center" src="../../_images/frente.jpg" style="width: 120px;" />
+</a>
+</td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>Extensión 2</p></td>
+<td><p>1</p></td>
+<td><a class="reference internal image-reference" href="../../_images/frente.jpg"><img alt="../../_images/frente.jpg" class="align-center" src="../../_images/frente.jpg" style="width: 120px;" />
+</a>
+</td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>Soporte radar</p></td>
+<td><p>1</p></td>
+<td><a class="reference internal image-reference" href="../../_images/frente.jpg"><img alt="../../_images/frente.jpg" class="align-center" src="../../_images/frente.jpg" style="width: 120px;" />
+</a>
+</td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>Soporte Pantalla</p></td>
+<td><p>1</p></td>
+<td><a class="reference internal image-reference" href="../../_images/chasis.jpg"><img alt="../../_images/chasis.jpg" class="align-center" src="../../_images/chasis.jpg" style="width: 120px;" />
+</a>
+</td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p>Soportes Orugas delanteros</p></td>
+<td><p>2</p></td>
+<td><a class="reference internal image-reference" href="../../_images/chasis.jpg"><img alt="../../_images/chasis.jpg" class="align-center" src="../../_images/chasis.jpg" style="width: 120px;" />
+</a>
+</td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>Soporte Servomotor</p></td>
+<td><p>1</p></td>
+<td><a class="reference internal image-reference" href="../../_images/chasis.jpg"><img alt="../../_images/chasis.jpg" class="align-center" src="../../_images/chasis.jpg" style="width: 120px;" />
+</a>
+</td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>Acople Gripper</p></td>
+<td><p>1</p></td>
+<td><a class="reference internal image-reference" href="../../_images/chasis.jpg"><img alt="../../_images/chasis.jpg" class="align-center" src="../../_images/chasis.jpg" style="width: 120px;" />
+</a>
+</td>
+</tr>
+<tr class="row-odd"><td><p>12</p></td>
+<td><p>Tornillos M3 X 10</p></td>
+<td><p>25</p></td>
+<td><a class="reference internal image-reference" href="../../_images/tornillo_m3_10.jpg"><img alt="../../_images/tornillo_m3_10.jpg" class="align-center" src="../../_images/tornillo_m3_10.jpg" style="width: 120px;" />
+</a>
+</td>
+</tr>
+<tr class="row-even"><td><p>13</p></td>
+<td><p>Tornillos M3 X 30</p></td>
+<td><p>4</p></td>
+<td><a class="reference internal image-reference" href="../../_images/tornillo_m3_30.jpg"><img alt="../../_images/tornillo_m3_30.jpg" class="align-center" src="../../_images/tornillo_m3_30.jpg" style="width: 120px;" />
+</a>
+</td>
+</tr>
+<tr class="row-odd"><td><p>14</p></td>
+<td><p>Tuercas M3</p></td>
+<td><p>30</p></td>
+<td><a class="reference internal image-reference" href="../../_images/tuercas.jpg"><img alt="../../_images/tuercas.jpg" class="align-center" src="../../_images/tuercas.jpg" style="width: 120px;" />
+</a>
+</td>
+</tr>
+<tr class="row-even"><td><p>15</p></td>
+<td><p>Separadores plásticos M3 x 12</p></td>
+<td><p>4</p></td>
+<td><a class="reference internal image-reference" href="../../_images/separador_12.jpg"><img alt="../../_images/separador_12.jpg" class="align-center" src="../../_images/separador_12.jpg" style="width: 120px;" />
+</a>
+</td>
+</tr>
+<tr class="row-odd"><td><p>16</p></td>
+<td><p>Separadores plásticos M3 x 5</p></td>
+<td><p>4</p></td>
+<td><a class="reference internal image-reference" href="../../_images/separador_12.jpg"><img alt="../../_images/separador_12.jpg" class="align-center" src="../../_images/separador_12.jpg" style="width: 120px;" />
+</a>
+</td>
+</tr>
+<tr class="row-even"><td><p>17</p></td>
+<td><p>Rueda loca</p></td>
+<td><p>2</p></td>
+<td><a class="reference internal image-reference" href="../../_images/rueda_loca.jpg"><img alt="../../_images/rueda_loca.jpg" class="align-center" src="../../_images/rueda_loca.jpg" style="width: 120px;" />
+</a>
+</td>
+</tr>
+<tr class="row-odd"><td><p>18</p></td>
+<td><p>Llantas</p></td>
+<td><p>2</p></td>
+<td><a class="reference internal image-reference" href="../../_images/llantas.jpg"><img alt="../../_images/llantas.jpg" class="align-center" src="../../_images/llantas.jpg" style="width: 120px;" />
+</a>
+</td>
+</tr>
+<tr class="row-even"><td><p>19</p></td>
+<td><p>Cables distintos tamaños</p></td>
+<td><p>5</p></td>
+<td><a class="reference internal image-reference" href="../../_images/llantas.jpg"><img alt="../../_images/llantas.jpg" class="align-center" src="../../_images/llantas.jpg" style="width: 120px;" />
+</a>
+</td>
+</tr>
+<tr class="row-odd"><td><p>20</p></td>
+<td><p>Protectore de circuito</p></td>
+<td><p>1</p></td>
+<td><a class="reference internal image-reference" href="../../_images/chasis.jpg"><img alt="../../_images/chasis.jpg" class="align-center" src="../../_images/chasis.jpg" style="width: 120px;" />
+</a>
+</td>
+</tr>
+<tr class="row-even"><td><p>21</p></td>
+<td><p>Placa de control</p></td>
+<td><p>1</p></td>
+<td><a class="reference internal image-reference" href="../../_images/placa_control.jpg"><img alt="../../_images/placa_control.jpg" class="align-center" src="../../_images/placa_control.jpg" style="width: 120px;" />
+</a>
+</td>
+</tr>
+<tr class="row-odd"><td><p>22</p></td>
+<td><p>Base de soporte Servomotor</p></td>
+<td><p>1</p></td>
+<td><a class="reference internal image-reference" href="../../_images/placa_control.jpg"><img alt="../../_images/placa_control.jpg" class="align-center" src="../../_images/placa_control.jpg" style="width: 120px;" />
+</a>
+</td>
+</tr>
+<tr class="row-even"><td><p>22</p></td>
+<td><p>Protección IMU</p></td>
+<td><p>1</p></td>
+<td><a class="reference internal image-reference" href="../../_images/placa_control.jpg"><img alt="../../_images/placa_control.jpg" class="align-center" src="../../_images/placa_control.jpg" style="width: 120px;" />
+</a>
+</td>
+</tr>
+<tr class="row-odd"><td><p>23</p></td>
+<td><p>Tapa Ultrasónico</p></td>
+<td><p>1</p></td>
+<td><a class="reference internal image-reference" href="../../_images/chasis.jpg"><img alt="../../_images/chasis.jpg" class="align-center" src="../../_images/chasis.jpg" style="width: 120px;" />
+</a>
+</td>
+</tr>
+<tr class="row-even"><td><p>24</p></td>
+<td><p>Sensor QTR8</p></td>
+<td><p>1</p></td>
+<td><a class="reference internal image-reference" href="../../_images/seguidor_linea.jpg"><img alt="../../_images/seguidor_linea.jpg" class="align-center" src="../../_images/seguidor_linea.jpg" style="width: 120px;" />
+</a>
+</td>
+</tr>
+<tr class="row-odd"><td><p>25</p></td>
+<td><p>Sensor Ultrasónico</p></td>
+<td><p>1</p></td>
+<td><a class="reference internal image-reference" href="../../_images/chasis.jpg"><img alt="../../_images/chasis.jpg" class="align-center" src="../../_images/chasis.jpg" style="width: 120px;" />
+</a>
+</td>
+</tr>
+<tr class="row-even"><td><p>26</p></td>
+<td><p>Sensor de sonido</p></td>
+<td><p>1</p></td>
+<td><a class="reference internal image-reference" href="../../_images/chasis.jpg"><img alt="../../_images/chasis.jpg" class="align-center" src="../../_images/chasis.jpg" style="width: 120px;" />
+</a>
+</td>
+</tr>
+<tr class="row-odd"><td><p>28</p></td>
+<td><p>Sensor de temperatura</p></td>
+<td><p>1</p></td>
+<td><a class="reference internal image-reference" href="../../_images/chasis.jpg"><img alt="../../_images/chasis.jpg" class="align-center" src="../../_images/chasis.jpg" style="width: 120px;" />
+</a>
+</td>
+</tr>
+<tr class="row-even"><td><p>29</p></td>
+<td><p>Sensor de Incercia</p></td>
+<td><p>1</p></td>
+<td><a class="reference internal image-reference" href="../../_images/chasis.jpg"><img alt="../../_images/chasis.jpg" class="align-center" src="../../_images/chasis.jpg" style="width: 120px;" />
+</a>
+</td>
+</tr>
+<tr class="row-odd"><td><p>30</p></td>
+<td><p>Servomotor sg90</p></td>
+<td><p>1</p></td>
+<td><a class="reference internal image-reference" href="../../_images/chasis.jpg"><img alt="../../_images/chasis.jpg" class="align-center" src="../../_images/chasis.jpg" style="width: 120px;" />
+</a>
+</td>
+</tr>
+<tr class="row-even"><td><p>31</p></td>
+<td><p>Hélice Servomotor</p></td>
+<td><p>1</p></td>
+<td><a class="reference internal image-reference" href="../../_images/chasis.jpg"><img alt="../../_images/chasis.jpg" class="align-center" src="../../_images/chasis.jpg" style="width: 120px;" />
+</a>
+</td>
+</tr>
+<tr class="row-odd"><td><p>32</p></td>
+<td><p>Buzzer</p></td>
+<td><p>1</p></td>
+<td><a class="reference internal image-reference" href="../../_images/chasis.jpg"><img alt="../../_images/chasis.jpg" class="align-center" src="../../_images/chasis.jpg" style="width: 120px;" />
+</a>
+</td>
+</tr>
+<tr class="row-even"><td><p>33</p></td>
+<td><p>Ejes Oruga</p></td>
+<td><p>2</p></td>
+<td><a class="reference internal image-reference" href="../../_images/bateria.jpg"><img alt="../../_images/bateria.jpg" class="align-center" src="../../_images/bateria.jpg" style="width: 120px;" />
+</a>
+</td>
+</tr>
+<tr class="row-odd"><td><p>34</p></td>
+<td><p>Acoples orugas</p></td>
+<td><p>1</p></td>
+<td><a class="reference internal image-reference" href="../../_images/bateria.jpg"><img alt="../../_images/bateria.jpg" class="align-center" src="../../_images/bateria.jpg" style="width: 120px;" />
+</a>
+</td>
+</tr>
+<tr class="row-even"><td><p>35</p></td>
+<td><p>Ruedas de apoyo</p></td>
+<td><p>2</p></td>
+<td><a class="reference internal image-reference" href="../../_images/bateria.jpg"><img alt="../../_images/bateria.jpg" class="align-center" src="../../_images/bateria.jpg" style="width: 120px;" />
+</a>
+</td>
+</tr>
+<tr class="row-odd"><td><p>36</p></td>
+<td><p>Cadena</p></td>
+<td><p>1</p></td>
+<td><a class="reference internal image-reference" href="../../_images/bateria.jpg"><img alt="../../_images/bateria.jpg" class="align-center" src="../../_images/bateria.jpg" style="width: 120px;" />
+</a>
+</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Batería</p></td>
+<td><p>1</p></td>
+<td><a class="reference internal image-reference" href="../../_images/bateria.jpg"><img alt="../../_images/bateria.jpg" class="align-center" src="../../_images/bateria.jpg" style="width: 120px;" />
+</a>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Herramientas necesarias:</p>
+<ul class="simple">
+<li><p>Destornillador tipo estrella.</p></li>
+</ul>
+<p>El RENA-BOT puede ser armado de 2 formas diferentes, <strong>1. Velocista</strong>, <strong>2. Equilibrista</strong>, <strong>3. Todoterreno</strong> y <strong>4. Exporador</strong>.</p>
+</section>
+<section id="modo-velocista">
+<h2>Modo Velocista<a class="headerlink" href="#modo-velocista" title="Link to this heading"></a></h2>
+<p>Rena velocista En esta modalidad, el robot utiliza la máxima potencia de sus motores y su sistema de locomoción diferencial con tres ruedas: dos motrices y una de apoyo para estabilidad.
+Permite el desplazamiento libre en el entorno y la realización de actividades como:</p>
+<ul class="simple">
+<li><p>Seguimiento de inteligente de trayectorias mediante el sensor seguidor de línea.</p></li>
+<li><p>Evitar de obstáculos utilizando el sensor ultrasónico.</p></li>
+</ul>
+<p>Ejercicios de control de velocidad y giros.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/velocista.png"><img alt="modelorobot" src="../../_images/velocista.png" style="width: 400px;" />
+</a>
+</figure>
+<p>Guía de armado:</p>
+<a class="reference internal image-reference" href="../../_images/rena.gif"><img alt="../../_images/rena.gif" class="align-center" src="../../_images/rena.gif" style="width: 700px;" />
+</a>
+</section>
+<section id="modo-velocista-transportador">
+<h2>Modo Velocista transportador<a class="headerlink" href="#modo-velocista-transportador" title="Link to this heading"></a></h2>
+<p>La versión transportador del RENA-BOT utiliza los Guardafangos como piezas del
+gripper que permiten transportar objetos.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/transportador.png"><img alt="modelorobot" src="../../_images/transportador.png" style="width: 400px;" />
+</a>
+</figure>
+<p>Guía de armado:</p>
+<a class="reference internal image-reference" href="../../_images/rena.gif"><img alt="../../_images/rena.gif" class="align-center" src="../../_images/rena.gif" style="width: 700px;" />
+</a>
+</section>
+<section id="modo-todoterreno">
+<h2>Modo Todoterreno<a class="headerlink" href="#modo-todoterreno" title="Link to this heading"></a></h2>
+<p>En esta configuración, el RENA-BOT adopta un diseño de movilidad con orugas, lo que lo
+convierte en un robot todoterreno capaz de desplazarse de manera eficiente sobre superficies
+irregulares, tanto en interiores como en exteriores.
+El sistema de locomoción se basa en un control diferencial de doble oruga,
+que le permite realizar giros precisos y mantener estabilidad en terrenos complejos. A través
+del sensor ultrasónico se puede programar la evasión de obstáculos o utilizar el modo automático para evitar choques.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/todoterreno.png"><img alt="modelorobot" src="../../_images/todoterreno.png" style="width: 400px;" />
+</a>
+</figure>
+<p>Guía de armado:</p>
+</section>
+<section id="modo-equilibrista">
+<h2>Modo Equilibrista<a class="headerlink" href="#modo-equilibrista" title="Link to this heading"></a></h2>
+<p>En este modo, el RenaBot utiliza la información de velocidad lineal y angular presenta en el
+eje x del sensor MPU, permitiendo realizar un control sobre el avance y equilibrio del robot
+mientras avanza. Su control se realiza a través de un joystick virtual.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/equilibrista.png"><img alt="modelorobot" src="../../_images/equilibrista.png" style="width: 400px;" />
+</a>
+</figure>
+<p>Guía de armado:</p>
+</section>
+<section id="modo-explorador">
+<h2>Modo Explorador<a class="headerlink" href="#modo-explorador" title="Link to this heading"></a></h2>
+<p>En esta configuración, el RENA-BOT utiliza el sistema de locomoción del modo todoterreno
+e incorpora una estructura adicional que eleva el sensor ultrasónico, montado sobre un
+servomotor SG90. Esta combinación le permite al robot simular un radar de exploración,
+capaz de realizar un barrido configurable de 120° a 200º para la detección de obstáculos
+en el entorno.</p>
+<p>De esta manera, el Rena Explorador no solo amplía sus capacidades de movilidad,
+sino que también potencia el aprendizaje en áreas como:</p>
+<ul class="simple">
+<li><p>Robótica móvil avanzada y navegación autónoma.</p></li>
+<li><p>Uso de sensores de proximidad con movimiento angular.</p></li>
+<li><p>Implementación de mapas básicos y estrategias de exploración.</p></li>
+</ul>
+<p>Guía de armado:</p>
+</section>
+<section id="revision-final">
+<h2>Revisión final<a class="headerlink" href="#revision-final" title="Link to this heading"></a></h2>
+<p>Checklist de verificación:</p>
+<ul class="simple">
+<li><p>Todas las piezas atornilladas.</p></li>
+<li><p>Conexiones firmes y sin falsos contactos.</p></li>
+<li><p>Ruedas giran libremente.</p></li>
+</ul>
+</section>
+<section id="prueba-basica-de-movimiento">
+<h2>Prueba básica de movimiento<a class="headerlink" href="#prueba-basica-de-movimiento" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Encendido inicial.</p></li>
+<li><p>Verificación de motores.</p></li>
+<li><p>Práctica de movimiento libre.</p></li>
+</ul>
+<p>Revisa la sección <a class="reference internal" href="../tema_4/1_ejemplos.html#modo-libre"><span class="std std-ref">Práctica de movimiento libre</span></a>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Truco</p>
+<p>Si un motor no gira, revise las conexiones en el driver y confirme que la batería tenga carga suficiente.</p>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="../tema_0/0_intro.html" class="btn btn-neutral float-left" title="RENA-BOT Estándar" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="../tema_2/0_electronica.html" class="btn btn-neutral float-right" title="Componentes Electrónicos" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2025, AvigTech.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
