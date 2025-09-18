@@ -27,9 +27,9 @@ Lista completa de componentes incluidos en el kit:
           :width: 120px
           :align: center
    * - 2
-     - Soporte ultrasónico
+     - Estructura ultrasónico
      - 1
-     - .. image:: ./img/soporte_ultrasonico.jpg
+     - .. image:: ./img/estructura_ultrasonico.jpg
           :width: 120px
           :align: center
    * - 3
@@ -47,25 +47,25 @@ Lista completa de componentes incluidos en el kit:
    * - 5
      - Extensión 1
      - 1
-     - .. image:: ./img/frente.jpg
+     - .. image:: ./img/extension1.jpg
           :width: 120px
           :align: center
    * - 6
      - Extensión 2
      - 1
-     - .. image:: ./img/frente.jpg
+     - .. image:: ./img/extension2.jpg
           :width: 120px
           :align: center
    * - 7
      - Soporte radar
      - 1
-     - .. image:: ./img/frente.jpg
+     - .. image:: ./img/soporte_radar.jpg
           :width: 120px
           :align: center
    * - 8
      - Soporte Pantalla
      - 1
-     - .. image:: ./img/chasis.jpg
+     - .. image:: ./img/soporte_pantalla.jpg
           :width: 120px
           :align: center
    * - 9
@@ -75,15 +75,15 @@ Lista completa de componentes incluidos en el kit:
           :width: 120px
           :align: center
    * - 10
-     - Soporte Servomotor
+     - Estructura Servomotor
      - 1
-     - .. image:: ./img/chasis.jpg
+     - .. image:: ./img/estructura_servo.jpg
           :width: 120px
           :align: center
    * - 11
-     - Acople Gripper
+     - Estructura Gripper
      - 1
-     - .. image:: ./img/chasis.jpg
+     - .. image:: ./img/estructura_gripper.jpg
           :width: 120px
           :align: center
    * - 12
@@ -131,13 +131,13 @@ Lista completa de componentes incluidos en el kit:
    * - 19
      - Cables distintos tamaños
      - 5
-     - .. image:: ./img/llantas.jpg
+     - .. image:: ./img/cables.jpg
           :width: 120px
           :align: center
    * - 20
      - Protectore de circuito
      - 1
-     - .. image:: ./img/chasis.jpg
+     - .. image:: ./img/placa_control.jpg
           :width: 120px
           :align: center
    * - 21 
@@ -147,21 +147,21 @@ Lista completa de componentes incluidos en el kit:
           :width: 120px
           :align: center
    * - 22 
-     - Base de soporte Servomotor
+     - Acople Ultrasónico
      - 1
-     - .. image:: ./img/placa_control.jpg
+     - .. image:: ./img/acople_ultrasónico.jpg
           :width: 120px
           :align: center
    * - 22 
      - Protección IMU
      - 1
-     - .. image:: ./img/placa_control.jpg
+     - .. image:: ./img/caja_imu.jpg
           :width: 120px
           :align: center
    * - 23
      - Tapa Ultrasónico
      - 1
-     - .. image:: ./img/chasis.jpg
+     - .. image:: ./img/tapa_ultra.jpg
           :width: 120px
           :align: center
    * - 24
@@ -173,70 +173,70 @@ Lista completa de componentes incluidos en el kit:
    * - 25
      - Sensor Ultrasónico
      - 1
-     - .. image:: ./img/chasis.jpg
+     - .. image:: ./img/s_ultrasonico.jpg
           :width: 120px
           :align: center
    * - 26
      - Sensor de sonido
      - 1
-     - .. image:: ./img/chasis.jpg
+     - .. image:: ./img/s_sonido.jpg
           :width: 120px
           :align: center
    * - 28
      - Sensor de temperatura
      - 1
-     - .. image:: ./img/chasis.jpg
+     - .. image:: ./img/s_temperatura.jpg
           :width: 120px
           :align: center
    * - 29
      - Sensor de Incercia
      - 1
-     - .. image:: ./img/chasis.jpg
+     - .. image:: ./img/imu.jpg
           :width: 120px
           :align: center
    * - 30
      - Servomotor sg90
      - 1
-     - .. image:: ./img/chasis.jpg
+     - .. image:: ./img/servo.jpg
           :width: 120px
           :align: center
    * - 31
      - Hélice Servomotor
      - 1
-     - .. image:: ./img/chasis.jpg
+     - .. image:: ./img/helice.jpg
           :width: 120px
           :align: center
    * - 32
      - Buzzer
      - 1
-     - .. image:: ./img/chasis.jpg
+     - .. image:: ./img/buzzer.jpg
           :width: 120px
           :align: center
    * - 33
      - Ejes Oruga
      - 2
-     - .. image:: ./img/bateria.jpg
+     - .. image:: ./img/eje_oruga.jpg
           :width: 120px
           :align: center
    * - 34
      - Acoples orugas
-     - 1
-     - .. image:: ./img/bateria.jpg
+     - 2
+     - .. image:: ./img/guardafangos.jpg
           :width: 120px
           :align: center
    * - 35
-     - Ruedas de apoyo
+     - Ruedas de la Oruga
      - 2
-     - .. image:: ./img/bateria.jpg
+     - .. image:: ./img/ruedas_oruga.jpg
           :width: 120px
           :align: center
    * - 36
      - Cadena
-     - 1
-     - .. image:: ./img/bateria.jpg
+     - 2
+     - .. image:: ./img/cadena.jpg
           :width: 120px
           :align: center
-   * - 
+   * - 37
      - Batería
      - 1
      - .. image:: ./img/bateria.jpg
@@ -249,7 +249,7 @@ Herramientas necesarias:
 - Destornillador tipo estrella.   
 
 
-El RENA-BOT puede ser armado de 2 formas diferentes, **1. Velocista**, **2. Equilibrista**, **3. Todoterreno** y **4. Exporador**.
+El RENA-BOT puede ser armado de 4 formas diferentes, **1. Velocista**, **2. Equilibrista**, **3. Todoterreno** y **4. Exporador**.
 
 
 Modo Velocista
@@ -271,9 +271,7 @@ Ejercicios de control de velocidad y giros.
 
 Guía de armado:
 
-.. image:: ./img/rena.gif
-   :width: 700px
-   :align: center
+:download:`Descargar ficha Velocista <../../_static/velocista.pdf>`
 
 Modo Velocista transportador
 ----------------------------
@@ -288,9 +286,10 @@ gripper que permiten transportar objetos.
 
 Guía de armado:
 
-.. image:: ./img/rena.gif
-   :width: 700px
-   :align: center
+.. raw:: html
+
+   <embed src="../../_static/velocista.pdf" type="application/pdf" width="100%" height="600px">
+
 
 
 Modo Todoterreno
@@ -362,4 +361,9 @@ Revisa la sección :ref:`Práctica de movimiento libre <modo-libre>`.
 
 
 .. tip::
-   Si un motor no gira, revise las conexiones en el driver y confirme que la batería tenga carga suficiente.
+	Para una mejor visualización del armado de las diferentes versiones del RENA-BOT revisa la tarjeta de consutrucción de la aplicación movil o escritorio
+
+.. image:: ./img/rena.gif
+   :width: 700px
+   :align: center
+
