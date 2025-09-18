@@ -66,7 +66,8 @@
 <li class="toctree-l3"><a class="reference internal" href="#seguidor-de-linea">Seguidor de línea</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#sensor-de-distancia">Sensor de distancia</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#sensor-de-intensidad-luminica">Sensor de intensidad lumínica</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#sensor-de-temperatura">Sensor de temperatura</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modulo-sensor-de-temperatura-ky-028">Módulo Sensor de Temperatura  KY-028</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modulo-sensor-de-sonido-ky-037">Módulo Sensor de Sonido KY-037</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#actuadores">Actuadores</a><ul>
@@ -116,22 +117,26 @@
 <h1>Componentes Electrónicos<a class="headerlink" href="#componentes-electronicos" title="Link to this heading"></a></h1>
 <section id="placa-de-control">
 <h2>Placa de Control<a class="headerlink" href="#placa-de-control" title="Link to this heading"></a></h2>
-<p>La <strong>placa de control</strong> del RENA-BOT contiene un diseño <strong>PCB/SMD</strong> optimizado para educación.
+<p>La placa de control del RENA-BOT contiene un diseño PCB/SMD optimizado para educación.
 Permite la integración de motores, sensores y actuadores de manera ordenada, con conectores accesibles y pines de expansión para futuros proyectos.
-Está basada en un microcontrolador <strong>ESP32 WROOM 1</strong>, lo que brinda flexibilidad para programar
-el robot con distintos entornos como <strong>Arduino IDE, Micro-Python o FreeRTOS</strong>.</p>
+Está basada en un microcontrolador <code class="docutils literal notranslate"><span class="pre">ESP32</span> <span class="pre">WROOM</span> <span class="pre">1</span></code>, lo que brinda flexibilidad para programar
+el robot con distintos entornos como Arduino IDE, Micro-Python o FreeRTOS.</p>
 <figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../_images/placa_control1.jpg"><img alt="modelorobot" src="../../_images/placa_control1.jpg" style="width: 400px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Placa de Control v1</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+<p><span class="caption-text">Cerebro del RENA-BOT</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <section id="caracteristicas">
 <h3>Características<a class="headerlink" href="#caracteristicas" title="Link to this heading"></a></h3>
-<p>La placa de control del <strong>RENA-BOT</strong> ha sido diseñada con un <strong>ensamblaje de montaje superficial (SMD)</strong>, lo que garantiza un acabado compacto, ligero y confiable.
-Sus dimensiones son <strong>95 x 92 x 2 mm</strong>, cuenta con <strong>recubrimiento protector</strong> para mayor durabilidad y resistencia, y está optimizada para integrar de forma ordenada los diferentes módulos del robot en formato
+<p>La placa de control del RENA-BOT ha sido diseñada con un ensamblaje de montaje superficial (SMD)**, lo que garantiza un acabado compacto, ligero y confiable.
+Sus dimensiones son 95 x 92 x 2 mm, cuenta con recubrimiento protector para mayor durabilidad y resistencia, y está optimizada para integrar de forma ordenada los diferentes módulos del robot en formato
 plug and play.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/circuito1.jpg"><img alt="modelorobot" src="../../_images/circuito1.jpg" style="width: 400px;" />
+</a>
+</figure>
 <p>Entre los principales elementos que incorpora se encuentran:</p>
 <table class="fit-table docutils align-default">
 <colgroup>
@@ -140,7 +145,7 @@ plug and play.</p>
 <col style="width: 64.7%" />
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="head"><p>N°</p></th>
+<tr class="row-odd"><th class="head"><p>N</p></th>
 <th class="head"><p>Elemento</p></th>
 <th class="head"><p>Descripción</p></th>
 </tr>
@@ -180,7 +185,7 @@ plug and play.</p>
 </tr>
 <tr class="row-even"><td><p>9</p></td>
 <td><p>Sensores LDR</p></td>
-<td><p>El sensor <strong>LDR (Light Dependent Resistor)</strong> integrado en la placa posee unas dimensiones de 5 mm de diámetro.</p></td>
+<td><p>El sensor LDR (Light Dependent Resistor) integrado en la placa posee unas dimensiones de 5 mm de diámetro.</p></td>
 </tr>
 <tr class="row-odd"><td><p>10</p></td>
 <td><p>Switch SMD</p></td>
@@ -195,17 +200,6 @@ plug and play.</p>
 <p>El RENA-BOT incluye la siguiente lista de sensores, los cuales permiten que el robot interactúe con su entorno y ejecute diferentes actividades educativas:</p>
 <section id="seguidor-de-linea">
 <h3>Seguidor de línea<a class="headerlink" href="#seguidor-de-linea" title="Link to this heading"></a></h3>
-<p>El sensor <strong>QTR8</strong> está compuesto por un arreglo de 8 sensores infrarrojos (IR) que permiten detectar el contraste entre superficies claras y oscuras.
-Funciona emitiendo luz infrarroja y midiendo la cantidad de reflexión en el suelo: superficies claras reflejan más y las oscuras menos.</p>
-<p>Características técnicas:
-- Tipo: arreglo de sensores IR reflectivos.
-- Canales: 8 independientes.
-- Salida: analógica.
-- Voltaje de operación: 3.3 V – 5 V.</p>
-<p>Uso en el RENA-BOT:
-- Seguimiento de trayectorias y circuitos impresos en el suelo.
-- Implementación de robots <strong>seguidores de línea</strong> en competiciones educativas.
-- Desarrollo de proyectos como <strong>laberintos y rutinas de navegación autónoma</strong>.</p>
 <figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../_images/sensor_qtr8.jpg"><img alt="sensor_qtr8" src="../../_images/sensor_qtr8.jpg" style="width: 400px;" />
 </a>
@@ -213,19 +207,36 @@ Funciona emitiendo luz infrarroja y midiendo la cantidad de reflexión en el sue
 <p><span class="caption-text">Sensor QTR8 en el RENA-BOT</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
 </figcaption>
 </figure>
+<p>El sensor <code class="docutils literal notranslate"><span class="pre">QTR8</span></code> está compuesto por un arreglo de 8 sensores infrarrojos (IR) que permiten detectar el contraste entre superficies claras y oscuras.
+Funciona emitiendo luz infrarroja y midiendo la cantidad de reflexión en el suelo: superficies claras reflejan más y las oscuras menos.</p>
+<p>Características técnicas:
+- Tipo: arreglo de sensores IR reflectivos.
+- Canales: 8 independientes.
+- Salida: analógica.
+- Voltaje de operación: 3.3 V.</p>
+<p>Uso en el RENA-BOT:
+- Seguimiento de trayectorias y circuitos impresos en el suelo.
+- Implementación de robots seguidores de línea en competiciones educativas.
+- Desarrollo de proyectos como laberintos y rutinas de navegación autónoma.</p>
 </section>
 <section id="sensor-de-distancia">
 <h3>Sensor de distancia<a class="headerlink" href="#sensor-de-distancia" title="Link to this heading"></a></h3>
-<p>El sensor <strong>ultrasónico HC-SR04</strong> mide la distancia hasta un objeto enviando un pulso ultrasónico y calculando el tiempo que tarda en reflejarse.</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="../../_images/sensor_qtr8.jpg"><img alt="sensor_qtr8" src="../../_images/sensor_qtr8.jpg" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Sensor QTR8 en el RENA-BOT</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>El sensor ultrasónico HC-SR04 mide la distancia hasta un objeto enviando un pulso ultrasónico y calculando el tiempo que tarda en reflejarse.</p>
 <p>Características técnicas:
 - Rango de medición: 2 cm a 400 cm.
 - Precisión: ±3 mm.
 - Ángulo de detección: ~15°.
 - Voltaje de operación: 5 V.</p>
 <p>Uso en el RENA-BOT:
-- <strong>Evitación de obstáculos</strong> durante el recorrido.
-- Implementación de sistemas de <strong>detención automática</strong> cuando un objeto se acerca.
-- Actividades educativas sobre el <strong>principio del sonar</strong> y la propagación del sonido.</p>
+- Evitación de obstáculos durante el recorrido.
+- Implementación de sistemas de detención automática cuando un objeto se acerca.</p>
 </section>
 <section id="sensor-de-intensidad-luminica">
 <h3>Sensor de intensidad lumínica<a class="headerlink" href="#sensor-de-intensidad-luminica" title="Link to this heading"></a></h3>
@@ -236,21 +247,55 @@ Se utiliza como un divisor de tensión, conectado a una entrada analógica del m
 - Tiempo de respuesta: 20 – 30 ms.
 - Voltaje de operación: 3.3 V – 5 V.</p>
 <p>Uso en el RENA-BOT:
-- Detectar niveles de <strong>luz y oscuridad</strong>.
+- Detectar niveles de luz y oscuridad.
 - Encender automáticamente LEDs cuando baja la iluminación.
 - Ejercicios de programación donde el robot reaccione a condiciones ambientales.</p>
 </section>
-<section id="sensor-de-temperatura">
-<h3>Sensor de temperatura<a class="headerlink" href="#sensor-de-temperatura" title="Link to this heading"></a></h3>
-<p>El <strong>LM35</strong> es un sensor analógico de temperatura con salida lineal en milivoltios proporcional a la temperatura en grados Celsius.</p>
+<section id="modulo-sensor-de-temperatura-ky-028">
+<h3>Módulo Sensor de Temperatura  KY-028<a class="headerlink" href="#modulo-sensor-de-temperatura-ky-028" title="Link to this heading"></a></h3>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="../../_images/s_temperatura1.jpg"><img alt="sensor_qtr8" src="../../_images/s_temperatura1.jpg" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Sensor Ky-028</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>El <strong>Módulo Sensor de Temperatura Digital KY-028</strong> combina un sensor NTC (Negative Temperature Coefficient) con un comparador LM393, lo que permite obtener tanto salida analógica (proporcional a la temperatura) como salida digital (según un umbral definido).
+Este diseño lo hace versátil para actividades educativas, ya que el usuario puede medir variaciones de temperatura y, al mismo tiempo, configurar condiciones de activación mediante el potenciómetro integrado.</p>
 <p>Características técnicas:
-- Rango de medición: -55 °C a +150 °C.
-- Precisión: ±0.5 °C (a 25 °C).
-- Salida: 10 mV/°C.
-- Voltaje de operación: 4 V – 30 V.</p>
+- Rango de medición: aproximadamente -20 °C a +100 °C.
+- Tipo de salida: analógica (variable continua) y digital (por umbral configurado).
+- Voltaje de operación: 3.3 V.
+- Sensibilidad ajustable mediante potenciómetro.
+- Indicador LED integrado para la salida digital.</p>
 <p>Uso en el RENA-BOT:
-- Experimentos de <strong>ciencia ambiental</strong> (medición de temperatura del entorno).
-- Registro de condiciones térmicas en proyectos escolares.</p>
+- Medición de temperatura ambiental en actividades de exploración científica.
+- Activación de alarmas o actuadores al superar un umbral de temperatura predefinido.
+- Ejercicios de programación que combinen lecturas analógicas y digitales.
+- Proyectos de automatización educativa, relacionando condiciones térmicas con acciones específicas del robot.</p>
+</section>
+<section id="modulo-sensor-de-sonido-ky-037">
+<h3>Módulo Sensor de Sonido KY-037<a class="headerlink" href="#modulo-sensor-de-sonido-ky-037" title="Link to this heading"></a></h3>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="../../_images/s_sonido1.jpg"><img alt="sensor_qtr8" src="../../_images/s_sonido1.jpg" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Sensor KY-037</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>El Módulo Sensor de Sonido KY-037 está diseñado para detectar la intensidad del sonido en el ambiente mediante un micrófono electret y un amplificador integrado.
+Proporciona tanto salida analógica (nivel proporcional a la intensidad sonora) como salida digital (activada al superar un umbral ajustable mediante potenciómetro).</p>
+<p>Características técnicas:
+- Tipo de sensor: micrófono electret con amplificador.
+- Salidas: analógica (A0) y digital (D0).
+- Voltaje de operación: 3.3 V.
+- Sensibilidad ajustable con potenciómetro.
+- Indicador LED para la salida digital.</p>
+<p>Uso en el RENA-BOT:
+- Detección de aplausos o sonidos fuertes para activar acciones del robot.
+- Proyectos de interacción sonora, donde el robot responde a estímulos acústicos.
+- Ejercicios de programación que combinen niveles de intensidad sonora con decisiones lógicas.
+- Actividades lúdicas como el control del robot mediante señales sonoras simples (ejemplo: avance con un aplauso).</p>
 </section>
 </section>
 <section id="actuadores">
@@ -259,33 +304,33 @@ Se utiliza como un divisor de tensión, conectado a una entrada analógica del m
 <section id="motores-dc">
 <h3>Motores DC<a class="headerlink" href="#motores-dc" title="Link to this heading"></a></h3>
 <p>Los <strong>motores de corriente directa (DC)</strong> son los responsables del movimiento del robot.
-Están acoplados a reductores que aumentan el torque y permiten controlar con precisión la velocidad y dirección de las ruedas.</p>
+Están acoplados a reductores que aumentan el torque y permiten manejar con mayor precisión la velocidad y dirección del motor.</p>
 <p>Características técnicas:
 - Voltaje de operación: 6 – 9 V.
 - Velocidad nominal: 150 RPM (sin carga).</p>
 <p>Uso en el RENA-BOT:
-- Desplazamiento mediante <strong>control diferencial</strong> (variando la velocidad de cada rueda).
+- Desplazamiento mediante control diferencial (variando la velocidad de cada rueda).
 - Implementación de rutinas de navegación en trayectorias rectas, curvas o giros.
-- Actividades prácticas para enseñar conceptos de <strong>cinemática de robots móviles</strong>.- Resolución de encoder: 300 pulsos por revolución.</p>
+- Actividades prácticas para enseñar conceptos de cinemática de robots móviles.</p>
 </section>
 <section id="servomotor">
 <h3>Servomotor<a class="headerlink" href="#servomotor" title="Link to this heading"></a></h3>
-<p>El <strong>servomotor SG90</strong> es un actuador de pequeño tamaño que permite un movimiento angular limitado en un rango de <strong>0° a 180°</strong>.
+<p>El <strong>servomotor SG90</strong> es un actuador de pequeño tamaño que permite un movimiento angular <strong>0° a 360°</strong>.
 Se controla enviando pulsos PWM desde el microcontrolador.</p>
 <p>Características técnicas:
 - Voltaje de operación: 4.8 V – 6 V.
-- Ángulo de rotación: 0° a 180°.
+- Ángulo de rotación: 360º
 - Torque: ~1.8 kg·cm.
 - Peso: 9 g.</p>
 <p>Uso en el RENA-BOT:
-- Control de un <strong>manipulador de objetos</strong> o gripper.
+- Control de un manipulador de objetos o gripper.
 - Movimiento de sensores (por ejemplo, rotación de un sensor ultrasónico).
-- Actividades para enseñar el control de <strong>PWM y actuadores de precisión</strong>.</p>
+- Actividades para enseñar el control de PWM y actuadores de precisión.</p>
 </section>
 <section id="modulo-de-buzzer-pasivo">
 <h3>Módulo de Buzzer Pasivo<a class="headerlink" href="#modulo-de-buzzer-pasivo" title="Link to this heading"></a></h3>
 <p>El <strong>buzzer pasivo</strong> es un actuador electrónico capaz de generar sonidos o tonos al recibir una señal de frecuencia desde el microcontrolador.
-A diferencia del <strong>buzzer activo</strong>, que emite un tono fijo con solo aplicarle voltaje, el buzzer pasivo requiere que se le envíen <strong>señales PWM</strong> para producir distintos sonidos y melodías.</p>
+A diferencia del buzzer activo, que emite un tono fijo con solo aplicarle voltaje, el buzzer pasivo requiere que se le envíen <strong>señales PWM</strong> para producir distintos sonidos y melodías.</p>
 <p>Características técnicas:
 - Tipo: buzzer pasivo.
 - Voltaje de operación: 3.3 V – 5 V.
