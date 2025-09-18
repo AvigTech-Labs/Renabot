@@ -1,13 +1,14 @@
 Componentes Electrónicos
 ========================
 
+
 Placa de Control
 ----------------
 
-La **placa de control** del RENA-BOT contiene un diseño **PCB/SMD** optimizado para educación.  
+La placa de control del RENA-BOT contiene un diseño PCB/SMD optimizado para educación.  
 Permite la integración de motores, sensores y actuadores de manera ordenada, con conectores accesibles y pines de expansión para futuros proyectos.  
-Está basada en un microcontrolador **ESP32 WROOM 1**, lo que brinda flexibilidad para programar 
-el robot con distintos entornos como **Arduino IDE, Micro-Python o FreeRTOS**.  
+Está basada en un microcontrolador ``ESP32 WROOM 1``, lo que brinda flexibilidad para programar 
+el robot con distintos entornos como Arduino IDE, Micro-Python o FreeRTOS.  
 
 
 .. figure:: ./img/placa_control.jpg
@@ -15,15 +16,21 @@ el robot con distintos entornos como **Arduino IDE, Micro-Python o FreeRTOS**.
    :align: center
    :width: 400px
 
-   Placa de Control v1
-
+   Cerebro del RENA-BOT
 
 Características
 ~~~~~~~~~~~~~~~
 
-La placa de control del **RENA-BOT** ha sido diseñada con un **ensamblaje de montaje superficial (SMD)**, lo que garantiza un acabado compacto, ligero y confiable.  
-Sus dimensiones son **95 x 92 x 2 mm**, cuenta con **recubrimiento protector** para mayor durabilidad y resistencia, y está optimizada para integrar de forma ordenada los diferentes módulos del robot en formato
+La placa de control del RENA-BOT ha sido diseñada con un ensamblaje de montaje superficial (SMD)**, lo que garantiza un acabado compacto, ligero y confiable.  
+Sus dimensiones son 95 x 92 x 2 mm, cuenta con recubrimiento protector para mayor durabilidad y resistencia, y está optimizada para integrar de forma ordenada los diferentes módulos del robot en formato
 plug and play.  
+
+.. figure:: ./img/circuito.jpg
+   :alt: modelorobot
+   :align: center
+   :width: 400px
+
+	PCB -  RENA RENA-BOT
 
 Entre los principales elementos que incorpora se encuentran: 
 
@@ -32,7 +39,7 @@ Entre los principales elementos que incorpora se encuentran:
    :widths: 8 28 66
    :class: fit-table
 
-   * - N°
+   * - N
      - Elemento
      - Descripción
    * - 1
@@ -61,7 +68,7 @@ Entre los principales elementos que incorpora se encuentran:
      - Entradas para la selección manual de movimiento del RENA-BOT en el modo seguidor de línea.
    * - 9
      - Sensores LDR 
-     - El sensor **LDR (Light Dependent Resistor)** integrado en la placa posee unas dimensiones de 5 mm de diámetro.
+     - El sensor LDR (Light Dependent Resistor) integrado en la placa posee unas dimensiones de 5 mm de diámetro.
    * - 10
      - Switch SMD 
      - Entrada para la selección de conexión con el RENA-BOT, como cliente WiFi o punto de acceso WiFi.
@@ -74,19 +81,29 @@ El RENA-BOT incluye la siguiente lista de sensores, los cuales permiten que el r
 Seguidor de línea
 ~~~~~~~~~~~~~~~~~
 
-El sensor **QTR8** está compuesto por un arreglo de 8 sensores infrarrojos (IR) que permiten detectar el contraste entre superficies claras y oscuras.  
+.. figure:: ./img/sensor_qtr8.jpg
+   :alt: sensor_qtr8
+   :align: center
+   :width: 400px
+
+   Sensor QTR8 en el RENA-BOT
+
+El sensor ``QTR8`` está compuesto por un arreglo de 8 sensores infrarrojos (IR) que permiten detectar el contraste entre superficies claras y oscuras.  
 Funciona emitiendo luz infrarroja y midiendo la cantidad de reflexión en el suelo: superficies claras reflejan más y las oscuras menos.  
 
 Características técnicas:  
 - Tipo: arreglo de sensores IR reflectivos.  
 - Canales: 8 independientes.  
 - Salida: analógica. 
-- Voltaje de operación: 3.3 V – 5 V.  
+- Voltaje de operación: 3.3 V.  
 
 Uso en el RENA-BOT:  
 - Seguimiento de trayectorias y circuitos impresos en el suelo.  
-- Implementación de robots **seguidores de línea** en competiciones educativas.  
-- Desarrollo de proyectos como **laberintos y rutinas de navegación autónoma**.  
+- Implementación de robots seguidores de línea en competiciones educativas.  
+- Desarrollo de proyectos como laberintos y rutinas de navegación autónoma.  
+
+Sensor de distancia
+~~~~~~~~~~~~~~~~~~~
 
 .. figure:: ./img/sensor_qtr8.jpg
    :alt: sensor_qtr8
@@ -95,10 +112,7 @@ Uso en el RENA-BOT:
 
    Sensor QTR8 en el RENA-BOT
 
-Sensor de distancia
-~~~~~~~~~~~~~~~~~~~
-
-El sensor **ultrasónico HC-SR04** mide la distancia hasta un objeto enviando un pulso ultrasónico y calculando el tiempo que tarda en reflejarse.  
+El sensor ultrasónico HC-SR04 mide la distancia hasta un objeto enviando un pulso ultrasónico y calculando el tiempo que tarda en reflejarse.  
 
 Características técnicas:  
 - Rango de medición: 2 cm a 400 cm.  
@@ -107,9 +121,8 @@ Características técnicas:
 - Voltaje de operación: 5 V.  
 
 Uso en el RENA-BOT:  
-- **Evitación de obstáculos** durante el recorrido.  
-- Implementación de sistemas de **detención automática** cuando un objeto se acerca.  
-- Actividades educativas sobre el **principio del sonar** y la propagación del sonido.  
+- Evitación de obstáculos durante el recorrido.  
+- Implementación de sistemas de detención automática cuando un objeto se acerca.   
 
 Sensor de intensidad lumínica
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -123,24 +136,62 @@ Características técnicas:
 - Voltaje de operación: 3.3 V – 5 V.  
 
 Uso en el RENA-BOT:  
-- Detectar niveles de **luz y oscuridad**.  
+- Detectar niveles de luz y oscuridad.  
 - Encender automáticamente LEDs cuando baja la iluminación.  
 - Ejercicios de programación donde el robot reaccione a condiciones ambientales.  
 
-Sensor de temperatura
-~~~~~~~~~~~~~~~~~~~~~
+Módulo Sensor de Temperatura  KY-028
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-El **LM35** es un sensor analógico de temperatura con salida lineal en milivoltios proporcional a la temperatura en grados Celsius.  
+.. figure:: ./img/s_temperatura.jpg
+   :alt: sensor_qtr8
+   :align: center
+   :width: 400px
+
+   Sensor Ky-028
+
+El **Módulo Sensor de Temperatura Digital KY-028** combina un sensor NTC (Negative Temperature Coefficient) con un comparador LM393, lo que permite obtener tanto salida analógica (proporcional a la temperatura) como salida digital (según un umbral definido).  
+Este diseño lo hace versátil para actividades educativas, ya que el usuario puede medir variaciones de temperatura y, al mismo tiempo, configurar condiciones de activación mediante el potenciómetro integrado.
 
 Características técnicas:  
-- Rango de medición: -55 °C a +150 °C.  
-- Precisión: ±0.5 °C (a 25 °C).  
-- Salida: 10 mV/°C.  
-- Voltaje de operación: 4 V – 30 V.  
+- Rango de medición: aproximadamente -20 °C a +100 °C.  
+- Tipo de salida: analógica (variable continua) y digital (por umbral configurado).  
+- Voltaje de operación: 3.3 V.  
+- Sensibilidad ajustable mediante potenciómetro.  
+- Indicador LED integrado para la salida digital.  
 
 Uso en el RENA-BOT:  
-- Experimentos de **ciencia ambiental** (medición de temperatura del entorno).  
-- Registro de condiciones térmicas en proyectos escolares.   
+- Medición de temperatura ambiental en actividades de exploración científica.  
+- Activación de alarmas o actuadores al superar un umbral de temperatura predefinido.  
+- Ejercicios de programación que combinen lecturas analógicas y digitales.  
+- Proyectos de automatización educativa, relacionando condiciones térmicas con acciones específicas del robot.
+
+Módulo Sensor de Sonido KY-037
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. figure:: ./img/s_sonido.jpg
+   :alt: sensor_qtr8
+   :align: center
+   :width: 400px
+
+   Sensor KY-037 
+
+El Módulo Sensor de Sonido KY-037 está diseñado para detectar la intensidad del sonido en el ambiente mediante un micrófono electret y un amplificador integrado.  
+Proporciona tanto salida analógica (nivel proporcional a la intensidad sonora) como salida digital (activada al superar un umbral ajustable mediante potenciómetro).  
+
+Características técnicas:  
+- Tipo de sensor: micrófono electret con amplificador.  
+- Salidas: analógica (A0) y digital (D0).  
+- Voltaje de operación: 3.3 V.  
+- Sensibilidad ajustable con potenciómetro.  
+- Indicador LED para la salida digital.  
+
+Uso en el RENA-BOT:  
+- Detección de aplausos o sonidos fuertes para activar acciones del robot.  
+- Proyectos de interacción sonora, donde el robot responde a estímulos acústicos.  
+- Ejercicios de programación que combinen niveles de intensidad sonora con decisiones lógicas.  
+- Actividades lúdicas como el control del robot mediante señales sonoras simples (ejemplo: avance con un aplauso).  
+
 
 Actuadores
 ----------
@@ -151,40 +202,40 @@ Motores DC
 ~~~~~~~~~~
 
 Los **motores de corriente directa (DC)** son los responsables del movimiento del robot.  
-Están acoplados a reductores que aumentan el torque y permiten controlar con precisión la velocidad y dirección de las ruedas.  
+Están acoplados a reductores que aumentan el torque y permiten manejar con mayor precisión la velocidad y dirección del motor.
 
 Características técnicas:  
 - Voltaje de operación: 6 – 9 V.  
 - Velocidad nominal: 150 RPM (sin carga).  
 
 Uso en el RENA-BOT:  
-- Desplazamiento mediante **control diferencial** (variando la velocidad de cada rueda).  
+- Desplazamiento mediante control diferencial (variando la velocidad de cada rueda).  
 - Implementación de rutinas de navegación en trayectorias rectas, curvas o giros.  
-- Actividades prácticas para enseñar conceptos de **cinemática de robots móviles**.- Resolución de encoder: 300 pulsos por revolución.    
+- Actividades prácticas para enseñar conceptos de cinemática de robots móviles.
 
 Servomotor
 ~~~~~~~~~~
 
-El **servomotor SG90** es un actuador de pequeño tamaño que permite un movimiento angular limitado en un rango de **0° a 180°**.  
+El **servomotor SG90** es un actuador de pequeño tamaño que permite un movimiento angular **0° a 360°**.  
 Se controla enviando pulsos PWM desde el microcontrolador.  
 
 Características técnicas:  
 - Voltaje de operación: 4.8 V – 6 V.  
-- Ángulo de rotación: 0° a 180°.  
+- Ángulo de rotación: 360º  
 - Torque: ~1.8 kg·cm.  
 - Peso: 9 g.  
 
 Uso en el RENA-BOT:  
-- Control de un **manipulador de objetos** o gripper.  
+- Control de un manipulador de objetos o gripper.  
 - Movimiento de sensores (por ejemplo, rotación de un sensor ultrasónico).  
-- Actividades para enseñar el control de **PWM y actuadores de precisión**.  
+- Actividades para enseñar el control de PWM y actuadores de precisión.  
 
 
 Módulo de Buzzer Pasivo 
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 El **buzzer pasivo** es un actuador electrónico capaz de generar sonidos o tonos al recibir una señal de frecuencia desde el microcontrolador.  
-A diferencia del **buzzer activo**, que emite un tono fijo con solo aplicarle voltaje, el buzzer pasivo requiere que se le envíen **señales PWM** para producir distintos sonidos y melodías.
+A diferencia del buzzer activo, que emite un tono fijo con solo aplicarle voltaje, el buzzer pasivo requiere que se le envíen **señales PWM** para producir distintos sonidos y melodías.
 
 Características técnicas:  
 - Tipo: buzzer pasivo.  

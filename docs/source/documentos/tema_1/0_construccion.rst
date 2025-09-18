@@ -1,10 +1,10 @@
 Construcción del RENA-BOT
 =========================
 
-En esta sección aprenderá a ensamblar paso a paso el **RENA-BOT Estándar**, desde la preparación del chasis hasta la primera prueba de movimiento.  
+En esta sección aprenderá a ensamblar paso a paso el **RENA-BOT 4 en 1**, desde la preparación del chasis hasta la primera prueba de movimiento.  
 
-.. note::
-   Se recomienda realizar el armado en un área amplia y bien iluminada. Mantenga organizadas las piezas y herramientas para facilitar el proceso.
+.. tip::
+   Arme del robot en un área amplia y bien iluminada. Mantenga organizadas las piezas y herramientas para facilitar el proceso.
 
 
 Inventario de piezas y herramientas
@@ -143,7 +143,7 @@ Lista completa de componentes incluidos en el kit:
    * - 21 
      - Placa de control
      - 1
-     - .. image:: ./img/placa_control.jpg
+     - .. image:: ./img/circuito.jpg
           :width: 120px
           :align: center
    * - 22 
@@ -251,9 +251,17 @@ Herramientas necesarias:
 
 El RENA-BOT puede ser armado de 4 formas diferentes, **1. Velocista**, **2. Equilibrista**, **3. Todoterreno** y **4. Exporador**.
 
+Modos de construcción
+---------------------
 
 Modo Velocista
---------------
+~~~~~~~~~~~~~~
+
+.. figure:: ./img/rena/velocista.png
+   :alt: modelorobot
+   :align: center
+   :width: 400px
+
 
 Rena velocista En esta modalidad, el robot utiliza la máxima potencia de sus motores y su sistema de locomoción diferencial con tres ruedas: dos motrices y una de apoyo para estabilidad.  
 Permite el desplazamiento libre en el entorno y la realización de actividades como:  
@@ -264,25 +272,20 @@ Permite el desplazamiento libre en el entorno y la realización de actividades c
 
 Ejercicios de control de velocidad y giros.   
 
-.. figure:: ./img/rena/velocista.png
-   :alt: modelorobot
-   :align: center
-   :width: 400px
-
 Guía de armado:
 
 :download:`Descargar ficha Velocista <../../_static/velocista.pdf>`
 
 Modo Velocista transportador
-----------------------------
-
-La versión transportador del RENA-BOT utiliza los Guardafangos como piezas del 
-gripper que permiten transportar objetos.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: ./img/rena/transportador.png
    :alt: modelorobot
    :align: center
    :width: 400px
+
+La versión transportador del RENA-BOT utiliza los Guardafangos como piezas del 
+gripper que permiten transportar objetos.
 
 Guía de armado:
 
@@ -293,38 +296,47 @@ Guía de armado:
 
 
 Modo Todoterreno
-----------------
-
-En esta configuración, el RENA-BOT adopta un diseño de movilidad con orugas, lo que lo 
-convierte en un robot todoterreno capaz de desplazarse de manera eficiente sobre superficies 
-irregulares, tanto en interiores como en exteriores.
-El sistema de locomoción se basa en un control diferencial de doble oruga, 
-que le permite realizar giros precisos y mantener estabilidad en terrenos complejos. A través 
-del sensor ultrasónico se puede programar la evasión de obstáculos o utilizar el modo automático para evitar choques.
+~~~~~~~~~~~~~~~~
 
 .. figure:: ./img/rena/todoterreno.png
    :alt: modelorobot
    :align: center
    :width: 400px
 
+En esta configuración, el RENA-BOT adopta un diseño de movilidad con orugas, lo que lo convierte en un robot todoterreno capaz de desplazarse de manera eficiente sobre superficies 
+irregulares, tanto en interiores como en exteriores.
+El sistema de locomoción se basa en un control diferencial de doble oruga, 
+que le permite realizar giros precisos y mantener estabilidad en terrenos complejos. A través 
+del sensor ultrasónico se puede programar la evasión de obstáculos o utilizar el modo automático para evitar choques.
+
 Guía de armado:
 
-Modo Equilibrista
------------------
+:download:`Descargar ficha Velocista <../../_static/velocista.pdf>`
 
-En este modo, el RenaBot utiliza la información de velocidad lineal y angular presenta en el 
-eje x del sensor MPU, permitiendo realizar un control sobre el avance y equilibrio del robot 
-mientras avanza. Su control se realiza a través de un joystick virtual.
+Modo Equilibrista
+~~~~~~~~~~~~~~~~~
 
 .. figure:: ./img/rena/equilibrista.png
    :alt: modelorobot
    :align: center
    :width: 400px
 
+En este modo, el RenaBot utiliza la información de velocidad lineal y angular presenta en el 
+eje x del sensor MPU, permitiendo realizar un control sobre el avance y equilibrio del robot 
+mientras avanza. Su control se realiza a través de un joystick virtual.
+
+
 Guía de armado:
 
+:download:`Descargar ficha Velocista <../../_static/velocista.pdf>`
+
 Modo Explorador
----------------
+~~~~~~~~~~~~~~~
+
+.. figure:: ./img/rena/explorador.png
+   :alt: modelorobot
+   :align: center
+   :width: 400px
 
 En esta configuración, el RENA-BOT utiliza el sistema de locomoción del modo todoterreno 
 e incorpora una estructura adicional que eleva el sensor ultrasónico, montado sobre un 
@@ -341,6 +353,8 @@ sino que también potencia el aprendizaje en áreas como:
 
 Guía de armado:
 
+:download:`Descargar ficha Velocista <../../_static/velocista.pdf>`
+
 Revisión final
 --------------
 
@@ -351,7 +365,7 @@ Checklist de verificación:
 - Ruedas giran libremente.  
 
 Prueba básica de movimiento
----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Encendido inicial.  
 - Verificación de motores.
@@ -367,3 +381,4 @@ Revisa la sección :ref:`Práctica de movimiento libre <modo-libre>`.
    :width: 700px
    :align: center
 
+Continúa con la revisión de los componentes electrónicos del RENA-BOT
