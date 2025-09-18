@@ -1,5 +1,5 @@
-RENA-BOT Estándar
-=================
+RENA-BOT 4 en 1
+===============
 
 El **RENA-BOT** es un robot educativo diseñado con un enfoque **compacto, modular y accesible**, orientado a la enseñanza de **STEM (Ciencia, Tecnología, Ingeniería y Matemáticas)** en niños y jóvenes de **5 a 14 años**.  
 Su desarrollo busca apoyar tanto a la educación formal como a la educación extracurricular, ofreciendo una herramienta práctica para introducirse en el mundo de la robótica.
@@ -9,7 +9,7 @@ Su desarrollo busca apoyar tanto a la educación formal como a la educación ext
    :align: center
    :width: 400px
 
-   RENA-Bot v1
+   RENA-Bot modelos 
 
 **Propósito del RENA-BOT**
 --------------------------
