@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Conexión del RENA-BOT &mdash; documentación de Documentación RENA-BOT 4en1 - 0.1</title>
+  <title>Configuracióndel RENA-BOT &mdash; documentación de Documentación RENA-BOT 4en1 - 0.1</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -25,7 +25,7 @@
     <link rel="index" title="Índice" href="../../genindex.html" />
     <link rel="search" title="Búsqueda" href="../../search.html" />
     <link rel="next" title="Prácticas RENA-Bot" href="1_ejemplos.html" />
-    <link rel="prev" title="API Blockly + MQTT" href="../tema_3/0_software.html" /> 
+    <link rel="prev" title="SOFTWARE Y PROGRAMACIÓN" href="../tema_3/0_software.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -61,13 +61,19 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Software</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../tema_3/0_software.html">API Blockly + MQTT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tema_3/0_software.html">SOFTWARE Y PROGRAMACIÓN</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Configuración y Uso</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Conexión del RENA-BOT</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#estructura-de-la-carpeta">Estructura de la carpeta</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#comandos-para-actualizar-hmi">Comandos para actualizar HMI</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Configuracióndel RENA-BOT</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#conexion-con-el-dispositivo">Conexión con el dispositivo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#seleccion-de-aplicacion">Selección de aplicación</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#seguidor-en-malla">Seguidor en Malla</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modo-musico">Modo Músico</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modo-radar">Modo radar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modo-libre">Modo Libre</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="1_ejemplos.html">Prácticas RENA-Bot</a></li>
@@ -87,7 +93,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Conexión del RENA-BOT</li>
+      <li class="breadcrumb-item active">Configuracióndel RENA-BOT</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -96,23 +102,70 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="conexion-del-rena-bot">
-<h1>Conexión del RENA-BOT<a class="headerlink" href="#conexion-del-rena-bot" title="Link to this heading"></a></h1>
-<section id="estructura-de-la-carpeta">
-<h2>Estructura de la carpeta<a class="headerlink" href="#estructura-de-la-carpeta" title="Link to this heading"></a></h2>
-<p>Los archivos originales de <code class="docutils literal notranslate"><span class="pre">ui_main.py</span></code> y <code class="docutils literal notranslate"><span class="pre">resources_rc.py</span></code>, se
-encuentran etiquetados como:</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">0_ui_main.py</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">0_resources_rc.py</span></code></p></li>
-</ul>
+  <section id="configuraciondel-rena-bot">
+<h1>Configuracióndel RENA-BOT<a class="headerlink" href="#configuraciondel-rena-bot" title="Link to this heading"></a></h1>
+<section id="conexion-con-el-dispositivo">
+<h2>Conexión con el dispositivo<a class="headerlink" href="#conexion-con-el-dispositivo" title="Link to this heading"></a></h2>
+<p>Una vez realizada la construcción del cualquier modelo del RenaBot, el primer paso para usar
+el RENA-BOT es establecer una conexión wifi.</p>
+<p>Para la conexión con el RENA-BOT se puede utilizar 2 modos:</p>
+<p>Modo cliente:</p>
+<p>En el modo cliente el rena se conecta a la red wifi disponible.</p>
+<ol class="arabic simple">
+<li><p>Revise las redes diponibles</p></li>
+<li><p>Ingrese al portal general por el Rena-XX.</p></li>
+<li><p>Ingrese las credencias de la Red Wifi a la que quieres acceder.</p></li>
+<li><p>Espere a que la conexión se haya realizado.</p></li>
+</ol>
+<p>Modo Acces Point:</p>
+<ol class="arabic simple">
+<li><p>Revise las redes diponibles</p></li>
+<li><p>Ingrese al portal general por el Rena-XX.</p></li>
+<li><p>Conectate a la red Wifi generada por el RENA-BOT.</p></li>
+<li><p>Ingresa la contraseña rena1234.</p></li>
+</ol>
+<p>Cada RENA-BOT tiene un número de identificación único.</p>
+<figure class="align-center">
+<img alt="modelorobot" src="../../_images/configuracion.jpg" />
+</figure>
+<p>Una vez realizada la conexión ya puedes utilizar tu RENA-BOT</p>
 </section>
-<section id="comandos-para-actualizar-hmi">
-<h2>Comandos para actualizar HMI<a class="headerlink" href="#comandos-para-actualizar-hmi" title="Link to this heading"></a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pyside6</span><span class="o">-</span><span class="n">uic</span> <span class="n">main</span><span class="o">.</span><span class="n">ui</span> <span class="o">&gt;</span> <span class="n">modules</span><span class="o">/</span><span class="n">ui_main</span><span class="o">.</span><span class="n">py</span>
-<span class="n">pyside6</span><span class="o">-</span><span class="n">rcc</span> <span class="n">resources</span><span class="o">.</span><span class="n">qrc</span> <span class="o">-</span><span class="n">o</span> <span class="n">modules</span><span class="o">/</span><span class="n">resources_rc</span><span class="o">.</span><span class="n">py</span>
-</pre></div>
-</div>
+<section id="seleccion-de-aplicacion">
+<h2>Selección de aplicación<a class="headerlink" href="#seleccion-de-aplicacion" title="Link to this heading"></a></h2>
+<section id="seguidor-en-malla">
+<h3>Seguidor en Malla<a class="headerlink" href="#seguidor-en-malla" title="Link to this heading"></a></h3>
+<p>Para esta modalidad necesitas la malla para el seguidor de linea.</p>
+<p>Este modo se presenta como una implementación diseñada para maximizar la precisión de los movimientos del RENA-BOT, siendo especialmente útil en actividades educativas que priorizan:</p>
+<ul class="simple">
+<li><p>El desarrollo del pensamiento lógico-matemático básico, a través de tareas como contar, reconocer figuras y patrones, clasificar y comparar.</p></li>
+<li><p>El aprendizaje experiencial y lúdico, mediante actividades de exploración, prácticas guiadas y juegos interactivos.</p></li>
+</ul>
+<p>Además, este modelo toma como referencia un toy problem relacionado con el almacenamiento inteligente y la optimización de rutas utilizando robots móviles.
+Su aplicación más directa se observa en los robots industriales seguidores de línea utilizados por Amazon, que ejemplifican cómo un concepto didáctico puede escalar hacia soluciones de ingeniería avanzada en logística y automatización.</p>
+<p>Para su uso puedes utilizar los bloques de <code class="docutils literal notranslate"><span class="pre">seguidor</span></code> y la opcion de control por voz utilizando el modo <code class="docutils literal notranslate"><span class="pre">seguidor</span></code></p>
+<p>Versiones que soportan esta aplicacion: <code class="docutils literal notranslate"><span class="pre">velocista</span></code>, <code class="docutils literal notranslate"><span class="pre">transportador</span></code>, <code class="docutils literal notranslate"><span class="pre">todoterreno</span></code></p>
+</section>
+<section id="modo-musico">
+<h3>Modo Músico<a class="headerlink" href="#modo-musico" title="Link to this heading"></a></h3>
+<p>Este modo utiliza el buzzer pasivo y el piano virtual diseñado en la aplicación para que el RENA-BOT pueda interpretar melodías.
+El usuario selecciona notas musicales desde el piano virtual o mediante bloques de programación, y el robot las reproduce generando distintos tonos a través del buzzer.</p>
+<p>De esta manera, los estudiantes no solo aprenden sobre programación y electrónica, sino que también se introducen a conceptos de frecuencia, ondas sonoras y PWM (modulación por ancho de pulso) de una forma divertida y creativa.
+Además, este modo fomenta la creatividad artística y tecnológica, permitiendo integrar actividades de música en la robótica educativa.</p>
+</section>
+<section id="modo-radar">
+<h3>Modo radar<a class="headerlink" href="#modo-radar" title="Link to this heading"></a></h3>
+<p>En esta configuración, el RENA-BOT emplea el sensor ultrasónico
+montado en un servomotor para realizar un barrido de hasta 270°, generando
+un mapa básico de los objetos que lo rodean. Paralelamente, el usuario puede manipular
+el movimiento del robot de forma manual mediante un joystick virtual, lo que combina
+exploración autónoma con control interactivo.</p>
+</section>
+<section id="modo-libre">
+<span id="id1"></span><h3>Modo Libre<a class="headerlink" href="#modo-libre" title="Link to this heading"></a></h3>
+<p>En el modolo libre usando un <code class="docutils literal notranslate"><span class="pre">joystick</span></code> se puede manipular el movimiento del robot, además, se
+puede visualizar los datos obtenidos por los sensores <code class="docutils literal notranslate"><span class="pre">ultrasónico,</span> <span class="pre">LDR,</span> <span class="pre">LM35dz</span></code> y manipular
+el <code class="docutils literal notranslate"><span class="pre">servomotor</span></code> si el modelo armado es el manipulador.</p>
+</section>
 </section>
 </section>
 
@@ -120,7 +173,7 @@ encuentran etiquetados como:</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
-        <a href="../tema_3/0_software.html" class="btn btn-neutral float-left" title="API Blockly + MQTT" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="../tema_3/0_software.html" class="btn btn-neutral float-left" title="SOFTWARE Y PROGRAMACIÓN" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
         <a href="1_ejemplos.html" class="btn btn-neutral float-right" title="Prácticas RENA-Bot" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

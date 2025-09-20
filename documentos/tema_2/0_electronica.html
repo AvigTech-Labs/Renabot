@@ -24,7 +24,7 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Índice" href="../../genindex.html" />
     <link rel="search" title="Búsqueda" href="../../search.html" />
-    <link rel="next" title="API Blockly + MQTT" href="../tema_3/0_software.html" />
+    <link rel="next" title="SOFTWARE Y PROGRAMACIÓN" href="../tema_3/0_software.html" />
     <link rel="prev" title="Construcción del RENA-BOT" href="../tema_1/0_construccion.html" /> 
 </head>
 
@@ -77,16 +77,17 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#fuente-de-energia">Fuente de energía</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#conexion-de-los-componentes">Conexión de los componentes</a></li>
 </ul>
 </li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Software</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../tema_3/0_software.html">API Blockly + MQTT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tema_3/0_software.html">SOFTWARE Y PROGRAMACIÓN</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Configuración y Uso</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../tema_4/0_conf.html">Conexión del RENA-BOT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tema_4/0_conf.html">Configuracióndel RENA-BOT</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tema_4/1_ejemplos.html">Prácticas RENA-Bot</a></li>
 </ul>
 
@@ -222,10 +223,10 @@ Funciona emitiendo luz infrarroja y midiendo la cantidad de reflexión en el sue
 <section id="sensor-de-distancia">
 <h3>Sensor de distancia<a class="headerlink" href="#sensor-de-distancia" title="Link to this heading"></a></h3>
 <figure class="align-center" id="id3">
-<a class="reference internal image-reference" href="../../_images/sensor_qtr8.jpg"><img alt="sensor_qtr8" src="../../_images/sensor_qtr8.jpg" style="width: 400px;" />
+<a class="reference internal image-reference" href="../../_images/sensor_ultra.jpg"><img alt="sensor_qtr8" src="../../_images/sensor_ultra.jpg" style="width: 400px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Sensor QTR8 en el RENA-BOT</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+<p><span class="caption-text">Sensor ultrasónico en el RENA-BOT</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>El sensor ultrasónico HC-SR04 mide la distancia hasta un objeto enviando un pulso ultrasónico y calculando el tiempo que tarda en reflejarse.</p>
@@ -240,6 +241,10 @@ Funciona emitiendo luz infrarroja y midiendo la cantidad de reflexión en el sue
 </section>
 <section id="sensor-de-intensidad-luminica">
 <h3>Sensor de intensidad lumínica<a class="headerlink" href="#sensor-de-intensidad-luminica" title="Link to this heading"></a></h3>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/ldr.jpg"><img alt="sensor_qtr8" src="../../_images/ldr.jpg" style="width: 400px;" />
+</a>
+</figure>
 <p>El sensor <strong>LDR (Light Dependent Resistor)</strong> varía su resistencia eléctrica según la cantidad de luz que incide sobre él.
 Se utiliza como un divisor de tensión, conectado a una entrada analógica del microcontrolador.</p>
 <p>Características técnicas:
@@ -303,6 +308,10 @@ Proporciona tanto salida analógica (nivel proporcional a la intensidad sonora) 
 <p>El RENA-BOT incluye la siguiente lista de actuadores, los cuales permiten que el robot realice acciones físicas:</p>
 <section id="motores-dc">
 <h3>Motores DC<a class="headerlink" href="#motores-dc" title="Link to this heading"></a></h3>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/motores.jpg"><img alt="sensor_qtr8" src="../../_images/motores.jpg" style="width: 400px;" />
+</a>
+</figure>
 <p>Los <strong>motores de corriente directa (DC)</strong> son los responsables del movimiento del robot.
 Están acoplados a reductores que aumentan el torque y permiten manejar con mayor precisión la velocidad y dirección del motor.</p>
 <p>Características técnicas:
@@ -315,6 +324,10 @@ Están acoplados a reductores que aumentan el torque y permiten manejar con mayo
 </section>
 <section id="servomotor">
 <h3>Servomotor<a class="headerlink" href="#servomotor" title="Link to this heading"></a></h3>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/servo1.jpg"><img alt="sensor_qtr8" src="../../_images/servo1.jpg" style="width: 400px;" />
+</a>
+</figure>
 <p>El <strong>servomotor SG90</strong> es un actuador de pequeño tamaño que permite un movimiento angular <strong>0° a 360°</strong>.
 Se controla enviando pulsos PWM desde el microcontrolador.</p>
 <p>Características técnicas:
@@ -329,6 +342,10 @@ Se controla enviando pulsos PWM desde el microcontrolador.</p>
 </section>
 <section id="modulo-de-buzzer-pasivo">
 <h3>Módulo de Buzzer Pasivo<a class="headerlink" href="#modulo-de-buzzer-pasivo" title="Link to this heading"></a></h3>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/buzzer1.jpg"><img alt="sensor_qtr8" src="../../_images/buzzer1.jpg" style="width: 400px;" />
+</a>
+</figure>
 <p>El <strong>buzzer pasivo</strong> es un actuador electrónico capaz de generar sonidos o tonos al recibir una señal de frecuencia desde el microcontrolador.
 A diferencia del buzzer activo, que emite un tono fijo con solo aplicarle voltaje, el buzzer pasivo requiere que se le envíen <strong>señales PWM</strong> para producir distintos sonidos y melodías.</p>
 <p>Características técnicas:
@@ -355,6 +372,16 @@ A diferencia del buzzer activo, que emite un tono fijo con solo aplicarle voltaj
 <p>Con un uso responsable, esta batería puede tener una larga vida útil y es suficiente para múltiples sesiones educativas antes de requerir recarga.</p>
 </div>
 </section>
+<section id="conexion-de-los-componentes">
+<h2>Conexión de los componentes<a class="headerlink" href="#conexion-de-los-componentes" title="Link to this heading"></a></h2>
+<p>El diseño SMD de la placa de contro con sus conectores JST XH2.54 y sumado al sistema de colores, permite
+identificar de forma sencilla la conexión de cada componente.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/conexiones.jpg"><img alt="sensor_qtr8" src="../../_images/conexiones.jpg" style="width: 400px;" />
+</a>
+</figure>
+<p>continúa aprendiendo sobre el RENA-BOT en la sección Software y Programación</p>
+</section>
 </section>
 
 
@@ -362,7 +389,7 @@ A diferencia del buzzer activo, que emite un tono fijo con solo aplicarle voltaj
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
         <a href="../tema_1/0_construccion.html" class="btn btn-neutral float-left" title="Construcción del RENA-BOT" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
-        <a href="../tema_3/0_software.html" class="btn btn-neutral float-right" title="API Blockly + MQTT" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../tema_3/0_software.html" class="btn btn-neutral float-right" title="SOFTWARE Y PROGRAMACIÓN" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

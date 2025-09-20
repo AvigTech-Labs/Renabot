@@ -105,12 +105,12 @@ Uso en el RENA-BOT:
 Sensor de distancia
 ~~~~~~~~~~~~~~~~~~~
 
-.. figure:: ./img/sensor_qtr8.jpg
+.. figure:: ./img/sensor_ultra.jpg
    :alt: sensor_qtr8
    :align: center
    :width: 400px
 
-   Sensor QTR8 en el RENA-BOT
+   Sensor ultrasónico en el RENA-BOT
 
 El sensor ultrasónico HC-SR04 mide la distancia hasta un objeto enviando un pulso ultrasónico y calculando el tiempo que tarda en reflejarse.  
 
@@ -126,6 +126,13 @@ Uso en el RENA-BOT:
 
 Sensor de intensidad lumínica
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. figure:: ./img/ldr.jpg
+   :alt: sensor_qtr8
+   :align: center
+   :width: 400px
+
+	sensor LDR
 
 El sensor **LDR (Light Dependent Resistor)** varía su resistencia eléctrica según la cantidad de luz que incide sobre él.  
 Se utiliza como un divisor de tensión, conectado a una entrada analógica del microcontrolador.  
@@ -201,6 +208,11 @@ El RENA-BOT incluye la siguiente lista de actuadores, los cuales permiten que el
 Motores DC
 ~~~~~~~~~~
 
+.. figure:: ./img/motores.jpg
+   :alt: sensor_qtr8
+   :align: center
+   :width: 400px
+
 Los **motores de corriente directa (DC)** son los responsables del movimiento del robot.  
 Están acoplados a reductores que aumentan el torque y permiten manejar con mayor precisión la velocidad y dirección del motor.
 
@@ -215,6 +227,11 @@ Uso en el RENA-BOT:
 
 Servomotor
 ~~~~~~~~~~
+
+.. figure:: ./img/servo.jpg
+   :alt: sensor_qtr8
+   :align: center
+   :width: 400px
 
 El **servomotor SG90** es un actuador de pequeño tamaño que permite un movimiento angular **0° a 360°**.  
 Se controla enviando pulsos PWM desde el microcontrolador.  
@@ -234,6 +251,11 @@ Uso en el RENA-BOT:
 Módulo de Buzzer Pasivo 
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. figure:: ./img/buzzer.jpg
+   :alt: sensor_qtr8
+   :align: center
+   :width: 400px
+
 El **buzzer pasivo** es un actuador electrónico capaz de generar sonidos o tonos al recibir una señal de frecuencia desde el microcontrolador.  
 A diferencia del buzzer activo, que emite un tono fijo con solo aplicarle voltaje, el buzzer pasivo requiere que se le envíen **señales PWM** para producir distintos sonidos y melodías.
 
@@ -242,8 +264,6 @@ Características técnicas:
 - Voltaje de operación: 3.3 V – 5 V.  
 - Control mediante señal PWM.  
 - Tamaño compacto, fácil de integrar en la placa o en módulos externos.  
-
-
 
 Fuente de energía
 -----------------
@@ -264,4 +284,15 @@ Recomendaciones de seguridad:
 .. tip::
    Con un uso responsable, esta batería puede tener una larga vida útil y es suficiente para múltiples sesiones educativas antes de requerir recarga.
 
-	
+Conexión de los componentes
+---------------------------
+
+El diseño SMD de la placa de contro con sus conectores JST XH2.54 y sumado al sistema de colores, permite
+identificar de forma sencilla la conexión de cada componente.
+
+.. figure:: ./img/conexiones.jpg
+   :alt: sensor_qtr8
+   :align: center
+   :width: 400px
+
+continúa aprendiendo sobre el RENA-BOT en la sección Software y Programación

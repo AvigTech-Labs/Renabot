@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>API Blockly + MQTT &mdash; documentación de Documentación RENA-BOT 4en1 - 0.1</title>
+  <title>SOFTWARE Y PROGRAMACIÓN &mdash; documentación de Documentación RENA-BOT 4en1 - 0.1</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -24,7 +24,7 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Índice" href="../../genindex.html" />
     <link rel="search" title="Búsqueda" href="../../search.html" />
-    <link rel="next" title="Conexión del RENA-BOT" href="../tema_4/0_conf.html" />
+    <link rel="next" title="Configuracióndel RENA-BOT" href="../tema_4/0_conf.html" />
     <link rel="prev" title="Componentes Electrónicos" href="../tema_2/0_electronica.html" /> 
 </head>
 
@@ -61,14 +61,28 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Software</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">API Blockly + MQTT</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#arquitectura-del-sistema">Arquitectura del sistema</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">SOFTWARE Y PROGRAMACIÓN</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#programacion">Programación</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#bloques-de-programacion-del-rena-bot">Bloques de programación del RENA-BOT</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#formas-de-uso">Formas de uso</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#modo-programador">Modo Programador</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modo-control-por-comandos-de-voz">Modo Control por Comandos de Voz</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#descargas">Descargas</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#aplicacion-de-escritorio">Aplicación de escritorio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#aplicacion-movil">Aplicación móvil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#arduino-ide">Arduino IDE</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Configuración y Uso</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../tema_4/0_conf.html">Conexión del RENA-BOT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tema_4/0_conf.html">Configuracióndel RENA-BOT</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tema_4/1_ejemplos.html">Prácticas RENA-Bot</a></li>
 </ul>
 
@@ -86,7 +100,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">API Blockly + MQTT</li>
+      <li class="breadcrumb-item active">SOFTWARE Y PROGRAMACIÓN</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -95,12 +109,208 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="api-blockly-mqtt">
-<h1>API Blockly + MQTT<a class="headerlink" href="#api-blockly-mqtt" title="Link to this heading"></a></h1>
-<p>Esta documentación describe el funcionamiento actual de la API que conecta la interfaz visual Blockly con el backend basado en FastAPI y comunicación MQTT. El sistema permite construir programas visuales usando bloques, que luego se traducen en comandos JSON y se ejecutan en un robot o sistema IoT.</p>
-<section id="arquitectura-del-sistema">
-<h2>Arquitectura del sistema<a class="headerlink" href="#arquitectura-del-sistema" title="Link to this heading"></a></h2>
-<p>El sistema está dividido en tres componentes principales:</p>
+  <section id="software-y-programacion">
+<h1>SOFTWARE Y PROGRAMACIÓN<a class="headerlink" href="#software-y-programacion" title="Link to this heading"></a></h1>
+<p>El RENA-BOT es compatible con múltiples lenguajes y entornos de programación, lo que lo convierte en una plataforma flexible para el aprendizaje de la robótica.
+Puede ser utilizado con:</p>
+<ul class="simple">
+<li><p><strong>Arduino IDE</strong> (C/C++).</p></li>
+<li><p><strong>Espressif IDE</strong> para desarrollos avanzados en ESP32.</p></li>
+<li><p><strong>MicroPython</strong>, orientado a programación ágil y didáctica.</p></li>
+<li><p><strong>Blockly</strong>, con bloques gráficos diseñados específicamente para simplificar la programación educativa.</p></li>
+</ul>
+<p>De esta manera, los estudiantes y docentes pueden elegir el entorno que mejor se adapte a su nivel y objetivos de aprendizaje.</p>
+<section id="programacion">
+<h2>Programación<a class="headerlink" href="#programacion" title="Link to this heading"></a></h2>
+<section id="bloques-de-programacion-del-rena-bot">
+<h3>Bloques de programación del RENA-BOT<a class="headerlink" href="#bloques-de-programacion-del-rena-bot" title="Link to this heading"></a></h3>
+<p>Los bloques personalizados de Blockly permiten a los estudiantes activar el robot en diferentes modos y desarrollar algoritmos de forma visual e intuitiva.</p>
+<p>Descripción de bloques:</p>
+<table class="fit-table docutils align-default">
+<colgroup>
+<col style="width: 30.5%" />
+<col style="width: 50.4%" />
+<col style="width: 19.1%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Bloque</p></th>
+<th class="head"><p>Descripción</p></th>
+<th class="head"><p>Clase</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><a class="reference internal image-reference" href="../../_images/1.jpg"><img alt="../../_images/1.jpg" class="align-center" src="../../_images/1.jpg" style="width: 180px;" />
+</a>
+</td>
+<td><p>Este bloque permite el inicio del RENA-BOT, y le agrega un nombre para su funcionamiento.</p></td>
+<td><p>Rena</p></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal image-reference" href="../../_images/2.jpg"><img alt="../../_images/2.jpg" class="align-center" src="../../_images/2.jpg" style="width: 180px;" />
+</a>
+</td>
+<td><p>Controla el movimiento del RENA-BOT en la malla de movimiento controlado, los movimientos disponibles son: Adelante, Atras, Izquierda, Derecha.</p></td>
+<td><p>Rena</p></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal image-reference" href="../../_images/3.jpg"><img alt="../../_images/3.jpg" class="align-center" src="../../_images/3.jpg" style="width: 180px;" />
+</a>
+</td>
+<td><p>Setea el valor de la velocidad, usando un valor porcentual. El bloque permite valores enteros.</p></td>
+<td><p>Rena</p></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal image-reference" href="../../_images/4.jpg"><img alt="../../_images/4.jpg" class="align-center" src="../../_images/4.jpg" style="width: 180px;" />
+</a>
+</td>
+<td><p>Controla el movimiento del robot durante una cantidad x de segundos, con este bloques el robot puede: Girar a la izquierda, Girar a la derecha, Avanzar o retroceder. El bloque admite valores decimales en el tiempo.</p></td>
+<td><p>Rena</p></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal image-reference" href="../../_images/5.jpg"><img alt="../../_images/5.jpg" class="align-center" src="../../_images/5.jpg" style="width: 180px;" />
+</a>
+</td>
+<td><p>Abre o cierra el gripper.</p></td>
+<td><p>Rena</p></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal image-reference" href="../../_images/6.jpg"><img alt="../../_images/6.jpg" class="align-center" src="../../_images/6.jpg" style="width: 180px;" />
+</a>
+</td>
+<td><p>Envia una pausa en la ejecución del algoritmo durante una x cantidad de tiempo. El bloque acepta valores decimales.</p></td>
+<td><p>Rena</p></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal image-reference" href="../../_images/7.jpg"><img alt="../../_images/7.jpg" class="align-center" src="../../_images/7.jpg" style="width: 180px;" />
+</a>
+</td>
+<td><p>Enciende o apaga el LED del RENA-BOT</p></td>
+<td><p>Rena</p></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal image-reference" href="../../_images/8.jpg"><img alt="../../_images/8.jpg" class="align-center" src="../../_images/8.jpg" style="width: 180px;" />
+</a>
+</td>
+<td><p>Actualiza el valor del sensor seleccionado, los sensores que se pueden leer son: ultrasónico, LDR izquierdo, LDR derecho, Temperatura, micrófono.</p></td>
+<td><p>Sensor</p></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal image-reference" href="../../_images/9.jpg"><img alt="../../_images/9.jpg" class="align-center" src="../../_images/9.jpg" style="width: 180px;" />
+</a>
+</td>
+<td><p>Variable que usa el valor de las lecturas tomadas por el bloque de sensores.</p></td>
+<td><p>Sensor</p></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal image-reference" href="../../_images/10.jpg"><img alt="../../_images/10.jpg" class="align-center" src="../../_images/10.jpg" style="width: 180px;" />
+</a>
+</td>
+<td><p>Bloque condicional IF, si la sentencia es verdadera se ejecutan los bloques agregados.</p></td>
+<td><p>Condicional</p></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal image-reference" href="../../_images/11.jpg"><img alt="../../_images/11.jpg" class="align-center" src="../../_images/11.jpg" style="width: 180px;" />
+</a>
+</td>
+<td><p>Bucle For, repite un n número de veces los diferentes bloques agregados.</p></td>
+<td><p>Condicional</p></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal image-reference" href="../../_images/12.jpg"><img alt="../../_images/12.jpg" class="align-center" src="../../_images/12.jpg" style="width: 180px;" />
+</a>
+</td>
+<td><p>Bucle If / Else, si se cumple las condición realiza las acciones agregadas en el if, sino realiza las acciones agregadas en el else.</p></td>
+<td><p>Condicional</p></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal image-reference" href="../../_images/13.jpg"><img alt="../../_images/13.jpg" class="align-center" src="../../_images/13.jpg" style="width: 180px;" />
+</a>
+</td>
+<td><p>Compara 2 variables diferentes, los comparadores logicos disponibles son: <code class="docutils literal notranslate"><span class="pre">!=</span></code>, <code class="docutils literal notranslate"><span class="pre">==</span></code>, <code class="docutils literal notranslate"><span class="pre">&gt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;</span></code>,</p></td>
+<td><p>Comparador</p></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal image-reference" href="../../_images/14.jpg"><img alt="../../_images/14.jpg" class="align-center" src="../../_images/14.jpg" style="width: 180px;" />
+</a>
+</td>
+<td><p>Combina 2 o mas bloques comparadores.</p></td>
+<td><p>Comparador</p></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal image-reference" href="../../_images/15.jpg"><img alt="../../_images/15.jpg" class="align-center" src="../../_images/15.jpg" style="width: 180px;" />
+</a>
+</td>
+<td><p>Devuelve una sentencia verdadera o falsa.</p></td>
+<td><p>Comparador</p></td>
+</tr>
+</tbody>
+</table>
+<p>Esto permite pasar de la programación visual a la codificación real, generando código fuente en Python o C++ de manera automática.</p>
+</section>
+</section>
+<section id="formas-de-uso">
+<h2>Formas de uso<a class="headerlink" href="#formas-de-uso" title="Link to this heading"></a></h2>
+<p>El RENA-BOT puede ser utilizado de diferentes maneras, según la necesidad del curso o proyecto:</p>
+<section id="modo-programador">
+<h3>Modo Programador<a class="headerlink" href="#modo-programador" title="Link to this heading"></a></h3>
+<p>A través de bloques de programación (Blockly) el usuario puede manipular el comportamiento del RENA-BOT.</p>
+<figure class="align-center">
+<img alt="modelorobot" src="../../_images/programador.jpg" />
+</figure>
+<p>Descripción del programa:</p>
+<figure class="align-center">
+<img alt="modelorobot" src="../../_images/bloques_ejemplo.jpg" />
+</figure>
+</section>
+<section id="modo-control-por-comandos-de-voz">
+<h3>Modo Control por Comandos de Voz<a class="headerlink" href="#modo-control-por-comandos-de-voz" title="Link to this heading"></a></h3>
+<p>Este modo integra un módulo de reconocimiento de voz que permite controlar el robot mediante órdenes verbales simples activa los bloques de programacion.
+Se introducen así conceptos de <strong>interacción humano-robot (HRI)</strong> y de <strong>inteligencia artificial aplicada a la educación</strong>.</p>
+<p>Estructura del comando de voz</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Rena<span class="w"> </span>modo<span class="w"> </span><span class="sb">``</span>opcion<span class="w"> </span>de<span class="w"> </span>modo<span class="sb">``</span><span class="w"> </span><span class="sb">``</span>accion<span class="sb">``</span><span class="w">  </span><span class="sb">``</span>complemento<span class="sb">``</span>
+</pre></div>
+</div>
+<p>Lista de comandos:</p>
+<ol class="arabic simple">
+<li><p>Movimiento libre del robot:</p></li>
+</ol>
+<p>Rena modo libre <code class="docutils literal notranslate"><span class="pre">accion</span></code> durante <code class="docutils literal notranslate"><span class="pre">tiempo</span></code> segundos.</p>
+<p>acción: <code class="docutils literal notranslate"><span class="pre">adelante</span></code>, <code class="docutils literal notranslate"><span class="pre">giro</span> <span class="pre">a</span> <span class="pre">la</span> <span class="pre">izquierda</span></code>, <code class="docutils literal notranslate"><span class="pre">giro</span> <span class="pre">a</span> <span class="pre">la</span> <span class="pre">derecha</span></code>, <code class="docutils literal notranslate"><span class="pre">atras</span></code></p>
+<p>tiempo: numero entero.</p>
+<ol class="arabic simple" start="2">
+<li><p>Movimiento en la malla del seguidor de línea del robot:</p></li>
+</ol>
+<p>Rena modo seguidor <code class="docutils literal notranslate"><span class="pre">accion</span></code>.</p>
+<p>acción: <code class="docutils literal notranslate"><span class="pre">adelante</span></code>, <code class="docutils literal notranslate"><span class="pre">giro</span> <span class="pre">a</span> <span class="pre">la</span> <span class="pre">izquierda</span></code>, <code class="docutils literal notranslate"><span class="pre">giro</span> <span class="pre">a</span> <span class="pre">la</span> <span class="pre">derecha</span></code>, <code class="docutils literal notranslate"><span class="pre">atras</span></code></p>
+<ol class="arabic simple" start="3">
+<li><p>Control de velocidad:</p></li>
+</ol>
+<p>Rena modo velocidad al <code class="docutils literal notranslate"><span class="pre">valor</span></code> porciento.</p>
+<p>valor: <code class="docutils literal notranslate"><span class="pre">60</span></code> , <code class="docutils literal notranslate"><span class="pre">70</span></code>, <code class="docutils literal notranslate"><span class="pre">80</span></code>, <code class="docutils literal notranslate"><span class="pre">90</span></code>, <code class="docutils literal notranslate"><span class="pre">100</span></code></p>
+<ol class="arabic simple" start="4">
+<li><p>Control de gripper:</p></li>
+</ol>
+<p>Rena modo gripper <code class="docutils literal notranslate"><span class="pre">accion</span></code>.</p>
+<p>acción: <code class="docutils literal notranslate"><span class="pre">abrir</span></code>, <code class="docutils literal notranslate"><span class="pre">cerrar</span></code></p>
+<figure class="align-center">
+<img alt="modelorobot" src="../../_images/control_voz.jpg" />
+</figure>
+<p><strong>Modo Control Manual</strong>
+La aplicación incluye un <strong>joystick virtual</strong> que permite controlar directamente la locomoción del robot.
+En paralelo, se muestra información en tiempo real de los sensores integrados (actualizada cada <strong>100 ms</strong>), lo que convierte al modo manual en una herramienta tanto de práctica como de monitoreo.</p>
+<figure class="align-center">
+<img alt="modelorobot" src="../../_images/modo_libre.jpg" />
+</figure>
+</section>
+</section>
+<section id="descargas">
+<h2>Descargas<a class="headerlink" href="#descargas" title="Link to this heading"></a></h2>
+<section id="aplicacion-de-escritorio">
+<h3>Aplicación de escritorio<a class="headerlink" href="#aplicacion-de-escritorio" title="Link to this heading"></a></h3>
+<p>La aplicación de escritorio es compatible con los siguientes sistemas operativos:
+- <strong>Windows 10 / 11 (64 bits)</strong>
+- <strong>Ubuntu Linux 20.04 / 22.04</strong>
+- <strong>macOS Monterey o superior</strong></p>
+<p><code class="xref download docutils literal notranslate"><span class="pre">Descargar</span> <span class="pre">aplicación</span> <span class="pre">de</span> <span class="pre">escritorio</span></code></p>
+</section>
+<section id="aplicacion-movil">
+<h3>Aplicación móvil<a class="headerlink" href="#aplicacion-movil" title="Link to this heading"></a></h3>
+<p>La aplicación móvil está disponible para:
+- <strong>Android (9.0 o superior)</strong>
+- <strong>iOS (13.0 o superior)</strong></p>
+<p><code class="xref download docutils literal notranslate"><span class="pre">Descargar</span> <span class="pre">aplicación</span> <span class="pre">móvil</span></code></p>
+</section>
+<section id="arduino-ide">
+<h3>Arduino IDE<a class="headerlink" href="#arduino-ide" title="Link to this heading"></a></h3>
+<p>Enlace de descargar, AppImage
+<a class="reference external" href="https://www.arduino.cc/en/software/">arduino</a></p>
+</section>
 </section>
 </section>
 
@@ -109,7 +319,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
         <a href="../tema_2/0_electronica.html" class="btn btn-neutral float-left" title="Componentes Electrónicos" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
-        <a href="../tema_4/0_conf.html" class="btn btn-neutral float-right" title="Conexión del RENA-BOT" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../tema_4/0_conf.html" class="btn btn-neutral float-right" title="Configuracióndel RENA-BOT" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
