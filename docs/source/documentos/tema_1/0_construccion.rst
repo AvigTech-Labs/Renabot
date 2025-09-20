@@ -274,7 +274,7 @@ Ejercicios de control de velocidad y giros.
 
 Guía de armado:
 
-:download:`Descargar ficha Velocista <../../_static/velocista.pdf>`
+:download:`Descargar ficha Velocista <../../_static/Velocista.pdf>`
 
 Modo Velocista transportador
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -289,11 +289,7 @@ gripper que permiten transportar objetos.
 
 Guía de armado:
 
-.. raw:: html
-
-   <embed src="../../_static/velocista.pdf" type="application/pdf" width="100%" height="600px">
-
-
+:download:`Descargar ficha Velocista <../../_static/velo_transportador.pdf>`
 
 Modo Todoterreno
 ~~~~~~~~~~~~~~~~
@@ -311,7 +307,7 @@ del sensor ultrasónico se puede programar la evasión de obstáculos o utilizar
 
 Guía de armado:
 
-:download:`Descargar ficha Velocista <../../_static/velocista.pdf>`
+:download:`Descargar ficha Velocista <../../_static/todoterreno.pdf>`
 
 Modo Equilibrista
 ~~~~~~~~~~~~~~~~~
@@ -353,7 +349,7 @@ sino que también potencia el aprendizaje en áreas como:
 
 Guía de armado:
 
-:download:`Descargar ficha Velocista <../../_static/velocista.pdf>`
+:download:`Descargar ficha Velocista <../../_static/Explorador_orig.pdf>`
 
 Revisión final
 --------------
