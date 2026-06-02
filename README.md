@@ -1,4 +1,4 @@
-#RenaBOT 3 en 1
+# RenaBOT 3 en 1
 
 Documentación oficial del robot educativo **RenaBOT** de [AVIG Tech](https://github.com/AvigTech-Labs).
 
