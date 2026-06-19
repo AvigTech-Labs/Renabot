@@ -1,7 +1,7 @@
 Construcción del RENA-BOT
 =========================
 
-En esta sección aprenderá a ensamblar paso a paso el **RENA-BOT 4 en 1**, desde la preparación del chasis hasta la primera prueba de movimiento.  
+En esta sección aprenderá a ensamblar paso a paso el **RENABOT 3 en 1**, desde la preparación del chasis hasta la primera prueba de movimiento.  
 
 .. tip::
    Arme del robot en un área amplia y bien iluminada. Mantenga organizadas las piezas y herramientas para facilitar el proceso.
@@ -257,7 +257,7 @@ Modos de construcción
 Modo Velocista
 ~~~~~~~~~~~~~~
 
-.. figure:: ./img/rena/velocista.png
+.. figure:: ./img/rena/velocista.svg
    :alt: modelorobot
    :align: center
    :width: 400px
@@ -279,27 +279,27 @@ Guía de armado:
 Modo Velocista transportador
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: ./img/rena/transportador.png
+.. figure:: ./img/rena/transportador.svg
    :alt: modelorobot
    :align: center
    :width: 400px
 
-La versión transportador del RENA-BOT utiliza los Guardafangos como piezas del 
+La versión transportador del RENABOT utiliza los Guardafangos como piezas del 
 gripper que permiten transportar objetos.
 
 Guía de armado:
 
-:download:`Descargar ficha Velocista <../../_static/velo_transportador.pdf>`
+:download:`Descargar ficha transportador <../../_static/velo_transportador.pdf>`
 
 Modo Todoterreno
 ~~~~~~~~~~~~~~~~
 
-.. figure:: ./img/rena/todoterreno.png
+.. figure:: ./img/rena/todoterreno.svg
    :alt: modelorobot
    :align: center
    :width: 400px
 
-En esta configuración, el RENA-BOT adopta un diseño de movilidad con orugas, lo que lo convierte en un robot todoterreno capaz de desplazarse de manera eficiente sobre superficies 
+En esta configuración, el RENABOT adopta un diseño de movilidad con orugas, lo que lo convierte en un robot todoterreno capaz de desplazarse de manera eficiente sobre superficies 
 irregulares, tanto en interiores como en exteriores.
 El sistema de locomoción se basa en un control diferencial de doble oruga, 
 que le permite realizar giros precisos y mantener estabilidad en terrenos complejos. A través 
@@ -307,7 +307,7 @@ del sensor ultrasónico se puede programar la evasión de obstáculos o utilizar
 
 Guía de armado:
 
-:download:`Descargar ficha Velocista <../../_static/todoterreno.pdf>`
+:download:`Descargar ficha Todoterreno <../../_static/todoterreno.pdf>`
 
 Modo Equilibrista
 ~~~~~~~~~~~~~~~~~
@@ -324,17 +324,17 @@ mientras avanza. Su control se realiza a través de un joystick virtual.
 
 Guía de armado:
 
-:download:`Descargar ficha Velocista <../../_static/velocista.pdf>`
+:download:`Descargar ficha Equilibrista <../../_static/velocista.pdf>`
 
 Modo Explorador
 ~~~~~~~~~~~~~~~
 
-.. figure:: ./img/rena/explorador.png
+.. figure:: ./img/rena/explorador.svg
    :alt: modelorobot
    :align: center
    :width: 400px
 
-En esta configuración, el RENA-BOT utiliza el sistema de locomoción del modo todoterreno 
+En esta configuración, el RENABOT utiliza el sistema de locomoción del modo todoterreno 
 e incorpora una estructura adicional que eleva el sensor ultrasónico, montado sobre un 
 servomotor SG90. Esta combinación le permite al robot simular un radar de exploración,
 capaz de realizar un barrido configurable de 120° a 200º para la detección de obstáculos 
@@ -349,7 +349,7 @@ sino que también potencia el aprendizaje en áreas como:
 
 Guía de armado:
 
-:download:`Descargar ficha Velocista <../../_static/Explorador_orig.pdf>`
+:download:`Descargar ficha Explorador <../../_static/Explorador_orig.pdf>`
 
 Revisión final
 --------------
