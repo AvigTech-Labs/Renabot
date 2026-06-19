@@ -9,6 +9,6 @@ Junio - 2026
 
 ---
 
-🚀 **[Ver la documentación en línea](https://avigtech-labs.github.io/rena-bot-5en1/)**
+🚀 **[Ver la documentación en línea](https://avigtech-labs.github.io/Renabot/)**
 
 ---
