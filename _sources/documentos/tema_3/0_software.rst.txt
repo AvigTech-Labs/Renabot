@@ -14,7 +14,7 @@ De esta manera, los estudiantes y docentes pueden elegir el entorno que mejor se
 Programación
 ------------
 
-Bloques de programación del RENA-BOT
+Bloques de programación del RENABOT
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Los bloques personalizados de Blockly permiten a los estudiantes activar el robot en diferentes modos y desarrollar algoritmos de forma visual e intuitiva.  
@@ -32,12 +32,12 @@ Descripción de bloques:
    * - .. image:: ./img/1.jpg
           :width: 180px
           :align: center
-     - Este bloque permite el inicio del RENA-BOT, y le agrega un nombre para su funcionamiento.
+     - Este bloque permite el inicio del RENABOT, y le agrega un nombre para su funcionamiento.
      - Rena
    * - .. image:: ./img/2.jpg
           :width: 180px
           :align: center
-     - Controla el movimiento del RENA-BOT en la malla de movimiento controlado, los movimientos disponibles son: Adelante, Atras, Izquierda, Derecha.
+     - Controla el movimiento del RENABOT en la malla de movimiento controlado, los movimientos disponibles son: Adelante, Atras, Izquierda, Derecha.
      - Rena
    * - .. image:: ./img/3.jpg
           :width: 180px

@@ -27,219 +27,201 @@ Lista completa de componentes incluidos en el kit:
           :width: 120px
           :align: center
    * - 2
-     - Estructura ultrasónico
+     - Guardafango I/D
      - 1
      - .. image:: ./img/estructura_ultrasonico.jpg
           :width: 120px
           :align: center
    * - 3
-     - Guardafangos
-     - 2
+     - Acople T
+     - 3
      - .. image:: ./img/guardafangos.jpg
           :width: 120px
           :align: center
    * - 4
-     - Frente
-     - 1
+     - Acople I
+     - 3
      - .. image:: ./img/frente.jpg
           :width: 120px
           :align: center
    * - 5
-     - Extensión 1
+     - Acople servo radar
      - 1
      - .. image:: ./img/extension1.jpg
           :width: 120px
           :align: center
    * - 6
-     - Extensión 2
+     - Acople servo gripper
      - 1
      - .. image:: ./img/extension2.jpg
           :width: 120px
           :align: center
    * - 7
-     - Soporte radar
+     - Soporte ultrasónico
      - 1
      - .. image:: ./img/soporte_radar.jpg
           :width: 120px
           :align: center
    * - 8
-     - Soporte Pantalla
+     - Soporte frontal
      - 1
      - .. image:: ./img/soporte_pantalla.jpg
           :width: 120px
           :align: center
    * - 9
-     - Soportes Orugas delanteros
+     - Acople gripper
      - 2
      - .. image:: ./img/chasis.jpg
           :width: 120px
           :align: center
    * - 10
-     - Estructura Servomotor
-     - 1
+     - Acople estructural rodamiento
+     - 2
      - .. image:: ./img/estructura_servo.jpg
           :width: 120px
           :align: center
    * - 11
-     - Estructura Gripper
-     - 1
+     - Ruedas de transmisión dentada
+     - 4
      - .. image:: ./img/estructura_gripper.jpg
           :width: 120px
           :align: center
    * - 12
-     - Tornillos M3 X 10
-     - 25
+     - Rueda de transmisión 375 mm
+     - 4
      - .. image:: ./img/tornillo_m3_10.jpg
           :width: 120px
           :align: center
    * - 13
-     - Tornillos M3 X 30
+     - Rueda de transmisión 490 mm
      - 4
      - .. image:: ./img/tornillo_m3_30.jpg
           :width: 120px
           :align: center
    * - 14
-     - Tuercas M3
-     - 30
+     - Llantas diferencial
+     - 2
      - .. image:: ./img/tuercas.jpg
           :width: 120px
           :align: center
    * - 15
-     - Separadores plásticos M3 x 12
-     - 4
+     - Orugas plásticas
+     - 2
      - .. image:: ./img/separador_12.jpg
           :width: 120px
           :align: center
    * - 16
-     - Separadores plásticos M3 x 5
-     - 4
+     - Rueda loca
+     - 1
      - .. image:: ./img/separador_12.jpg
           :width: 120px
           :align: center
    * - 17
-     - Rueda loca
-     - 2
+     - Switch 2 estados
+     - 1
      - .. image:: ./img/rueda_loca.jpg
           :width: 120px
           :align: center
    * - 18
-     - Llantas
+     - Rodamiento M4
      - 2
      - .. image:: ./img/llantas.jpg
           :width: 120px
           :align: center
    * - 19
-     - Cables distintos tamaños
-     - 5
+     - Cables H-h distintos tamaños
+     - 9
      - .. image:: ./img/cables.jpg
           :width: 120px
           :align: center
    * - 20
-     - Protectore de circuito
-     - 1
+     - Tornillos y tuercas M3 
+     - 50
      - .. image:: ./img/placa_control.jpg
           :width: 120px
           :align: center
    * - 21 
-     - Placa de control
-     - 1
+     - Tornillos y tuercas M4 
+     - 2
      - .. image:: ./img/circuito.jpg
           :width: 120px
           :align: center
    * - 22 
-     - Acople Ultrasónico
+     - Juego sensor ultrasónico
      - 1
      - .. image:: ./img/acople_ultrasónico.jpg
           :width: 120px
           :align: center
    * - 22 
-     - Protección IMU
+     - Juego sensor QTR8 
      - 1
      - .. image:: ./img/caja_imu.jpg
           :width: 120px
           :align: center
    * - 23
-     - Tapa Ultrasónico
+     - Juego pantalla OLED
      - 1
      - .. image:: ./img/tapa_ultra.jpg
           :width: 120px
           :align: center
    * - 24
-     - Sensor QTR8
-     - 1
+     - Motores TT con encoder
+     - 2
      - .. image:: ./img/seguidor_linea.jpg
           :width: 120px
           :align: center
    * - 25
-     - Sensor Ultrasónico
-     - 1
+     - Juego sensor IMU
+     - 2
      - .. image:: ./img/s_ultrasonico.jpg
           :width: 120px
           :align: center
    * - 26
-     - Sensor de sonido
+     - Servomotor sg90
      - 1
      - .. image:: ./img/s_sonido.jpg
           :width: 120px
           :align: center
-   * - 28
-     - Sensor de temperatura
-     - 1
+   * - 27
+     - Acople 375
+     - 2
      - .. image:: ./img/s_temperatura.jpg
           :width: 120px
           :align: center
    * - 29
-     - Sensor de Incercia
-     - 1
+     - Acople 490
+     - 2
      - .. image:: ./img/imu.jpg
           :width: 120px
           :align: center
    * - 30
-     - Servomotor sg90
-     - 1
+     - Acople eje motor 
+     - 2
      - .. image:: ./img/servo.jpg
           :width: 120px
           :align: center
    * - 31
-     - Hélice Servomotor
-     - 1
+     - Separadores
+     - 22
      - .. image:: ./img/helice.jpg
           :width: 120px
           :align: center
    * - 32
-     - Buzzer
+     - Bateria 220 mAh
      - 1
      - .. image:: ./img/buzzer.jpg
           :width: 120px
           :align: center
    * - 33
-     - Ejes Oruga
-     - 2
+     - Cargador
+     - 1
      - .. image:: ./img/eje_oruga.jpg
           :width: 120px
           :align: center
    * - 34
-     - Acoples orugas
-     - 2
-     - .. image:: ./img/guardafangos.jpg
-          :width: 120px
-          :align: center
-   * - 35
-     - Ruedas de la Oruga
-     - 2
-     - .. image:: ./img/ruedas_oruga.jpg
-          :width: 120px
-          :align: center
-   * - 36
-     - Cadena
-     - 2
-     - .. image:: ./img/cadena.jpg
-          :width: 120px
-          :align: center
-   * - 37
-     - Batería
+     - Cargador de bateria 
      - 1
-     - .. image:: ./img/bateria.jpg
+     - .. image:: ./img/guardafangos.jpg
           :width: 120px
           :align: center
 
@@ -248,8 +230,7 @@ Herramientas necesarias:
 
 - Destornillador tipo estrella.   
 
-
-El RENA-BOT puede ser armado de 4 formas diferentes, **1. Velocista**, **2. Equilibrista**, **3. Todoterreno** y **4. Exporador**.
+El RENA-BOT puede ser armado de 4 formas diferentes, **1. Velocista**, **2. Todoterreno** y **3. Exporador**.
 
 Modos de construcción
 ---------------------
@@ -309,22 +290,6 @@ Guía de armado:
 
 :download:`Descargar ficha Todoterreno <../../_static/todoterreno.pdf>`
 
-Modo Equilibrista
-~~~~~~~~~~~~~~~~~
-
-.. figure:: ./img/rena/equilibrista.png
-   :alt: modelorobot
-   :align: center
-   :width: 400px
-
-En este modo, el RenaBot utiliza la información de velocidad lineal y angular presenta en el 
-eje x del sensor MPU, permitiendo realizar un control sobre el avance y equilibrio del robot 
-mientras avanza. Su control se realiza a través de un joystick virtual.
-
-
-Guía de armado:
-
-:download:`Descargar ficha Equilibrista <../../_static/velocista.pdf>`
 
 Modo Explorador
 ~~~~~~~~~~~~~~~
