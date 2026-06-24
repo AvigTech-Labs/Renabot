@@ -1,7 +1,11 @@
 RENA-BOT 3 en 1
 ===============
 
-El **RENABOT** es un robot educativo diseñado con un enfoque **compacto, modular y accesible**, orientado a la enseñanza de **STEM (Ciencia, Tecnología, Ingeniería y Matemáticas)** en niños y jóvenes de **5 a 14 años**.  
+El **RENABOT** es un robot educativo diseñado con un 
+enfoque **compacto, modular y accesible**, orientado a la 
+enseñanza de **STEM (Ciencia, Tecnología, Ingeniería y Matemáticas)** en 
+niños y jóvenes.  
+
 Su desarrollo busca apoyar tanto a la educación formal como a la educación extracurricular, ofreciendo una herramienta práctica para introducirse en el mundo de la robótica.
 
 .. figure:: ./img/Robot_STEM.svg
@@ -22,7 +26,7 @@ El uso del robot móvil diferencial con sensores y actuadores permite que los es
 -------------------------------
 
 - Diseño **compacto, modular y fácil de ensamblar**.  
-- Compatibilidad con plataformas como **Arduino IDE**, **Espresif - IDE.  
+- Compatibilidad con plataformas como **Arduino IDE**, **Espresif - IDE**.  
 - Conectividad WiFi.  
 - Arquitectura basada en un robot móvil diferencial, con capacidad de expansión a nuevos sensores y actuadores.  
 - Documentación y software educativo diseñados para acompañar el aprendizaje paso a paso.  
