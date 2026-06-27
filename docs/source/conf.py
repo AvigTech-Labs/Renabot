@@ -6,10 +6,10 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Documentación RENA-BOT 4en1'
+project = 'Documentación RENA-BOT 3 en 1'
 copyright = '2025, AvigTech'
 author = 'AvigTech'
-release = '0.1'
+release = '1.1'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
