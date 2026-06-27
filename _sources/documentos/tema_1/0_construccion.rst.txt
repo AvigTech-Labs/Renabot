@@ -1,7 +1,7 @@
-Construcción del RENA-BOT
+Construcción del Renabot
 =========================
 
-En esta sección aprenderá a ensamblar paso a paso el **RENABOT 3 en 1**, desde la preparación del chasis hasta la primera prueba de movimiento.  
+En esta sección aprenderá a ensamblar paso a paso el **Renabot 3 en 1**, desde la preparación del chasis hasta la primera prueba de movimiento.  
 
 .. tip::
    Arme del robot en un área amplia y bien iluminada. Mantenga organizadas las piezas y herramientas para facilitar el proceso.
@@ -23,214 +23,187 @@ Lista completa de componentes incluidos en el kit:
    * - 1
      - Chasis
      - 1
-     - .. image:: ./img/chasis.jpg
+     - .. image:: ./img/chasis.svg
           :width: 120px
           :align: center
    * - 2
      - Guardafango I/D
      - 1
-     - .. image:: ./img/estructura_ultrasonico.jpg
+     - .. image:: ./img/guardafangos.svg
           :width: 120px
           :align: center
    * - 3
      - Acople T
      - 3
-     - .. image:: ./img/guardafangos.jpg
+     - .. image:: ./img/acople_t.svg
           :width: 120px
           :align: center
    * - 4
      - Acople I
      - 3
-     - .. image:: ./img/frente.jpg
+     - .. image:: ./img/acople_i.svg
           :width: 120px
           :align: center
    * - 5
      - Acople servo radar
      - 1
-     - .. image:: ./img/extension1.jpg
+     - .. image:: ./img/acople_ser_rad.svg
           :width: 120px
           :align: center
    * - 6
      - Acople servo gripper
      - 1
-     - .. image:: ./img/extension2.jpg
+     - .. image:: ./img/soporte_servo.svg
           :width: 120px
           :align: center
    * - 7
      - Soporte ultrasónico
      - 1
-     - .. image:: ./img/soporte_radar.jpg
+     - .. image:: ./img/soporte_ultra.svg
           :width: 120px
           :align: center
    * - 8
      - Soporte frontal
      - 1
-     - .. image:: ./img/soporte_pantalla.jpg
+     - .. image:: ./img/soporte_frontal.svg
           :width: 120px
           :align: center
    * - 9
      - Acople gripper
-     - 2
-     - .. image:: ./img/chasis.jpg
+     - 1
+     - .. image:: ./img/acople_gripper.svg
           :width: 120px
           :align: center
    * - 10
-     - Acople estructural rodamiento
+     - Acople estructural con rodamiento
      - 2
-     - .. image:: ./img/estructura_servo.jpg
+     - .. image:: ./img/acople_rodamiento.svg
           :width: 120px
           :align: center
    * - 11
      - Ruedas de transmisión dentada
-     - 4
-     - .. image:: ./img/estructura_gripper.jpg
+     - 2
+     - .. image:: ./img/rueda_dentada.svg
           :width: 120px
           :align: center
    * - 12
      - Rueda de transmisión 375 mm
-     - 4
-     - .. image:: ./img/tornillo_m3_10.jpg
+     - 2
+     - .. image:: ./img/rueda_375.svg
           :width: 120px
           :align: center
    * - 13
      - Rueda de transmisión 490 mm
-     - 4
-     - .. image:: ./img/tornillo_m3_30.jpg
+     - 2
+     - .. image:: ./img/rueda_490.svg
           :width: 120px
           :align: center
    * - 14
      - Llantas diferencial
      - 2
-     - .. image:: ./img/tuercas.jpg
+     - .. image:: ./img/ruedas.svg
           :width: 120px
           :align: center
    * - 15
      - Orugas plásticas
      - 2
-     - .. image:: ./img/separador_12.jpg
+     - .. image:: ./img/ruedas_oruga.svg
           :width: 120px
           :align: center
    * - 16
      - Rueda loca
      - 1
-     - .. image:: ./img/separador_12.jpg
+     - .. image:: ./img/rueda_loca.svg
           :width: 120px
           :align: center
    * - 17
      - Switch 2 estados
      - 1
-     - .. image:: ./img/rueda_loca.jpg
+     - .. image:: ./img/switch.svg
           :width: 120px
           :align: center
    * - 18
-     - Rodamiento M4
-     - 2
-     - .. image:: ./img/llantas.jpg
+     - Cables H-h distintos tamaños
+     - 9
+     - .. image:: ./img/cables.svg
           :width: 120px
           :align: center
    * - 19
-     - Cables H-h distintos tamaños
-     - 9
-     - .. image:: ./img/cables.jpg
-          :width: 120px
-          :align: center
-   * - 20
      - Tornillos y tuercas M3 
      - 50
-     - .. image:: ./img/placa_control.jpg
+     - .. image:: ./img/tornillos_tuercas.svg
+          :width: 120px
+          :align: center
+   * - 20 
+     - Tornillos y tuercas M4 
+     - 2
+     - .. image:: ./img/tornillos_tuercas_m4.svg
           :width: 120px
           :align: center
    * - 21 
-     - Tornillos y tuercas M4 
-     - 2
-     - .. image:: ./img/circuito.jpg
-          :width: 120px
-          :align: center
-   * - 22 
      - Juego sensor ultrasónico
      - 1
-     - .. image:: ./img/acople_ultrasónico.jpg
+     - .. image:: ./img/s_ultrasonico.svg
           :width: 120px
           :align: center
    * - 22 
      - Juego sensor QTR8 
      - 1
-     - .. image:: ./img/caja_imu.jpg
+     - .. image:: ./img/s_qtr8.svg
           :width: 120px
           :align: center
    * - 23
      - Juego pantalla OLED
      - 1
-     - .. image:: ./img/tapa_ultra.jpg
+     - .. image:: ./img/oled.svg
           :width: 120px
           :align: center
    * - 24
      - Motores TT con encoder
      - 2
-     - .. image:: ./img/seguidor_linea.jpg
+     - .. image:: ./img/motores_tt.svg
           :width: 120px
           :align: center
    * - 25
      - Juego sensor IMU
      - 2
-     - .. image:: ./img/s_ultrasonico.jpg
+     - .. image:: ./img/s_imu.svg
           :width: 120px
           :align: center
    * - 26
      - Servomotor sg90
      - 1
-     - .. image:: ./img/s_sonido.jpg
+     - .. image:: ./img/servo.svg
           :width: 120px
           :align: center
    * - 27
-     - Acople 375
-     - 2
-     - .. image:: ./img/s_temperatura.jpg
+     - Separadores
+     - 22
+     - .. image:: ./img/separadores.svg
           :width: 120px
           :align: center
+   * - 28
+     - Bateria
+     - 1
+     - A elección
    * - 29
-     - Acople 490
-     - 2
-     - .. image:: ./img/imu.jpg
+     - Cargador
+     - 1
+     - .. image:: ./img/cargador.svg
           :width: 120px
           :align: center
    * - 30
-     - Acople eje motor 
-     - 2
-     - .. image:: ./img/servo.jpg
-          :width: 120px
-          :align: center
-   * - 31
-     - Separadores
-     - 22
-     - .. image:: ./img/helice.jpg
-          :width: 120px
-          :align: center
-   * - 32
-     - Bateria 220 mAh
+     - Controlador
      - 1
-     - .. image:: ./img/buzzer.jpg
+     - .. image:: ./img/controlador.svg
           :width: 120px
           :align: center
-   * - 33
-     - Cargador
-     - 1
-     - .. image:: ./img/eje_oruga.jpg
-          :width: 120px
-          :align: center
-   * - 34
-     - Cargador de bateria 
-     - 1
-     - .. image:: ./img/guardafangos.jpg
-          :width: 120px
-          :align: center
-
 
 Herramientas necesarias:
 
 - Destornillador tipo estrella.   
 
-El RENA-BOT puede ser armado de 4 formas diferentes, **1. Velocista**, **2. Todoterreno** y **3. Exporador**.
+El Renabot puede ser armado de 4 formas diferentes, **1. Velocista**, **2. Todoterreno** y **3. Exporador**.
 
 Modos de construcción
 ---------------------
@@ -255,7 +228,7 @@ Ejercicios de control de velocidad y giros.
 
 Guía de armado:
 
-:download:`Descargar ficha Velocista <../../_static/Velocista.pdf>`
+:download:`Descargar ficha Velocista <../../_static/velocista.pdf>`
 
 Modo Velocista transportador
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -265,7 +238,7 @@ Modo Velocista transportador
    :align: center
    :width: 400px
 
-La versión transportador del RENABOT utiliza los Guardafangos como piezas del 
+La versión transportador del Renabot utiliza los Guardafangos como piezas del 
 gripper que permiten transportar objetos.
 
 Guía de armado:
@@ -280,7 +253,7 @@ Modo Todoterreno
    :align: center
    :width: 400px
 
-En esta configuración, el RENABOT adopta un diseño de movilidad con orugas, lo que lo convierte en un robot todoterreno capaz de desplazarse de manera eficiente sobre superficies 
+En esta configuración, el Renabot adopta un diseño de movilidad con orugas, lo que lo convierte en un robot todoterreno capaz de desplazarse de manera eficiente sobre superficies 
 irregulares, tanto en interiores como en exteriores.
 El sistema de locomoción se basa en un control diferencial de doble oruga, 
 que le permite realizar giros precisos y mantener estabilidad en terrenos complejos. A través 
@@ -299,7 +272,7 @@ Modo Explorador
    :align: center
    :width: 400px
 
-En esta configuración, el RENABOT utiliza el sistema de locomoción del modo todoterreno 
+En esta configuración, el Renabot utiliza el sistema de locomoción del modo todoterreno 
 e incorpora una estructura adicional que eleva el sensor ultrasónico, montado sobre un 
 servomotor SG90. Esta combinación le permite al robot simular un radar de exploración,
 capaz de realizar un barrido configurable de 120° a 200º para la detección de obstáculos 

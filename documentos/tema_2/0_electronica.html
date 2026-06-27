@@ -24,8 +24,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Índice" href="../../genindex.html" />
     <link rel="search" title="Búsqueda" href="../../search.html" />
-    <link rel="next" title="SOFTWARE Y PROGRAMACIÓN" href="../tema_3/0_software.html" />
-    <link rel="prev" title="Construcción del RENA-BOT" href="../tema_1/0_construccion.html" /> 
+    <link rel="next" title="Software y Programación" href="../tema_3/0_software.html" />
+    <link rel="prev" title="Construcción del Renabot" href="../tema_1/0_construccion.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -49,11 +49,11 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Introducción</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../tema_0/0_intro.html">RENA-BOT 3 en 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tema_0/0_intro.html">Renabot 3 en 1</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Construcción</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../tema_1/0_construccion.html">Construcción del RENA-BOT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tema_1/0_construccion.html">Construcción del Renabot</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Electrónica</span></p>
 <ul class="current">
@@ -67,8 +67,8 @@
 <li class="toctree-l3"><a class="reference internal" href="#sensor-de-distancia">Sensor de distancia</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#sensor-de-intensidad-luminica">Sensor de intensidad lumínica</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#modulo-sensor-de-temperatura-lm35dz">Módulo Sensor de Temperatura  LM35dz</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#modulo-sensor-de-sonido-ky-037">Módulo Sensor de Sonido KY-037</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#modulo-sensor-mpu6050">Módulo Sensor MPU6050</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pines-adicionales-para-sensores">Pines adicionales para sensores</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#actuadores">Actuadores</a><ul>
@@ -86,12 +86,12 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Software</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../tema_3/0_software.html">SOFTWARE Y PROGRAMACIÓN</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tema_3/0_software.html">Software y Programación</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Configuración y Uso</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../tema_4/0_conf.html">Configuracióndel RENA-BOT</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tema_4/1_ejemplos.html">Prácticas RENA-Bot</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tema_4/0_conf.html">Configuracióndel Renabot</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tema_4/1_ejemplos.html">Actividades Renabot</a></li>
 </ul>
 
         </div>
@@ -126,20 +126,24 @@ Permite la integración de motores, sensores y actuadores de manera ordenada, co
 Está basada en un microcontrolador <code class="docutils literal notranslate"><span class="pre">ESP32</span> <span class="pre">WROOM</span></code>, lo que brinda flexibilidad para programar
 el robot con distintos entornos como Arduino IDE, Micro-Python o FreeRTOS.</p>
 <figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="documentos/tema_2/img/placa_control.svg"><img alt="modelorobot" src="documentos/tema_2/img/placa_control.svg" style="width: 400px;" />
+<a class="reference internal image-reference" href="../../_images/placa_control.svg"><img alt="modelorobot" src="../../_images/placa_control.svg" style="width: 400px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Cerebro del RENABOT</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+<p><span class="caption-text">Cerebro del Renabot</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
 </figcaption>
 </figure>
+<p><a class="reference external" href="https://avigtech-labs.github.io/ESP32-STEM/">Repositorio ESP32-STEM</a></p>
 <section id="caracteristicas">
 <h3>Características<a class="headerlink" href="#caracteristicas" title="Link to this heading"></a></h3>
 <p>La placa de control del RENABOT ha sido diseñada con un ensamblaje de montaje superficial, lo que garantiza un acabado compacto, ligero y confiable.
 Sus dimensiones son 95 x 92 x 2 mm, cuenta con recubrimiento protector para mayor durabilidad y resistencia, y está optimizada para integrar de forma ordenada los diferentes módulos del robot en formato
 plug and play.</p>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/circuito1.jpg"><img alt="modelorobot" src="../../_images/circuito1.jpg" style="width: 400px;" />
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../../_images/circuito.svg"><img alt="circuito" src="../../_images/circuito.svg" style="width: 400px;" />
 </a>
+<figcaption>
+<p><span class="caption-text">ESP32-STEM</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
 </figure>
 <p>Entre los principales elementos que incorpora se encuentran:</p>
 <table class="fit-table docutils align-default">
@@ -212,11 +216,11 @@ plug and play.</p>
 <p>El RENA-BOT incluye la siguiente lista de sensores, los cuales permiten que el robot interactúe con su entorno y ejecute diferentes actividades educativas:</p>
 <section id="seguidor-de-linea">
 <h3>Seguidor de línea<a class="headerlink" href="#seguidor-de-linea" title="Link to this heading"></a></h3>
-<figure class="align-center" id="id2">
-<a class="reference internal image-reference" href="documentos/tema_2/img/sensor_qtr8.svg"><img alt="sensor_qtr8" src="documentos/tema_2/img/sensor_qtr8.svg" style="width: 400px;" />
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="../../_images/s_qtr81.svg"><img alt="sensor_qtr8" src="../../_images/s_qtr81.svg" style="width: 400px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Sensor QTR8 en el RENA-BOT</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+<p><span class="caption-text">Sensor QTR8 en el RENA-BOT</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>El sensor <code class="docutils literal notranslate"><span class="pre">QTR8</span></code> está compuesto por un arreglo de 8 sensores infrarrojos (IR) que permiten detectar el contraste entre superficies claras y oscuras.
@@ -233,11 +237,11 @@ Funciona emitiendo luz infrarroja y midiendo la cantidad de reflexión en el sue
 </section>
 <section id="sensor-de-distancia">
 <h3>Sensor de distancia<a class="headerlink" href="#sensor-de-distancia" title="Link to this heading"></a></h3>
-<figure class="align-center" id="id3">
-<a class="reference internal image-reference" href="documentos/tema_2/img/sensor_ultra.svg"><img alt="sensor_qtr8" src="documentos/tema_2/img/sensor_ultra.svg" style="width: 400px;" />
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="../../_images/sensor_ultra.svg"><img alt="sensor_qtr8" src="../../_images/sensor_ultra.svg" style="width: 400px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Sensor ultrasónico en el RENABOT</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+<p><span class="caption-text">Sensor ultrasónico en el RENABOT</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>El sensor ultrasónico HC-SR04 mide la distancia hasta un objeto enviando un pulso ultrasónico y calculando el tiempo que tarda en reflejarse.</p>
@@ -252,9 +256,12 @@ Funciona emitiendo luz infrarroja y midiendo la cantidad de reflexión en el sue
 </section>
 <section id="sensor-de-intensidad-luminica">
 <h3>Sensor de intensidad lumínica<a class="headerlink" href="#sensor-de-intensidad-luminica" title="Link to this heading"></a></h3>
-<figure class="align-center">
-<a class="reference internal image-reference" href="documentos/tema_2/img/ldr.svg"><img alt="sensor_qtr8" src="documentos/tema_2/img/ldr.svg" style="width: 400px;" />
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="../../_images/ldr.svg"><img alt="sensor_qtr8" src="../../_images/ldr.svg" style="width: 400px;" />
 </a>
+<figcaption>
+<p><span class="caption-text">Sensor LDR</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
 </figure>
 <p>El sensor <strong>LDR (Light Dependent Resistor)</strong> varía su resistencia eléctrica según la cantidad de luz que incide sobre él.
 Se utiliza como un divisor de tensión, conectado a una entrada analógica del microcontrolador.</p>
@@ -269,11 +276,11 @@ Se utiliza como un divisor de tensión, conectado a una entrada analógica del m
 </section>
 <section id="modulo-sensor-de-temperatura-lm35dz">
 <h3>Módulo Sensor de Temperatura  LM35dz<a class="headerlink" href="#modulo-sensor-de-temperatura-lm35dz" title="Link to this heading"></a></h3>
-<figure class="align-center" id="id4">
-<a class="reference internal image-reference" href="../../_images/s_temperatura1.jpg"><img alt="sensor_qtr8" src="../../_images/s_temperatura1.jpg" style="width: 400px;" />
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="../../_images/s_temperatura.svg"><img alt="sensor_qtr8" src="../../_images/s_temperatura.svg" style="width: 400px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Sensor LM35dz</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+<p><span class="caption-text">Sensor LM35dz</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>El sensor de temperatura LM35DZ es un sensor analógico de precisión que proporciona una
@@ -298,36 +305,13 @@ Características técnicas:</p>
 <li><p>Activación de alarmas, indicadores visuales o actuadores cuando se alcancen determinadas temperaturas.</p></li>
 </ul>
 </section>
-<section id="modulo-sensor-de-sonido-ky-037">
-<h3>Módulo Sensor de Sonido KY-037<a class="headerlink" href="#modulo-sensor-de-sonido-ky-037" title="Link to this heading"></a></h3>
-<figure class="align-center" id="id5">
-<a class="reference internal image-reference" href="documentos/tema_2/img/s_sonido.svg"><img alt="sensor_qtr8" src="documentos/tema_2/img/s_sonido.svg" style="width: 400px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Sensor KY-037</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<p>El Módulo Sensor de Sonido KY-037 está diseñado para detectar la intensidad del sonido en el ambiente mediante un micrófono electret y un amplificador integrado.
-Proporciona tanto salida analógica (nivel proporcional a la intensidad sonora) como salida digital (activada al superar un umbral ajustable mediante potenciómetro).</p>
-<p>Características técnicas:
-- Tipo de sensor: micrófono electret con amplificador.
-- Salidas: analógica (A0) y digital (D0).
-- Voltaje de operación: 3.3 V.
-- Sensibilidad ajustable con potenciómetro.
-- Indicador LED para la salida digital.</p>
-<p>Uso en el RENA-BOT:
-- Detección de aplausos o sonidos fuertes para activar acciones del robot.
-- Proyectos de interacción sonora, donde el robot responde a estímulos acústicos.
-- Ejercicios de programación que combinen niveles de intensidad sonora con decisiones lógicas.
-- Actividades lúdicas como el control del robot mediante señales sonoras simples (ejemplo: avance con un aplauso).</p>
-</section>
 <section id="modulo-sensor-mpu6050">
 <h3>Módulo Sensor MPU6050<a class="headerlink" href="#modulo-sensor-mpu6050" title="Link to this heading"></a></h3>
-<figure class="align-center" id="id6">
-<a class="reference internal image-reference" href="documentos/tema_2/img/mpu.svg"><img alt="sensor_qtr8" src="documentos/tema_2/img/mpu.svg" style="width: 400px;" />
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="../../_images/mpu.svg"><img alt="sensor_qtr8" src="../../_images/mpu.svg" style="width: 400px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">MPU6050</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
+<p><span class="caption-text">MPU6050</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>El <strong>MPU6050</strong> es un sensor inercial de seis grados de libertad (6DOF) que integra un acelerómetro de tres ejes y un giroscopio de tres ejes en un solo dispositivo. Permite medir aceleraciones, inclinaciones y velocidades angulares, siendo ampliamente utilizado en aplicaciones de robótica, navegación y control de movimiento.</p>
@@ -347,14 +331,58 @@ Proporciona tanto salida analógica (nivel proporcional a la intensidad sonora) 
 - Desarrollo de algoritmos de navegación y control.
 - Actividades educativas relacionadas con sensores inerciales y procesamiento de señales.</p>
 </section>
+<section id="pines-adicionales-para-sensores">
+<h3>Pines adicionales para sensores<a class="headerlink" href="#pines-adicionales-para-sensores" title="Link to this heading"></a></h3>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="../../_images/extras.svg"><img alt="Extras" src="../../_images/extras.svg" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Extras</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>La placa de control del <strong>Renabot</strong> ha sido diseñada para permitir
+la expansión de nuevos sensores y módulos electrónicos según las necesidades de cada proyecto.</p>
+<p>Gracias a la incorporación del <strong>multiplexor analógico 74HC4067</strong>, es posible
+conectar hasta <strong>5 señales analógicas adicionales</strong>, permitiendo ampliar la capacidad de
+adquisición de datos sin consumir directamente más entradas analógicas del microcontrolador.</p>
+<p>Esta característica facilita la integración de sensores como:</p>
+<ul class="simple">
+<li><p>Sensores de humedad.</p></li>
+<li><p>Sensores de gases.</p></li>
+<li><p>Potenciómetros y otros dispositivos analógicos.</p></li>
+</ul>
+<p>Adicionalmente, la placa deja disponibles varios pines de propósito
+general (<strong>GPIO</strong>) del microcontrolador <strong>ESP32-WROOM-32</strong>, los cuales pueden
+utilizarse para conectar nuevos sensores, actuadores o módulos de comunicación.</p>
+<p>GPIO disponibles para expansión:</p>
+<ul class="simple">
+<li><p><strong>GPIO 23</strong></p></li>
+<li><p><strong>GPIO 5</strong></p></li>
+<li><p><strong>GPIO 14</strong></p></li>
+<li><p><strong>GPIO 27</strong></p></li>
+</ul>
+<p>Estos pines pueden configurarse como entradas o salidas digitales y permiten implementar
+funcionalidades adicionales como:</p>
+<ul class="simple">
+<li><p>Control de relés.</p></li>
+<li><p>Lectura de sensores digitales.</p></li>
+<li><p>Comunicación con módulos externos.</p></li>
+<li><p>Control de LEDs y actuadores.</p></li>
+<li><p>Desarrollo de proyectos personalizados.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Antes de conectar nuevos dispositivos, verifique la compatibilidad de voltajes y corrientes con las especificaciones del ESP32-WROOM-32 para evitar daños en la placa de control.</p>
+</div>
+</section>
 </section>
 <section id="actuadores">
 <h2>Actuadores<a class="headerlink" href="#actuadores" title="Link to this heading"></a></h2>
-<p>El RENA-BOT incluye la siguiente lista de actuadores, los cuales permiten que el robot realice acciones físicas:</p>
+<p>El Renabot incluye la siguiente lista de actuadores, los cuales permiten que el robot realice acciones físicas:</p>
 <section id="motores-dc-con-encoder">
 <h3>Motores DC con encoder<a class="headerlink" href="#motores-dc-con-encoder" title="Link to this heading"></a></h3>
 <figure class="align-center">
-<a class="reference internal image-reference" href="documentos/tema_2/img/motores.svg"><img alt="sensor_qtr8" src="documentos/tema_2/img/motores.svg" style="width: 400px;" />
+<a class="reference internal image-reference" href="../../_images/motores.svg"><img alt="motores" src="../../_images/motores.svg" style="width: 400px;" />
 </a>
 </figure>
 <p>Los motores DC de cuadratura tipo TT con encoder Hall son los encargados del movimiento del robot. Incorporan un reductor mecánico y un encoder de cuadratura AB que permite medir velocidad y desplazamiento para implementar sistemas de control de precisión.</p>
@@ -382,94 +410,112 @@ Proporciona tanto salida analógica (nivel proporcional a la intensidad sonora) 
 <section id="servomotor">
 <h3>Servomotor<a class="headerlink" href="#servomotor" title="Link to this heading"></a></h3>
 <figure class="align-center">
-<a class="reference internal image-reference" href="documentos/tema_2/img/servo.svg"><img alt="sensor_qtr8" src="documentos/tema_2/img/servo.svg" style="width: 400px;" />
+<a class="reference internal image-reference" href="../../_images/servo1.svg"><img alt="servo" src="../../_images/servo1.svg" style="width: 400px;" />
 </a>
 </figure>
 <p>El <strong>servomotor SG90</strong> es un actuador de pequeño tamaño que permite un movimiento angular <strong>0° a 360°</strong>.
 Se controla enviando pulsos PWM desde el microcontrolador.</p>
-<p>Características técnicas:
-- Voltaje de operación: 4.8 V – 6 V.
-- Ángulo de rotación: 360º
-- Torque: ~1.8 kg·cm.
-- Peso: 9 g.</p>
-<p>Uso en el RENA-BOT:
-- Control de un manipulador de objetos o gripper.
-- Movimiento de sensores (por ejemplo, rotación de un sensor ultrasónico).
-- Actividades para enseñar el control de PWM y actuadores de precisión.</p>
+<p>Características técnicas:</p>
+<ul class="simple">
+<li><p>Voltaje de operación: 4.8 V – 6 V.</p></li>
+<li><p>Ángulo de rotación: 360º</p></li>
+<li><p>Torque: ~1.8 kg·cm.</p></li>
+<li><p>Peso: 9 g.</p></li>
+</ul>
+<p>Uso en el Renabot:</p>
+<ul class="simple">
+<li><p>Control de un manipulador de objetos o gripper.</p></li>
+<li><p>Movimiento de sensores (por ejemplo, rotación de un sensor ultrasónico).</p></li>
+<li><p>Actividades para enseñar el control de PWM y actuadores de precisión.</p></li>
+</ul>
 </section>
 <section id="buzzer">
 <h3>Buzzer<a class="headerlink" href="#buzzer" title="Link to this heading"></a></h3>
 <figure class="align-center">
-<a class="reference internal image-reference" href="documentos/tema_2/img/buzzer.svg"><img alt="sensor_qtr8" src="documentos/tema_2/img/buzzer.svg" style="width: 400px;" />
+<a class="reference internal image-reference" href="../../_images/buzzer.svg"><img alt="buzzer" src="../../_images/buzzer.svg" style="width: 400px;" />
 </a>
 </figure>
 <p>El <strong>buzzer pasivo</strong> es un actuador electrónico capaz de generar sonidos o tonos al recibir una señal de frecuencia desde el microcontrolador.
 A diferencia del buzzer activo, que emite un tono fijo con solo aplicarle voltaje, el buzzer pasivo requiere que se le envíen <strong>señales PWM</strong> para producir distintos sonidos y melodías.</p>
-<p>Características técnicas:
-- Tipo: buzzer pasivo.
-- Voltaje de operación: 3.3 V – 5 V.
-- Control mediante señal PWM.
-- Tamaño compacto, fácil de integrar en la placa o en módulos externos.</p>
+<p>Características técnicas:</p>
+<ul class="simple">
+<li><p>Tipo: buzzer pasivo.</p></li>
+<li><p>Voltaje de operación: 3.3 V – 5 V.</p></li>
+<li><p>Control mediante señal PWM.</p></li>
+<li><p>Tamaño compacto, fácil de integrar en la placa o en módulos externos.</p></li>
+</ul>
 </section>
 <section id="pantalla-oled">
 <h3>Pantalla OLED<a class="headerlink" href="#pantalla-oled" title="Link to this heading"></a></h3>
 <figure class="align-center">
-<a class="reference internal image-reference" href="documentos/tema_2/img/oled.svg"><img alt="sensor_qtr8" src="documentos/tema_2/img/oled.svg" style="width: 400px;" />
+<a class="reference internal image-reference" href="../../_images/oled1.svg"><img alt="oled" src="../../_images/oled1.svg" style="width: 400px;" />
 </a>
 </figure>
 <p>La <strong>pantalla OLED I2C de 0.96 pulgadas (128x64)</strong> es un dispositivo de visualización gráfica monocromática que utiliza tecnología OLED (Organic Light Emitting Diode), permitiendo mostrar texto, números, gráficos e iconos con alto contraste y bajo consumo energético.</p>
-<p>Características técnicas:
-- Tamaño de pantalla: 0.96 pulgadas.
-- Resolución: 128 × 64 píxeles.
-- Comunicación: I2C.
-- Voltaje de operación: 3.3 V – 5 V.
-- Controlador: SSD1306.
-- Color de visualización: blanco monocromático.
-- Bajo consumo de energía.
-- Amplio ángulo de visión.</p>
-<p>Uso en el RENA-BOT:
-- Visualización de información del sistema.
-- Monitoreo de variables y sensores en tiempo real.
-- Indicadores de estado de conexión y funcionamiento.
-- Presentación de mensajes, menús y configuraciones.
-- Desarrollo de interfaces gráficas educativas para proyectos de robótica y automatización.</p>
+<p>Características técnicas:</p>
+<ul class="simple">
+<li><p>Tamaño de pantalla: 0.96 pulgadas.</p></li>
+<li><p>Resolución: 128 × 64 píxeles.</p></li>
+<li><p>Comunicación: I2C.</p></li>
+<li><p>Voltaje de operación: 3.3 V – 5 V.</p></li>
+<li><p>Controlador: SSD1306.</p></li>
+<li><p>Color de visualización: blanco monocromático.</p></li>
+<li><p>Bajo consumo de energía.</p></li>
+<li><p>Amplio ángulo de visión.</p></li>
+</ul>
+<p>Uso en el RENA-BOT:</p>
+<ul class="simple">
+<li><p>Visualización de información del sistema.</p></li>
+<li><p>Monitoreo de variables y sensores en tiempo real.</p></li>
+<li><p>Indicadores de estado de conexión y funcionamiento.</p></li>
+<li><p>Presentación de mensajes, menús y configuraciones.</p></li>
+<li><p>Desarrollo de interfaces gráficas educativas para proyectos de robótica y automatización.</p></li>
+</ul>
 </section>
 <section id="led-rgb">
 <h3>LED RGB<a class="headerlink" href="#led-rgb" title="Link to this heading"></a></h3>
 <figure class="align-center">
-<a class="reference internal image-reference" href="documentos/tema_2/img/oled.svg"><img alt="sensor_qtr8" src="documentos/tema_2/img/oled.svg" style="width: 400px;" />
+<a class="reference internal image-reference" href="../../_images/led.svg"><img alt="led" src="../../_images/led.svg" style="width: 400px;" />
 </a>
 </figure>
 <p>El <strong>SK6812 RGB SMD</strong> es un LED inteligente direccionable que integra en un solo encapsulado un LED RGB y un circuito controlador digital. Permite controlar individualmente el color y brillo de cada LED mediante una única línea de datos, facilitando la creación de efectos visuales dinámicos e indicadores luminosos programables.</p>
-<p>Características técnicas:
-- Tipo: LED RGB direccionable.
-- Comunicación: señal digital de un solo cable (DIN).
-- Voltaje de operación: 3.5 V – 5.5 V.
-- Colores: rojo, verde y azul (RGB).
-- Control individual de color y brillo.
-- Encapsulado SMD compacto.
-- Conexión en cascada mediante DIN y DOUT.
-- Compatible con microcontroladores como ESP32 y Arduino.</p>
-<p>Uso en el RENA-BOT:
-- Indicadores visuales de estado y funcionamiento.
-- Representación de alarmas y notificaciones mediante colores.
-- Efectos luminosos programables para actividades educativas.
-- Visualización del estado de sensores y comunicaciones.
-- Desarrollo de proyectos relacionados con control digital de iluminación.</p>
+<p>Características técnicas:</p>
+<ul class="simple">
+<li><p>Tipo: LED RGB direccionable.</p></li>
+<li><p>Comunicación: señal digital de un solo cable (DIN).</p></li>
+<li><p>Voltaje de operación: 3.5 V – 5.5 V.</p></li>
+<li><p>Colores: rojo, verde y azul (RGB).</p></li>
+<li><p>Control individual de color y brillo.</p></li>
+<li><p>Encapsulado SMD compacto.</p></li>
+<li><p>Conexión en cascada mediante DIN y DOUT.</p></li>
+<li><p>Compatible con microcontroladores como ESP32 y Arduino.</p></li>
+</ul>
+<p>Uso en el RENA-BOT:</p>
+<ul class="simple">
+<li><p>Indicadores visuales de estado y funcionamiento.</p></li>
+<li><p>Representación de alarmas y notificaciones mediante colores.</p></li>
+<li><p>Efectos luminosos programables para actividades educativas.</p></li>
+<li><p>Visualización del estado de sensores y comunicaciones.</p></li>
+<li><p>Desarrollo de proyectos relacionados con control digital de iluminación.</p></li>
+</ul>
 </section>
 </section>
 <section id="fuente-de-energia">
 <h2>Fuente de energía<a class="headerlink" href="#fuente-de-energia" title="Link to this heading"></a></h2>
 <p>El RENA-BOT utiliza una batería recargable <strong>LiPo (Polímero de Litio) de 2 celdas (2S), 7.4 V, 2200 mAh y 35C</strong>.</p>
-<p>Características principales:
-- <strong>Voltaje nominal:</strong> 7.4 V (3.7 V por celda).
-- <strong>Capacidad:</strong> 1500 mAh, lo que ofrece un tiempo de operación adecuado para actividades educativas de corta y mediana duración.
-- <strong>Tasa de descarga:</strong> 35C, permitiendo suministrar la corriente suficiente para los motores y actuadores del robot sin caídas de voltaje.</p>
-<p>Recomendaciones de seguridad:
-- Nunca descargar la batería por debajo de <strong>6.0 V (3.0 V por celda)</strong>, ya que puede dañarse permanentemente.
-- Utilizar siempre un cargador balanceado para LiPo, que garantice la seguridad y prolongue la vida útil de la batería.
-- Evitar golpes, perforaciones o exposición a altas temperaturas.
-- Durante el almacenamiento prolongado, mantener la batería en un nivel de <strong>carga de almacenamiento (~3.8 V por celda)</strong>.</p>
+<p>Características principales:</p>
+<ul class="simple">
+<li><p><strong>Voltaje nominal:</strong> 7.4 V (3.7 V por celda).</p></li>
+<li><p><strong>Capacidad:</strong> 1500 mAh, lo que ofrece un tiempo de operación adecuado para actividades educativas de corta y mediana duración.</p></li>
+<li><p><strong>Tasa de descarga:</strong> 35C, permitiendo suministrar la corriente suficiente para los motores y actuadores del robot sin caídas de voltaje.</p></li>
+</ul>
+<p>Recomendaciones de seguridad:</p>
+<ul class="simple">
+<li><p>Nunca descargar la batería por debajo de <strong>6.0 V (3.0 V por celda)</strong>, ya que puede dañarse permanentemente.</p></li>
+<li><p>Utilizar siempre un cargador balanceado para LiPo, que garantice la seguridad y prolongue la vida útil de la batería.</p></li>
+<li><p>Evitar golpes, perforaciones o exposición a altas temperaturas.</p></li>
+<li><p>Durante el almacenamiento prolongado, mantener la batería en un nivel de <strong>carga de almacenamiento (~3.8 V por celda)</strong>.</p></li>
+</ul>
 <div class="admonition tip">
 <p class="admonition-title">Truco</p>
 <p>Con un uso responsable, esta batería puede tener una larga vida útil y es suficiente para múltiples sesiones educativas antes de requerir recarga.</p>
@@ -480,7 +526,7 @@ A diferencia del buzzer activo, que emite un tono fijo con solo aplicarle voltaj
 <p>El diseño SMD de la placa de contro con sus conectores JST XH y sumado al sistema de colores, permite
 identificar de forma sencilla la conexión de cada componente.</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/conexiones.jpg"><img alt="sensor_qtr8" src="../../_images/conexiones.jpg" style="width: 400px;" />
+<a class="reference internal image-reference" href="../../_images/conexiones.svg"><img alt="sensor_qtr8" src="../../_images/conexiones.svg" style="width: 400px;" />
 </a>
 </figure>
 <p>continúa aprendiendo sobre el RENABOT en la sección Software y Programación</p>
@@ -491,8 +537,8 @@ identificar de forma sencilla la conexión de cada componente.</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
-        <a href="../tema_1/0_construccion.html" class="btn btn-neutral float-left" title="Construcción del RENA-BOT" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
-        <a href="../tema_3/0_software.html" class="btn btn-neutral float-right" title="SOFTWARE Y PROGRAMACIÓN" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../tema_1/0_construccion.html" class="btn btn-neutral float-left" title="Construcción del Renabot" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="../tema_3/0_software.html" class="btn btn-neutral float-right" title="Software y Programación" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

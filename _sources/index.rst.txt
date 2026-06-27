@@ -1,7 +1,7 @@
-RENA-BOT
+RENABOT
 ============
 
-Bienvenido a la documentación oficial del RENA-BOT Kit de Robótica 4en1.
+Bienvenido a la documentación oficial del RENA-BOT Kit de Robótica 3 en 1.
 
 Esta documentación ha sido desarrollada por AvigTech.
 

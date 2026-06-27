@@ -1,7 +1,7 @@
-SOFTWARE Y PROGRAMACIÓN
+Software y Programación 
 =======================
 
-El RENA-BOT es compatible con múltiples lenguajes y entornos de programación, lo que lo convierte en una plataforma flexible para el aprendizaje de la robótica.  
+El Renabot es compatible con múltiples lenguajes y entornos de programación, lo que lo convierte en una plataforma flexible para el aprendizaje de la robótica.  
 Puede ser utilizado con:
 
 - **Arduino IDE** (C/C++).  
@@ -11,8 +11,21 @@ Puede ser utilizado con:
 
 De esta manera, los estudiantes y docentes pueden elegir el entorno que mejor se adapte a su nivel y objetivos de aprendizaje.
 
-Programación
-------------
+Modo Programador
+-----------------
+
+A través de bloques de programación (Blockly) el usuario puede manipular el comportamiento del RENA-BOT.  
+
+.. figure:: ./img/programador.jpg
+   :alt: modelorobot
+   :align: center
+
+Descripción del programa:
+
+.. figure:: ./img/bloques_ejemplo.jpg
+   :alt: modelorobot
+   :align: center
+
 
 Bloques de programación del RENABOT
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -29,77 +42,122 @@ Descripción de bloques:
    * - Bloque
      - Descripción
      - Clase
-   * - .. image:: ./img/1.jpg
+   * - .. image:: ./img/rena.svg
           :width: 180px
           :align: center
-     - Este bloque permite el inicio del RENABOT, y le agrega un nombre para su funcionamiento.
+     - Este bloque permite el inicio del RENABOT.
      - Rena
-   * - .. image:: ./img/2.jpg
+   * - .. image:: ./img/seguidor_malla.svg
           :width: 180px
           :align: center
      - Controla el movimiento del RENABOT en la malla de movimiento controlado, los movimientos disponibles son: Adelante, Atras, Izquierda, Derecha.
      - Rena
-   * - .. image:: ./img/3.jpg
+   * - .. image:: ./img/velocidad.svg
           :width: 180px
           :align: center
      - Setea el valor de la velocidad, usando un valor porcentual. El bloque permite valores enteros.
      - Rena
-   * - .. image:: ./img/4.jpg
+   * - .. image:: ./img/mov_libre.svg
           :width: 180px
           :align: center
      - Controla el movimiento del robot durante una cantidad x de segundos, con este bloques el robot puede: Girar a la izquierda, Girar a la derecha, Avanzar o retroceder. El bloque admite valores decimales en el tiempo.
      - Rena
-   * - .. image:: ./img/5.jpg
+   * - .. image:: ./img/gripper.svg
           :width: 180px
           :align: center
      - Abre o cierra el gripper.
      - Rena
-   * - .. image:: ./img/6.jpg
+   * - .. image:: ./img/esperar.svg
           :width: 180px
           :align: center
      - Envia una pausa en la ejecución del algoritmo durante una x cantidad de tiempo. El bloque acepta valores decimales.
      - Rena
-   * - .. image:: ./img/7.jpg
+   * - .. image:: ./img/led.svg
           :width: 180px
           :align: center
      - Enciende o apaga el LED del RENA-BOT
      - Rena
-   * - .. image:: ./img/8.jpg
+   * - .. image:: ./img/led.svg
           :width: 180px
           :align: center
-     - Actualiza el valor del sensor seleccionado, los sensores que se pueden leer son: ultrasónico, LDR izquierdo, LDR derecho, Temperatura, micrófono.
-     - Sensor
-   * - .. image:: ./img/9.jpg
+     - Enciende o apaga el LED del RENA-BOT
+     - Rena
+   * - .. image:: ./img/bpm.svg
           :width: 180px
           :align: center
-     - Variable que usa el valor de las lecturas tomadas por el bloque de sensores.
+     - Setea el valor de Beats por minuto.
+     - Rena
+   * - .. image:: ./img/bpm.svg
+          :width: 180px
+          :align: center
+     - Setea el valor de Beats por minuto.
+     - Rena
+   * - .. image:: ./img/musico.svg
+          :width: 180px
+          :align: center
+     - Toca una nota musical por determinando tiempo [s]
+     - Rena
+   * - .. image:: ./img/musico_pro.svg
+          :width: 180px
+          :align: center
+     - Toca una nota musical musical en base a una figura musical.
+     - Rena
+   * - .. image:: ./img/imagen.svg
+          :width: 180px
+          :align: center
+     - Muestra en la pantalla oled una imagen.
+     - Rena
+   * - .. image:: ./img/matriz.svg
+          :width: 180px
+          :align: center
+     - Crea una figura de 8 x 16 en la pantalla oled.
+     - Rena
+   * - .. image:: ./img/motor_ind.svg
+          :width: 180px
+          :align: center
+     - Controla la velocidad de los motores de forma independiente.
+     - Rena
+   * - .. image:: ./img/variable_sensor.svg
+          :width: 180px
+          :align: center
+     - Variable asignada a cada sensor.
      - Sensor
-   * - .. image:: ./img/10.jpg
+   * - .. image:: ./img/variable_sensor.svg
+          :width: 180px
+          :align: center
+     - Variable asignada a cada sensor.
+     - Sensor
+   * - .. image:: ./img/matriz.svg
           :width: 180px
           :align: center
      - Bloque condicional IF, si la sentencia es verdadera se ejecutan los bloques agregados.
      - Condicional
-   * - .. image:: ./img/11.jpg
+   * - .. image:: ./img/for.svg
           :width: 180px
           :align: center
      - Bucle For, repite un n número de veces los diferentes bloques agregados.
      - Condicional
-   * - .. image:: ./img/12.jpg
+   * - .. image:: ./img/if_else.svg
           :width: 180px
           :align: center
      - Bucle If / Else, si se cumple las condición realiza las acciones agregadas en el if, sino realiza las acciones agregadas en el else.
      - Condicional
-   * - .. image:: ./img/13.jpg
+   * - .. image:: ./img/comparador_logico.svg
           :width: 180px
           :align: center
      - Compara 2 variables diferentes, los comparadores logicos disponibles son: ``!=``, ``==``, ``>``, ``<``, 
      - Comparador
-   * - .. image:: ./img/14.jpg
+   * - .. image:: ./img/comparador.svg
           :width: 180px
           :align: center
      - Combina 2 o mas bloques comparadores.
      - Comparador
-   * - .. image:: ./img/15.jpg
+   * - .. image:: ./img/while.svg
+          :width: 180px
+          :align: center
+     - Ejecuta el bucle while
+     - Comparador
+   * - .. image:: ./img/true.svg
           :width: 180px
           :align: center
      - Devuelve una sentencia verdadera o falsa.
@@ -107,80 +165,6 @@ Descripción de bloques:
 
 
 Esto permite pasar de la programación visual a la codificación real, generando código fuente en Python o C++ de manera automática.
-
-
-Formas de uso
--------------
-
-El RENA-BOT puede ser utilizado de diferentes maneras, según la necesidad del curso o proyecto:
-
-Modo Programador
-~~~~~~~~~~~~~~~~
-
-A través de bloques de programación (Blockly) el usuario puede manipular el comportamiento del RENA-BOT.  
-
-.. figure:: ./img/programador.jpg
-   :alt: modelorobot
-   :align: center
-
-Descripción del programa:
-
-.. figure:: ./img/bloques_ejemplo.jpg
-   :alt: modelorobot
-   :align: center
-
-Modo Control por Comandos de Voz 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Este modo integra un módulo de reconocimiento de voz que permite controlar el robot mediante órdenes verbales simples activa los bloques de programacion.  
-Se introducen así conceptos de **interacción humano-robot (HRI)** y de **inteligencia artificial aplicada a la educación**.  
-
-Estructura del comando de voz
-
-
-.. code-block:: bash
-	
-	Rena modo ``opcion de modo`` ``accion``  ``complemento`` 
-
-Lista de comandos:
-
-1. Movimiento libre del robot:
-
-Rena modo libre ``accion`` durante ``tiempo`` segundos.
-
-acción: ``adelante``, ``giro a la izquierda``, ``giro a la derecha``, ``atras``
-
-tiempo: numero entero.
-
-2. Movimiento en la malla del seguidor de línea del robot:
-
-Rena modo seguidor ``accion``.
-
-acción: ``adelante``, ``giro a la izquierda``, ``giro a la derecha``, ``atras``
-
-3. Control de velocidad:
-
-Rena modo velocidad al ``valor`` porciento.
-
-valor: ``60`` , ``70``, ``80``, ``90``, ``100``
-
-4. Control de gripper:
-
-Rena modo gripper ``accion``.
-
-acción: ``abrir``, ``cerrar``
-
-.. figure:: ./img/control_voz.jpg
-   :alt: modelorobot
-   :align: center
-
-**Modo Control Manual**  
-La aplicación incluye un **joystick virtual** que permite controlar directamente la locomoción del robot.  
-En paralelo, se muestra información en tiempo real de los sensores integrados (actualizada cada **100 ms**), lo que convierte al modo manual en una herramienta tanto de práctica como de monitoreo.  
-
-.. figure:: ./img/modo_libre.jpg
-   :alt: modelorobot
-   :align: center
 
 Descargas
 ---------

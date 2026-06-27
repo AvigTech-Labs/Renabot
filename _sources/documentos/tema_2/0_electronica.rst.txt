@@ -15,8 +15,10 @@ el robot con distintos entornos como Arduino IDE, Micro-Python o FreeRTOS.
    :alt: modelorobot
    :align: center
    :width: 400px
+   
+   Cerebro del Renabot
 
-   Cerebro del RENABOT
+`Repositorio ESP32-STEM <https://avigtech-labs.github.io/ESP32-STEM/>`_
 
 Características
 ~~~~~~~~~~~~~~~
@@ -25,12 +27,12 @@ La placa de control del RENABOT ha sido diseñada con un ensamblaje de montaje s
 Sus dimensiones son 95 x 92 x 2 mm, cuenta con recubrimiento protector para mayor durabilidad y resistencia, y está optimizada para integrar de forma ordenada los diferentes módulos del robot en formato
 plug and play.  
 
-.. figure:: ./img/circuito.jpg
-   :alt: modelorobot
+.. figure:: ./img/circuito.svg
+   :alt: circuito
    :align: center
    :width: 400px
-
-	PCB -  RENA RENA-BOT
+   
+   ESP32-STEM
 
 Entre los principales elementos que incorpora se encuentran: 
 
@@ -87,11 +89,11 @@ El RENA-BOT incluye la siguiente lista de sensores, los cuales permiten que el r
 Seguidor de línea
 ~~~~~~~~~~~~~~~~~
 
-.. figure:: ./img/sensor_qtr8.svg
+.. figure:: ./img/s_qtr8.svg
    :alt: sensor_qtr8
    :align: center
    :width: 400px
-
+   
    Sensor QTR8 en el RENA-BOT
 
 El sensor ``QTR8`` está compuesto por un arreglo de 8 sensores infrarrojos (IR) que permiten detectar el contraste entre superficies claras y oscuras.  
@@ -137,8 +139,8 @@ Sensor de intensidad lumínica
    :alt: sensor_qtr8
    :align: center
    :width: 400px
-
-	sensor LDR
+   
+   Sensor LDR
 
 El sensor **LDR (Light Dependent Resistor)** varía su resistencia eléctrica según la cantidad de luz que incide sobre él.  
 Se utiliza como un divisor de tensión, conectado a una entrada analógica del microcontrolador.  
@@ -156,11 +158,11 @@ Uso en el RENA-BOT:
 Módulo Sensor de Temperatura  LM35dz
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: ./img/s_temperatura.jpg
+.. figure:: ./img/s_temperatura.svg
    :alt: sensor_qtr8
    :align: center
    :width: 400px
-
+   
    Sensor LM35dz
 
 El sensor de temperatura LM35DZ es un sensor analógico de precisión que proporciona una 
@@ -184,32 +186,6 @@ Uso en el RENABOT:
 - Desarrollo de proyectos educativos de adquisición de datos utilizando entradas analógicas del ESP32.
 - Activación de alarmas, indicadores visuales o actuadores cuando se alcancen determinadas temperaturas.
 
-Módulo Sensor de Sonido KY-037
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. figure:: ./img/s_sonido.svg
-   :alt: sensor_qtr8
-   :align: center
-   :width: 400px
-
-   Sensor KY-037 
-
-El Módulo Sensor de Sonido KY-037 está diseñado para detectar la intensidad del sonido en el ambiente mediante un micrófono electret y un amplificador integrado.  
-Proporciona tanto salida analógica (nivel proporcional a la intensidad sonora) como salida digital (activada al superar un umbral ajustable mediante potenciómetro).  
-
-Características técnicas:  
-- Tipo de sensor: micrófono electret con amplificador.  
-- Salidas: analógica (A0) y digital (D0).  
-- Voltaje de operación: 3.3 V.  
-- Sensibilidad ajustable con potenciómetro.  
-- Indicador LED para la salida digital.  
-
-Uso en el RENA-BOT:  
-- Detección de aplausos o sonidos fuertes para activar acciones del robot.  
-- Proyectos de interacción sonora, donde el robot responde a estímulos acústicos.  
-- Ejercicios de programación que combinen niveles de intensidad sonora con decisiones lógicas.  
-- Actividades lúdicas como el control del robot mediante señales sonoras simples (ejemplo: avance con un aplauso).  
-
 Módulo Sensor MPU6050
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -217,7 +193,7 @@ Módulo Sensor MPU6050
    :alt: sensor_qtr8
    :align: center
    :width: 400px
-
+   
    MPU6050
 
 El **MPU6050** es un sensor inercial de seis grados de libertad (6DOF) que integra un acelerómetro de tres ejes y un giroscopio de tres ejes en un solo dispositivo. Permite medir aceleraciones, inclinaciones y velocidades angulares, siendo ampliamente utilizado en aplicaciones de robótica, navegación y control de movimiento.
@@ -239,16 +215,63 @@ Uso en el RENA-BOT:
 - Desarrollo de algoritmos de navegación y control.
 - Actividades educativas relacionadas con sensores inerciales y procesamiento de señales.
 
+Pines adicionales para sensores
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+.. figure:: ./img/extras.svg
+   :alt: Extras
+   :align: center
+   :width: 400px
+   
+   Extras
+
+La placa de control del **Renabot** ha sido diseñada para permitir 
+la expansión de nuevos sensores y módulos electrónicos según las necesidades de cada proyecto.
+
+Gracias a la incorporación del **multiplexor analógico 74HC4067**, es posible 
+conectar hasta **5 señales analógicas adicionales**, permitiendo ampliar la capacidad de 
+adquisición de datos sin consumir directamente más entradas analógicas del microcontrolador.
+
+Esta característica facilita la integración de sensores como:
+
+- Sensores de humedad.
+- Sensores de gases.
+- Potenciómetros y otros dispositivos analógicos.
+
+Adicionalmente, la placa deja disponibles varios pines de propósito 
+general (**GPIO**) del microcontrolador **ESP32-WROOM-32**, los cuales pueden 
+utilizarse para conectar nuevos sensores, actuadores o módulos de comunicación.
+
+GPIO disponibles para expansión:
+
+- **GPIO 23**
+- **GPIO 5**
+- **GPIO 14**
+- **GPIO 27**
+
+Estos pines pueden configurarse como entradas o salidas digitales y permiten implementar 
+funcionalidades adicionales como:
+
+- Control de relés.
+- Lectura de sensores digitales.
+- Comunicación con módulos externos.
+- Control de LEDs y actuadores.
+- Desarrollo de proyectos personalizados.
+
+.. note::
+   Antes de conectar nuevos dispositivos, verifique la compatibilidad de voltajes y corrientes con las especificaciones del ESP32-WROOM-32 para evitar daños en la placa de control.
+
 Actuadores
 ----------
 
-El RENA-BOT incluye la siguiente lista de actuadores, los cuales permiten que el robot realice acciones físicas:  
+El Renabot incluye la siguiente lista de actuadores, los cuales permiten que el robot realice acciones físicas:  
 
 Motores DC con encoder
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: ./img/motores.svg
-   :alt: sensor_qtr8
+   :alt: motores
    :align: center
    :width: 400px
 
@@ -278,7 +301,7 @@ Servomotor
 ~~~~~~~~~~
 
 .. figure:: ./img/servo.svg
-   :alt: sensor_qtr8
+   :alt: servo
    :align: center
    :width: 400px
 
@@ -286,12 +309,14 @@ El **servomotor SG90** es un actuador de pequeño tamaño que permite un movimie
 Se controla enviando pulsos PWM desde el microcontrolador.  
 
 Características técnicas:  
+
 - Voltaje de operación: 4.8 V – 6 V.  
 - Ángulo de rotación: 360º  
 - Torque: ~1.8 kg·cm.  
 - Peso: 9 g.  
 
-Uso en el RENA-BOT:  
+Uso en el Renabot:  
+
 - Control de un manipulador de objetos o gripper.  
 - Movimiento de sensores (por ejemplo, rotación de un sensor ultrasónico).  
 - Actividades para enseñar el control de PWM y actuadores de precisión.  
@@ -300,7 +325,7 @@ Buzzer
 ~~~~~~~~~~~~~~
 
 .. figure:: ./img/buzzer.svg
-   :alt: sensor_qtr8
+   :alt: buzzer
    :align: center
    :width: 400px
 
@@ -308,6 +333,7 @@ El **buzzer pasivo** es un actuador electrónico capaz de generar sonidos o tono
 A diferencia del buzzer activo, que emite un tono fijo con solo aplicarle voltaje, el buzzer pasivo requiere que se le envíen **señales PWM** para producir distintos sonidos y melodías.
 
 Características técnicas:  
+
 - Tipo: buzzer pasivo.  
 - Voltaje de operación: 3.3 V – 5 V.  
 - Control mediante señal PWM.  
@@ -317,13 +343,14 @@ Pantalla OLED
 ~~~~~~~~~~~~~~
 
 .. figure:: ./img/oled.svg
-   :alt: sensor_qtr8
+   :alt: oled
    :align: center
    :width: 400px
 
 La **pantalla OLED I2C de 0.96 pulgadas (128x64)** es un dispositivo de visualización gráfica monocromática que utiliza tecnología OLED (Organic Light Emitting Diode), permitiendo mostrar texto, números, gráficos e iconos con alto contraste y bajo consumo energético.
 
 Características técnicas:
+
 - Tamaño de pantalla: 0.96 pulgadas.
 - Resolución: 128 × 64 píxeles.
 - Comunicación: I2C.
@@ -334,6 +361,7 @@ Características técnicas:
 - Amplio ángulo de visión.
 
 Uso en el RENA-BOT:
+
 - Visualización de información del sistema.
 - Monitoreo de variables y sensores en tiempo real.
 - Indicadores de estado de conexión y funcionamiento.
@@ -343,14 +371,15 @@ Uso en el RENA-BOT:
 LED RGB
 ~~~~~~~~~~~~~~
 
-.. figure:: ./img/oled.svg
-   :alt: sensor_qtr8
+.. figure:: ./img/led.svg
+   :alt: led
    :align: center
    :width: 400px
 
 El **SK6812 RGB SMD** es un LED inteligente direccionable que integra en un solo encapsulado un LED RGB y un circuito controlador digital. Permite controlar individualmente el color y brillo de cada LED mediante una única línea de datos, facilitando la creación de efectos visuales dinámicos e indicadores luminosos programables.
 
 Características técnicas:
+
 - Tipo: LED RGB direccionable.
 - Comunicación: señal digital de un solo cable (DIN).
 - Voltaje de operación: 3.5 V – 5.5 V.
@@ -361,6 +390,7 @@ Características técnicas:
 - Compatible con microcontroladores como ESP32 y Arduino.
 
 Uso en el RENA-BOT:
+
 - Indicadores visuales de estado y funcionamiento.
 - Representación de alarmas y notificaciones mediante colores.
 - Efectos luminosos programables para actividades educativas.
@@ -373,11 +403,13 @@ Fuente de energía
 El RENA-BOT utiliza una batería recargable **LiPo (Polímero de Litio) de 2 celdas (2S), 7.4 V, 2200 mAh y 35C**.  
 
 Características principales:  
+
 - **Voltaje nominal:** 7.4 V (3.7 V por celda).  
 - **Capacidad:** 1500 mAh, lo que ofrece un tiempo de operación adecuado para actividades educativas de corta y mediana duración.  
 - **Tasa de descarga:** 35C, permitiendo suministrar la corriente suficiente para los motores y actuadores del robot sin caídas de voltaje.  
 
 Recomendaciones de seguridad:  
+
 - Nunca descargar la batería por debajo de **6.0 V (3.0 V por celda)**, ya que puede dañarse permanentemente.  
 - Utilizar siempre un cargador balanceado para LiPo, que garantice la seguridad y prolongue la vida útil de la batería.  
 - Evitar golpes, perforaciones o exposición a altas temperaturas.  
@@ -393,7 +425,7 @@ Conexión de los componentes
 El diseño SMD de la placa de contro con sus conectores JST XH y sumado al sistema de colores, permite
 identificar de forma sencilla la conexión de cada componente.
 
-.. figure:: ./img/conexiones.jpg
+.. figure:: ./img/conexiones.svg
    :alt: sensor_qtr8
    :align: center
    :width: 400px
