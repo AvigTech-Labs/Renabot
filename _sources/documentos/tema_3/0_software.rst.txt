@@ -185,7 +185,6 @@ Aplicación móvil
 
 La aplicación móvil está disponible para:  
 - **Android (9.0 o superior)**  
-- **iOS (13.0 o superior)**  
 
 :download:`Descargar aplicación móvil <_static/rena-bot-app.apk>`
 

@@ -1,7 +1,7 @@
 Actividades Renabot
 ===================
 
-Pŕacticas
+Prácticas
 ----------
 
 El Renabot tiene integrado de diferentes programas, que pueden ser utilizadas
@@ -13,6 +13,13 @@ Control por Comandos de Voz
 
 El **Modo de Control por Voz** permite interactuar con el RENA-BOT mediante instrucciones habladas en lenguaje natural.  
 Este modo utiliza técnicas de **reconocimiento de voz (Speech Recognition)** para convertir la voz del usuario en texto y posteriormente aplicar procesos de análisis que permiten identificar las acciones que debe ejecutar el robot.
+
+
+
+.. figure:: ./img/control_voz.svg
+   :alt: modelorobot
+   :align: center
+
 
 **Funcionamiento general**
 
@@ -107,9 +114,6 @@ Además, facilita la interacción con estudiantes de diferentes edades al permit
    El reconocimiento de voz depende de la calidad del micrófono, el ruido del entorno y el idioma configurado en el dispositivo utilizado.
 
 
-.. figure:: ./img/control_voz.svg
-   :alt: modelorobot
-   :align: center
 
 .. _modo-libre:
 
@@ -238,7 +242,7 @@ El Modo Músico permite trabajar temas como:
 Modo Seguidor de Línea
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-El **Modo Seguidor de Línea** permite que el RENA-BOT se desplace de forma autónoma siguiendo una trayectoria marcada en el suelo, generalmente una **línea negra sobre una superficie clara**.  
+El **Modo Seguidor de Línea** permite que el Renabot se desplace de forma autónoma siguiendo una trayectoria marcada en el suelo, generalmente una **línea negra sobre una superficie clara**.  
 Este modo utiliza el arreglo de sensores infrarrojos del robot para detectar el contraste de la pista y corregir constantemente la dirección de movimiento.
 
 .. figure:: ./img/modo_seguidor_linea.svg
