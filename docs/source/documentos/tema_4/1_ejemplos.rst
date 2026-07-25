@@ -6,6 +6,12 @@ Programación Básica
 
 Utilizando el modo programador, se configura al Renabot para que siga una trayectoria cuadrada.
 
+.. figure:: ./img/bloques_ejer1.png
+   :alt: modelorobot
+   :align: center
+
+Bloques de programacióN
+
 .. figure:: ./img/ejer1.png
    :alt: modelorobot
    :align: center
