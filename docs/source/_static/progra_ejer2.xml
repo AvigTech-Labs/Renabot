@@ -1,0 +1,106 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="bloque_inicar" id="J;`ZY]g=J=$_{MxCH88Q" x="-525" y="-210">
+    <field name="NOMBRE">Rena</field>
+    <next>
+      <block type="bloque_velocidad" id="!EC5Tv~C8?MMSd.sie3#">
+        <value name="VELOCIDAD">
+          <block type="math_number" id="aer}IBMvuwek1?7eQ7wl">
+            <field name="NUM">30</field>
+          </block>
+        </value>
+        <next>
+          <block type="bloque_esperar" id="R_rjjqoO*(e0-XqvJ5la">
+            <value name="TIME">
+              <block type="math_number" id="l@0HU=-Bg9VDJICRB6TN">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+            <next>
+              <block type="bloque_leer_sensor" id="|x~C0;N%-y=Z0,2HKL3R">
+                <field name="SENSOR">ultrasonico</field>
+                <next>
+                  <block type="bloque_sequidor" id="0uKaBD.lpB=MY,A6,A^:">
+                    <field name="MOV">0</field>
+                    <next>
+                      <block type="bloque_for" id="SA50ElI;vJ2gYXhB9n3[">
+                        <value name="VECES">
+                          <block type="math_number" id="C+dqIQqpB$v*%%C^|sgY">
+                            <field name="NUM">2</field>
+                          </block>
+                        </value>
+                        <statement name="HACER">
+                          <block type="bloque_leer_sensor" id="$a:)PGavp7Fq[Z/X=1Jn">
+                            <field name="SENSOR">ultrasonico</field>
+                            <next>
+                              <block type="bloque_if_else" id="QB6NJ#%$;n:cu_SicP2r">
+                                <value name="COND">
+                                  <block type="logic_compare" id="j.0n;Q!c7wh+S4$!CMNv">
+                                    <field name="OP">&lt;</field>
+                                    <value name="A">
+                                      <block type="get_sensor" id="ES2)s3|%#vKfHDwFqi6F">
+                                        <field name="SENSOR">ultrasonico</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="math_number" id="c[[A,N4|BPg#E-5}g`+9">
+                                        <field name="NUM">15</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <statement name="ENTONCES">
+                                  <block type="bloque_sequidor" id="wI_oHzV@.z,ZvG)Dz;-m">
+                                    <field name="MOV">0</field>
+                                  </block>
+                                </statement>
+                                <statement name="SINO">
+                                  <block type="bloque_sequidor" id="K~~_MjP|r[3h#(kyU8+-">
+                                    <field name="MOV">2</field>
+                                    <next>
+                                      <block type="bloque_sequidor" id="M4DZDxc0/h@.`]DLHLX.">
+                                        <field name="MOV">0</field>
+                                        <next>
+                                          <block type="bloque_sequidor" id="rl!,j3D`($/V{?H[(.^@">
+                                            <field name="MOV">1</field>
+                                            <next>
+                                              <block type="bloque_sequidor" id="T`DXsYe9}OlQ$|)aznTM">
+                                                <field name="MOV">0</field>
+                                                <next>
+                                                  <block type="bloque_sequidor" id="48T*|M1;#g!MLXh`GvdL">
+                                                    <field name="MOV">1</field>
+                                                    <next>
+                                                      <block type="bloque_sequidor" id="JbpR$ruNUOvT-_!}o@}g">
+                                                        <field name="MOV">0</field>
+                                                        <next>
+                                                          <block type="bloque_sequidor" id="aA%LxZZ%4,b-heEA;s:`">
+                                                            <field name="MOV">2</field>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </statement>
+                              </block>
+                            </next>
+                          </block>
+                        </statement>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
