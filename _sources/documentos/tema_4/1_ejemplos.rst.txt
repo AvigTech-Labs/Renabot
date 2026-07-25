@@ -4,7 +4,7 @@ Programación Básica
 1. Trayectoria Cuadrada
 ------------------------
 
-Utilizando el modo proramador, se configura al Renabot para que siga una trayectoria cuadrada.
+Utilizando el modo programador, se configura al Renabot para que siga una trayectoria cuadrada.
 
 .. figure:: ./img/ejer1.png
    :alt: modelorobot
