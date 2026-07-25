@@ -1,0 +1,70 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="bloque_inicar" id="J;`ZY]g=J=$_{MxCH88Q" x="-558" y="-95">
+    <field name="NOMBRE">Rena</field>
+    <next>
+      <block type="bloque_velocidad" id="!EC5Tv~C8?MMSd.sie3#">
+        <value name="VELOCIDAD">
+          <block type="math_number" id="aer}IBMvuwek1?7eQ7wl">
+            <field name="NUM">30</field>
+          </block>
+        </value>
+        <next>
+          <block type="bloque_esperar" id="R_rjjqoO*(e0-XqvJ5la">
+            <value name="TIME">
+              <block type="math_number" id="l@0HU=-Bg9VDJICRB6TN">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+            <next>
+              <block type="bloque_for" id="gk,O42FpjY7ja7pWAd3|">
+                <value name="VECES">
+                  <block type="math_number" id="#?w~7]:H%_Nk^HTkI+Tq">
+                    <field name="NUM">4</field>
+                  </block>
+                </value>
+                <statement name="HACER">
+                  <block type="bloque_libre" id="P~{AVmb/S2|=YOY]^}[F">
+                    <field name="VALOR">0</field>
+                    <value name="TIME">
+                      <block type="math_number" id="-SZO[~9bNYdrPe@6,=qC">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="bloque_esperar" id="HDy_/uQ1s_CsIokt7hV$">
+                        <value name="TIME">
+                          <block type="math_number" id="x*-x2oOYV7Xyoh+/S4$Z">
+                            <field name="NUM">0.2</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="bloque_libre" id="OGpxZN:X;4NA|;e^eZ@3">
+                            <field name="VALOR">2</field>
+                            <value name="TIME">
+                              <block type="math_number" id="fpA1J?x{G=%+Q)eO1^=7">
+                                <field name="NUM">0.7</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="bloque_esperar" id="N2HS)]T-6lS+)KJ6QNwh">
+                                <value name="TIME">
+                                  <block type="math_number" id="AcI~=RC.9f2OnqYpfj-o">
+                                    <field name="NUM">0.2</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

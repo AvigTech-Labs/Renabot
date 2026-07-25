@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Actividades Renabot &mdash; documentación de Documentación RENA-BOT 3 en 1 - 1.1</title>
+  <title>Programación Básica &mdash; documentación de Documentación RENA-BOT 3 en 1 - 1.1</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -65,21 +65,19 @@
 <p class="caption" role="heading"><span class="caption-text">Configuración y Uso</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="0_conf.html">Configuracióndel Renabot</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Actividades Renabot</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#practicas">Prácticas</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#control-por-comandos-de-voz">Control por Comandos de Voz</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#modo-control-manual">Modo Control Manual</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#modo-musico">Modo Músico</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#modo-seguidor-de-linea">Modo Seguidor de Línea</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Programación Básica</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#trayectoria-cuadrada">1. Trayectoria Cuadrada</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#evitar-obstaculos-en-una-malla">2. Evitar obstáculos en una malla</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#aplicaciones">Aplicaciones</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#seguidor-en-malla">Seguidor en Malla</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#modo-radar">Modo radar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#practicas">Prácticas</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#control-por-comandos-de-voz">Control por Comandos de Voz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#modo-control-manual">Modo Control Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#modo-musico">Modo Músico</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#modo-seguidor-de-linea">Modo Seguidor de Línea</a></li>
 </ul>
 </li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="#actividades-stem">Actividades STEM</a></li>
 </ul>
 
         </div>
@@ -96,7 +94,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Actividades Renabot</li>
+      <li class="breadcrumb-item active">Programación Básica</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -105,14 +103,40 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="actividades-renabot">
-<h1>Actividades Renabot<a class="headerlink" href="#actividades-renabot" title="Link to this heading"></a></h1>
+  <section id="programacion-basica">
+<h1>Programación Básica<a class="headerlink" href="#programacion-basica" title="Link to this heading"></a></h1>
+<section id="trayectoria-cuadrada">
+<h2>1. Trayectoria Cuadrada<a class="headerlink" href="#trayectoria-cuadrada" title="Link to this heading"></a></h2>
+<p>Utilizando el modo proramador, se configura al Renabot para que siga una trayectoria cuadrada.</p>
+<figure class="align-center">
+<img alt="modelorobot" src="../../_images/ejer1.png" />
+</figure>
+<p><a class="reference download internal" download="" href="../../_downloads/b1d9f31c092b42a7257b7840d4fa95e2/progra_ejer1.xml"><code class="xref download docutils literal notranslate"><span class="pre">Descargar</span> <span class="pre">Actividad</span> <span class="pre">1</span></code></a></p>
+</section>
+<section id="evitar-obstaculos-en-una-malla">
+<h2>2. Evitar obstáculos en una malla<a class="headerlink" href="#evitar-obstaculos-en-una-malla" title="Link to this heading"></a></h2>
+<p>Para esta modalidad necesitas la malla para el seguidor de linea.</p>
+<p>Este modo se presenta como una implementación diseñada para maximizar la precisión de los movimientos del Renabot, siendo especialmente útil en actividades educativas que priorizan:</p>
+<ul class="simple">
+<li><p>El desarrollo del pensamiento lógico-matemático básico, a través de tareas como contar, reconocer figuras y patrones, clasificar y comparar.</p></li>
+<li><p>El aprendizaje experiencial y lúdico, mediante actividades de exploración, prácticas guiadas y juegos interactivos.</p></li>
+</ul>
+<p>Además, este modelo toma como referencia un toy problem relacionado con el almacenamiento inteligente y la optimización de rutas utilizando robots móviles.
+Su aplicación más directa se observa en los robots industriales seguidores de línea utilizados por Amazon, que ejemplifican cómo un concepto didáctico puede escalar hacia soluciones de ingeniería avanzada en logística y automatización.</p>
+<p>Para su uso puedes utilizar los bloques de <code class="docutils literal notranslate"><span class="pre">seguidor</span></code> y la opcion de control por voz utilizando el modo <code class="docutils literal notranslate"><span class="pre">seguidor</span></code></p>
+<p>Versiones que soportan esta aplicacion: <code class="docutils literal notranslate"><span class="pre">velocista</span></code>, <code class="docutils literal notranslate"><span class="pre">transportador</span></code>, <code class="docutils literal notranslate"><span class="pre">todoterreno</span></code></p>
+<figure class="align-center">
+<img alt="modelorobot" src="../../_images/ejer2.png" />
+</figure>
+<p><a class="reference download internal" download="" href="../../_downloads/99f75777573a72dfb631053dac6850d5/progra_ejer2.xml"><code class="xref download docutils literal notranslate"><span class="pre">Descargar</span> <span class="pre">Actividad</span> <span class="pre">2</span></code></a></p>
+</section>
+</section>
 <section id="practicas">
-<h2>Prácticas<a class="headerlink" href="#practicas" title="Link to this heading"></a></h2>
+<h1>Prácticas<a class="headerlink" href="#practicas" title="Link to this heading"></a></h1>
 <p>El Renabot tiene integrado de diferentes programas, que pueden ser utilizadas
 según la necesidad del curso o proyecto:</p>
 <section id="control-por-comandos-de-voz">
-<h3>Control por Comandos de Voz<a class="headerlink" href="#control-por-comandos-de-voz" title="Link to this heading"></a></h3>
+<h2>Control por Comandos de Voz<a class="headerlink" href="#control-por-comandos-de-voz" title="Link to this heading"></a></h2>
 <p>El <strong>Modo de Control por Voz</strong> permite interactuar con el RENA-BOT mediante instrucciones habladas en lenguaje natural.
 Este modo utiliza técnicas de <strong>reconocimiento de voz (Speech Recognition)</strong> para convertir la voz del usuario en texto y posteriormente aplicar procesos de análisis que permiten identificar las acciones que debe ejecutar el robot.</p>
 <figure class="align-center">
@@ -218,7 +242,7 @@ Este modo utiliza técnicas de <strong>reconocimiento de voz (Speech Recognition
 </div>
 </section>
 <section id="modo-control-manual">
-<span id="modo-libre"></span><h3>Modo Control Manual<a class="headerlink" href="#modo-control-manual" title="Link to this heading"></a></h3>
+<span id="modo-libre"></span><h2>Modo Control Manual<a class="headerlink" href="#modo-control-manual" title="Link to this heading"></a></h2>
 <p>El <strong>Modo Manual</strong> permite controlar directamente el movimiento del <strong>Renabot</strong> mediante un <strong>joystick virtual</strong> integrado en la aplicación de escritorio o móvil.
 Este modo está diseñado para realizar pruebas de funcionamiento, actividades de exploración libre y control directo del robot durante prácticas educativas.</p>
 <figure class="align-center" id="id1">
@@ -290,7 +314,7 @@ Estos datos permiten monitorear el comportamiento del robot durante su operació
 </div>
 </section>
 <section id="modo-musico">
-<h3>Modo Músico<a class="headerlink" href="#modo-musico" title="Link to this heading"></a></h3>
+<h2>Modo Músico<a class="headerlink" href="#modo-musico" title="Link to this heading"></a></h2>
 <p>El <strong>Modo Músico</strong> permite que el Renabot reproduzca notas musicales utilizando el <strong>buzzer pasivo</strong> incorporado en el robot.
 Desde la aplicación de escritorio o móvil, el usuario dispone de un <strong>piano virtual</strong> con notas básicas como <strong>DO, RE, MI, FA, SOL, LA y SI</strong>.</p>
 <p>Al presionar una tecla del piano, la aplicación envía la nota seleccionada al Renabot.
@@ -328,7 +352,7 @@ A través del buzzer, los estudiantes pueden comprender que cada nota musical es
 </div>
 </section>
 <section id="modo-seguidor-de-linea">
-<h3>Modo Seguidor de Línea<a class="headerlink" href="#modo-seguidor-de-linea" title="Link to this heading"></a></h3>
+<h2>Modo Seguidor de Línea<a class="headerlink" href="#modo-seguidor-de-linea" title="Link to this heading"></a></h2>
 <p>El <strong>Modo Seguidor de Línea</strong> permite que el Renabot se desplace de forma autónoma siguiendo una trayectoria marcada en el suelo, generalmente una <strong>línea negra sobre una superficie clara</strong>.
 Este modo utiliza el arreglo de sensores infrarrojos del robot para detectar el contraste de la pista y corregir constantemente la dirección de movimiento.</p>
 <figure class="align-center" id="id3">
@@ -417,34 +441,17 @@ Cada indicador representa la lectura individual de un sensor, permitiendo observ
 </div>
 </section>
 </section>
-<section id="aplicaciones">
-<h2>Aplicaciones<a class="headerlink" href="#aplicaciones" title="Link to this heading"></a></h2>
-<section id="seguidor-en-malla">
-<h3>Seguidor en Malla<a class="headerlink" href="#seguidor-en-malla" title="Link to this heading"></a></h3>
-<p>Para esta modalidad necesitas la malla para el seguidor de linea.</p>
-<p>Este modo se presenta como una implementación diseñada para maximizar la precisión de los movimientos del RENA-BOT, siendo especialmente útil en actividades educativas que priorizan:</p>
-<ul class="simple">
-<li><p>El desarrollo del pensamiento lógico-matemático básico, a través de tareas como contar, reconocer figuras y patrones, clasificar y comparar.</p></li>
-<li><p>El aprendizaje experiencial y lúdico, mediante actividades de exploración, prácticas guiadas y juegos interactivos.</p></li>
-</ul>
-<p>Además, este modelo toma como referencia un toy problem relacionado con el almacenamiento inteligente y la optimización de rutas utilizando robots móviles.
-Su aplicación más directa se observa en los robots industriales seguidores de línea utilizados por Amazon, que ejemplifican cómo un concepto didáctico puede escalar hacia soluciones de ingeniería avanzada en logística y automatización.</p>
-<p>Para su uso puedes utilizar los bloques de <code class="docutils literal notranslate"><span class="pre">seguidor</span></code> y la opcion de control por voz utilizando el modo <code class="docutils literal notranslate"><span class="pre">seguidor</span></code></p>
-<p>Versiones que soportan esta aplicacion: <code class="docutils literal notranslate"><span class="pre">velocista</span></code>, <code class="docutils literal notranslate"><span class="pre">transportador</span></code>, <code class="docutils literal notranslate"><span class="pre">todoterreno</span></code></p>
-</section>
-<section id="modo-radar">
-<h3>Modo radar<a class="headerlink" href="#modo-radar" title="Link to this heading"></a></h3>
-<p>En esta configuración, el Renabot emplea el sensor ultrasónico
-montado en un servomotor para realizar un barrido de hasta 270°, generando
-un mapa básico de los objetos que lo rodean. Paralelamente, el usuario puede manipular
-el movimiento del robot de forma manual mediante un joystick virtual, lo que combina
-exploración autónoma con control interactivo.</p>
-<div class="admonition note">
-<p class="admonition-title">Nota</p>
-<p>Actualizacion en proceso.</p>
-</div>
-</section>
-</section>
+<section id="actividades-stem">
+<h1>Actividades STEM<a class="headerlink" href="#actividades-stem" title="Link to this heading"></a></h1>
+<p>A continuación, se presentan 3 actividades STEM con el Renabot.</p>
+<ol class="arabic simple">
+<li><p>Renabot - Entrega inteligente</p></li>
+</ol>
+<p><a class="reference download internal" download="" href="../../_downloads/11db30679d22b37f9347a2d45b54b035/Actividad_1_Mision_Entrega_Inteligente.pdf"><code class="xref download docutils literal notranslate"><span class="pre">Descargar</span> <span class="pre">Actividad</span> <span class="pre">1</span></code></a></p>
+<ol class="arabic simple" start="2">
+<li><p>Renabot - Evita obstáculos</p></li>
+</ol>
+<p><a class="reference download internal" download="" href="../../_downloads/1d8489f53885b4fba805e1d4f759e5dc/Actividad_2_RENABOT_Evita_Obstaculos.pdf"><code class="xref download docutils literal notranslate"><span class="pre">Descargar</span> <span class="pre">Actividad</span> <span class="pre">1</span></code></a></p>
 </section>
 
 

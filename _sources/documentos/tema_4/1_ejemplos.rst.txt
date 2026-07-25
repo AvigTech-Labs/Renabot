@@ -1,15 +1,52 @@
-Actividades Renabot
+Programación Básica
 ===================
 
+1. Trayectoria Cuadrada
+------------------------
+
+Utilizando el modo proramador, se configura al Renabot para que siga una trayectoria cuadrada.
+
+.. figure:: ./img/ejer1.png
+   :alt: modelorobot
+   :align: center
+
+:download:`Descargar Actividad 1 <../../_static/progra_ejer1.xml>`
+
+
+2. Evitar obstáculos en una malla
+---------------------------------
+
+Para esta modalidad necesitas la malla para el seguidor de linea.
+
+Este modo se presenta como una implementación diseñada para maximizar la precisión de los movimientos del Renabot, siendo especialmente útil en actividades educativas que priorizan:
+
+* El desarrollo del pensamiento lógico-matemático básico, a través de tareas como contar, reconocer figuras y patrones, clasificar y comparar.
+
+* El aprendizaje experiencial y lúdico, mediante actividades de exploración, prácticas guiadas y juegos interactivos.
+
+Además, este modelo toma como referencia un toy problem relacionado con el almacenamiento inteligente y la optimización de rutas utilizando robots móviles.
+Su aplicación más directa se observa en los robots industriales seguidores de línea utilizados por Amazon, que ejemplifican cómo un concepto didáctico puede escalar hacia soluciones de ingeniería avanzada en logística y automatización.
+
+Para su uso puedes utilizar los bloques de ``seguidor`` y la opcion de control por voz utilizando el modo ``seguidor``
+
+Versiones que soportan esta aplicacion: ``velocista``, ``transportador``, ``todoterreno``
+
+.. figure:: ./img/ejer2.png
+   :alt: modelorobot
+   :align: center
+
+:download:`Descargar Actividad 2 <../../_static/progra_ejer2.xml>`
+
+
 Prácticas
-----------
+==========
 
 El Renabot tiene integrado de diferentes programas, que pueden ser utilizadas
 según la necesidad del curso o proyecto:
 
 
 Control por Comandos de Voz
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------
 
 El **Modo de Control por Voz** permite interactuar con el RENA-BOT mediante instrucciones habladas en lenguaje natural.  
 Este modo utiliza técnicas de **reconocimiento de voz (Speech Recognition)** para convertir la voz del usuario en texto y posteriormente aplicar procesos de análisis que permiten identificar las acciones que debe ejecutar el robot.
@@ -118,7 +155,7 @@ Además, facilita la interacción con estudiantes de diferentes edades al permit
 .. _modo-libre:
 
 Modo Control Manual  
-~~~~~~~~~~~~~~~~~~~~
+-------------------
 
 El **Modo Manual** permite controlar directamente el movimiento del **Renabot** mediante un **joystick virtual** integrado en la aplicación de escritorio o móvil.  
 Este modo está diseñado para realizar pruebas de funcionamiento, actividades de exploración libre y control directo del robot durante prácticas educativas.
@@ -192,7 +229,7 @@ El Modo Manual permite desarrollar actividades relacionadas con:
    Antes de utilizar el Modo Manual, verifique que el RENA-BOT se encuentre conectado correctamente a la aplicación y que la batería tenga carga suficiente.
 
 Modo Músico
-~~~~~~~~~~~~
+-----------
 
 
 El **Modo Músico** permite que el Renabot reproduzca notas musicales utilizando el **buzzer pasivo** incorporado en el robot.  
@@ -240,7 +277,7 @@ El Modo Músico permite trabajar temas como:
    El sonido generado por el buzzer depende de la frecuencia enviada por el microcontrolador y de la duración definida para cada nota musical.
 
 Modo Seguidor de Línea
-~~~~~~~~~~~~~~~~~~~~~~~
+----------------------
 
 El **Modo Seguidor de Línea** permite que el Renabot se desplace de forma autónoma siguiendo una trayectoria marcada en el suelo, generalmente una **línea negra sobre una superficie clara**.  
 Este modo utiliza el arreglo de sensores infrarrojos del robot para detectar el contraste de la pista y corregir constantemente la dirección de movimiento.
@@ -332,38 +369,15 @@ El Modo Seguidor de Línea permite desarrollar actividades relacionadas con:
    Para obtener mejores resultados, se recomienda utilizar pistas con buen contraste entre la línea y el fondo, además de realizar la calibración antes de iniciar cada práctica.
 
 
-Aplicaciones
-------------
+Actividades STEM
+=================
 
+A continuación, se presentan 3 actividades STEM con el Renabot.
 
-Seguidor en Malla
-~~~~~~~~~~~~~~~~~
+1. Renabot - Entrega inteligente
 
-Para esta modalidad necesitas la malla para el seguidor de linea.
+:download:`Descargar Actividad 1 <../../_static/Actividad_1_Mision_Entrega_Inteligente.pdf>`
 
-Este modo se presenta como una implementación diseñada para maximizar la precisión de los movimientos del RENA-BOT, siendo especialmente útil en actividades educativas que priorizan:
+2. Renabot - Evita obstáculos
 
-* El desarrollo del pensamiento lógico-matemático básico, a través de tareas como contar, reconocer figuras y patrones, clasificar y comparar.
-
-* El aprendizaje experiencial y lúdico, mediante actividades de exploración, prácticas guiadas y juegos interactivos.
-
-Además, este modelo toma como referencia un toy problem relacionado con el almacenamiento inteligente y la optimización de rutas utilizando robots móviles.
-Su aplicación más directa se observa en los robots industriales seguidores de línea utilizados por Amazon, que ejemplifican cómo un concepto didáctico puede escalar hacia soluciones de ingeniería avanzada en logística y automatización.
-
-Para su uso puedes utilizar los bloques de ``seguidor`` y la opcion de control por voz utilizando el modo ``seguidor``
-
-Versiones que soportan esta aplicacion: ``velocista``, ``transportador``, ``todoterreno``
-
-
-Modo radar 
-~~~~~~~~~~
-En esta configuración, el Renabot emplea el sensor ultrasónico 
-montado en un servomotor para realizar un barrido de hasta 270°, generando 
-un mapa básico de los objetos que lo rodean. Paralelamente, el usuario puede manipular
-el movimiento del robot de forma manual mediante un joystick virtual, lo que combina 
-exploración autónoma con control interactivo.
-
-
-.. note::
-
-   Actualizacion en proceso.
+:download:`Descargar Actividad 1 <../../_static/Actividad_2_RENABOT_Evita_Obstaculos.pdf>`
