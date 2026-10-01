@@ -1,15 +1,88 @@
-/* Solo afecta a tablas con la clase 'fit-table' */
+/* =====================================================
+   TABLAS GRANDES - SPHINX
+   Clase: fit-table
+===================================================== */
+
 table.docutils.fit-table {
-  table-layout: fixed;   /* reparte el ancho según :widths: */
   width: 100%;
-}
-table.docutils.fit-table td,
-table.docutils.fit-table th {
-  white-space: normal !important;    /* permite saltos de línea */
-  word-break: break-word;            /* corta palabras largas si hace falta */
-  overflow-wrap: anywhere;           /* asegura el wrap */
-}
-table.docutils.fit-table p {         /* quita márgenes extras dentro de celdas */
-  margin: 0;
+  max-width: 100%;
+
+  table-layout: fixed;
+  border-collapse: collapse;
 }
 
+
+/* -----------------------------------------------------
+   CELDAS
+----------------------------------------------------- */
+
+table.docutils.fit-table td,
+table.docutils.fit-table th {
+
+  white-space: normal !important;
+
+  /* Permite ajustar textos largos */
+  overflow-wrap: anywhere;
+  word-wrap: break-word;
+  word-break: normal;
+
+  /* Alineación más cómoda para tablas grandes */
+  vertical-align: top;
+
+  /* Evita que el contenido fuerce el ancho */
+  max-width: 0;
+}
+
+
+/* -----------------------------------------------------
+   PARRAFOS DENTRO DE CELDAS
+----------------------------------------------------- */
+
+table.docutils.fit-table p {
+  margin-top: 0;
+  margin-bottom: 0.4em;
+}
+
+
+/* El último párrafo no necesita margen inferior */
+table.docutils.fit-table p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* -----------------------------------------------------
+   LISTAS DENTRO DE CELDAS
+----------------------------------------------------- */
+
+table.docutils.fit-table ul,
+table.docutils.fit-table ol {
+
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+
+  padding-left: 1.4em;
+}
+
+
+/* -----------------------------------------------------
+   CODIGO Y TEXTO LARGO
+----------------------------------------------------- */
+
+table.docutils.fit-table code {
+
+  white-space: normal !important;
+
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+
+/* -----------------------------------------------------
+   IMAGENES
+----------------------------------------------------- */
+
+table.docutils.fit-table img {
+
+  max-width: 100%;
+  height: auto;
+}

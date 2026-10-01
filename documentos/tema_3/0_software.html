@@ -6,11 +6,11 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Software y Programación &mdash; documentación de Documentación RENA-BOT 3 en 1 - 1.1</title>
+  <title>Ecosistema de software RENABOT &mdash; documentación de Documentación RENA-BOT 3 en 1 - 1.1</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=23a32747" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=82c69470" />
 
   
       <script src="../../_static/jquery.js?v=5d32c60e"></script>
@@ -61,17 +61,20 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Software</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Software y Programación</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#modo-programador">Modo Programador</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#bloques-de-programacion-del-renabot">Bloques de programación del RENABOT</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Ecosistema de software RENABOT</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#renabot-suite">Renabot Suite</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#programacion-con-bloques">Programación con bloques</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#programacion-basada-en-arduino">Programación basada en Arduino</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#visualizacion-de-sensores-dashboard">Visualización de sensores (Dashboard)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#actividades-y-recursos-educativos">Actividades y recursos educativos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#configuracion-de-renabot">Configuración de Renabot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#guias-de-construccion">Guías de construcción</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#practicas">Pŕacticas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#funcionamiento-sin-internet">Funcionamiento sin Internet</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#descargas">Descargas</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#aplicacion-de-escritorio">Aplicación de escritorio</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#aplicacion-movil">Aplicación móvil</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#arduino-ide">Arduino IDE</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="#renabot-mobile">RENABOT Mobile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#renabot-suite-y-renabot-mobile">RENABOT Suite y RENABOT Mobile</a></li>
 </ul>
 </li>
 </ul>
@@ -97,7 +100,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Software y Programación</li>
+      <li class="breadcrumb-item active">Ecosistema de software RENABOT</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -106,20 +109,31 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="software-y-programacion">
-<h1>Software y Programación<a class="headerlink" href="#software-y-programacion" title="Link to this heading"></a></h1>
-<p>El Renabot es compatible con múltiples lenguajes y entornos de programación, lo que lo convierte en una plataforma flexible para el aprendizaje de la robótica.
-Puede ser utilizado con:</p>
+  <section id="ecosistema-de-software-renabot">
+<h1>Ecosistema de software RENABOT<a class="headerlink" href="#ecosistema-de-software-renabot" title="Link to this heading"></a></h1>
+<p>Renabot cuenta con un conjunto de herramientas de software diseñadas para facilitar
+la programación, configuración y uso del robot tanto desde un computador como desde
+un dispositivo móvil.</p>
+<p>El ecosistema está compuesto principalmente por:</p>
 <ul class="simple">
-<li><p><strong>Arduino IDE</strong> (C/C++).</p></li>
-<li><p><strong>Espressif IDE</strong> para desarrollos avanzados en ESP32.</p></li>
-<li><p><strong>MicroPython</strong>, orientado a programación ágil y didáctica.</p></li>
-<li><p><strong>Blockly</strong>, con bloques gráficos diseñados específicamente para simplificar la programación educativa.</p></li>
+<li><p><strong>RENABOT Suite</strong>, la aplicación principal para computador.</p></li>
+<li><p><strong>RENABOT Mobile</strong>, la aplicación complementaria para dispositivos móviles.</p></li>
 </ul>
-<p>De esta manera, los estudiantes y docentes pueden elegir el entorno que mejor se adapte a su nivel y objetivos de aprendizaje.</p>
-<section id="modo-programador">
-<h2>Modo Programador<a class="headerlink" href="#modo-programador" title="Link to this heading"></a></h2>
-<p>A través de bloques de programación (Blockly) el usuario puede manipular el comportamiento del RENA-BOT.</p>
+<p>Ambas herramientas permiten interactuar con Renabot de acuerdo con el tipo de
+actividad que se desee realizar.</p>
+<section id="renabot-suite">
+<h2>Renabot Suite<a class="headerlink" href="#renabot-suite" title="Link to this heading"></a></h2>
+<p><strong>RENABOT Suite</strong> es la aplicación de escritorio compatible con Linux
+y windows para trabajar con Renabot.</p>
+<p>Desde esta aplicación el usuario puede acceder a diferentes herramientas para
+programar, simular, configurar y monitorear el robot.</p>
+<a class="reference internal image-reference" href="../../_images/renabot_suite.png"><img alt="Interfaz de RENABOT Suite" class="align-center" src="../../_images/renabot_suite.png" style="width: 90%;" />
+</a>
+<section id="programacion-con-bloques">
+<h3>Programación con bloques<a class="headerlink" href="#programacion-con-bloques" title="Link to this heading"></a></h3>
+<p>Renabot Suite incorpora un entorno de programación gráfica basado en bloques.</p>
+<p>Este entorno permite crear programas desde actividades sencillas hasta algoritmos
+con lógica, sensores y estructuras de control.</p>
 <figure class="align-center">
 <img alt="modelorobot" src="../../_images/programador.jpg" />
 </figure>
@@ -127,11 +141,11 @@ Puede ser utilizado con:</p>
 <figure class="align-center">
 <img alt="modelorobot" src="../../_images/bloques_ejemplo.jpg" />
 </figure>
-<section id="bloques-de-programacion-del-renabot">
-<h3>Bloques de programación del RENABOT<a class="headerlink" href="#bloques-de-programacion-del-renabot" title="Link to this heading"></a></h3>
-<p>Los bloques personalizados de Blockly permiten a los estudiantes activar el robot en diferentes modos y desarrollar algoritmos de forma visual e intuitiva.</p>
-<p>Descripción de bloques:</p>
-<table class="fit-table docutils align-default">
+<p><strong>Bloques de programación del RENABOT</strong></p>
+<p>Los bloques personalizados permiten a los estudiantes activar
+el robot en diferentes modos y desarrollar algoritmos de forma visual e intuitiva.</p>
+<p>Bloques Disponibles:</p>
+<table class="fit-table longtable docutils align-default">
 <colgroup>
 <col style="width: 30.5%" />
 <col style="width: 50.4%" />
@@ -290,30 +304,159 @@ Puede ser utilizado con:</p>
 </tr>
 </tbody>
 </table>
-<p>Esto permite pasar de la programación visual a la codificación real, generando código fuente en Python o C++ de manera automática.</p>
+</section>
+<section id="programacion-basada-en-arduino">
+<h3>Programación basada en Arduino<a class="headerlink" href="#programacion-basada-en-arduino" title="Link to this heading"></a></h3>
+<p>Renabot Suite también dispone de herramientas para trabajar con programación de la ESP32.</p>
+<p>Este módulo está orientado a usuarios que desean avanzar desde la programación por
+bloques hacia el desarrollo de aplicaciones con microcontroladores.</p>
+<p>Permite trabajar con conceptos como:</p>
+<ul class="simple">
+<li><p>Entradas y salidas digitales.</p></li>
+<li><p>Entradas analógicas.</p></li>
+<li><p>Sensores.</p></li>
+<li><p>Actuadores.</p></li>
+<li><p>Servomotores.</p></li>
+<li><p>Motores.</p></li>
+<li><p>Variables.</p></li>
+<li><p>Estructuras de control.</p></li>
+</ul>
+</section>
+<section id="visualizacion-de-sensores-dashboard">
+<h3>Visualización de sensores (Dashboard)<a class="headerlink" href="#visualizacion-de-sensores-dashboard" title="Link to this heading"></a></h3>
+<p>Renabot Suite permite visualizar la información generada por el robot mediante
+paneles gráficos.</p>
+<p>Los datos de sensores pueden presentarse utilizando diferentes elementos de
+visualización, como:</p>
+<ul class="simple">
+<li><p>Indicadores numéricos.</p></li>
+<li><p>Gráficos de línea.</p></li>
+<li><p>Gráficos de barras.</p></li>
+<li><p>Indicadores tipo <code class="docutils literal notranslate"><span class="pre">gauge</span></code>.</p></li>
+</ul>
+<p>Esto facilita la observación del comportamiento del robot durante una práctica.</p>
+</section>
+<section id="actividades-y-recursos-educativos">
+<h3>Actividades y recursos educativos<a class="headerlink" href="#actividades-y-recursos-educativos" title="Link to this heading"></a></h3>
+<p>Renabot Suite también funciona como una herramienta de apoyo para el aprendizaje
+de robótica.</p>
+<p>La aplicación puede incluir:</p>
+<ul class="simple">
+<li><p>Prácticas guiadas.</p></li>
+<li><p>Tutoriales.</p></li>
+<li><p>Material de apoyo.</p></li>
+<li><p>Guías de construcción.</p></li>
+<li><p>Ejemplos de programación.</p></li>
+<li><p>Recursos para docentes y estudiantes.</p></li>
+</ul>
+<p>De esta forma, el usuario puede acceder desde una misma aplicación a las
+herramientas necesarias para construir, programar y experimentar con RENABOT.</p>
+</section>
+<section id="configuracion-de-renabot">
+<h3>Configuración de Renabot<a class="headerlink" href="#configuracion-de-renabot" title="Link to this heading"></a></h3>
+<p>Desde RENABOT Suite también se pueden realizar tareas de configuración y
+mantenimiento del robot.</p>
+<p>Dependiendo del módulo utilizado, el usuario puede acceder a herramientas para:</p>
+<ul class="simple">
+<li><p>Configurar la comunicación con RENABOT.</p></li>
+<li><p>Verificar la conexión del robot.</p></li>
+<li><p>Configurar dispositivos.</p></li>
+</ul>
+</section>
+<section id="guias-de-construccion">
+<h3>Guías de construcción<a class="headerlink" href="#guias-de-construccion" title="Link to this heading"></a></h3>
+<p>Utilizando modelos 3D del Renabot esta aplicación presenta un tutorial del armado de los diferentes
+modos de construcción del Renabot.</p>
+</section>
+<section id="practicas">
+<h3>Pŕacticas<a class="headerlink" href="#practicas" title="Link to this heading"></a></h3>
+<p>El Renabot tiene integrado 5 diferentes actividades programadas, que pueden ser utilizadas
+según la necesidad del curso o proyecto. Las actividades incluidas son:</p>
+<ul class="simple">
+<li><p>Seguidor de línea</p></li>
+<li><p>Notas musicales</p></li>
+<li><p>Control manual</p></li>
+<li><p>Control por voz</p></li>
+<li><p>Andamiaje Robótico</p></li>
+</ul>
+</section>
+<section id="funcionamiento-sin-internet">
+<h3>Funcionamiento sin Internet<a class="headerlink" href="#funcionamiento-sin-internet" title="Link to this heading"></a></h3>
+<p>Las principales herramientas de RENABOT Suite están diseñadas para funcionar de
+manera local.</p>
+<p>Esto permite utilizar, todos los recursos sin depender permanentemente de una conexión a Internet.</p>
 </section>
 </section>
-<section id="descargas">
-<h2>Descargas<a class="headerlink" href="#descargas" title="Link to this heading"></a></h2>
-<section id="aplicacion-de-escritorio">
-<h3>Aplicación de escritorio<a class="headerlink" href="#aplicacion-de-escritorio" title="Link to this heading"></a></h3>
-<p>La aplicación de escritorio es compatible con los siguientes sistemas operativos:
-- <strong>Windows 10 / 11 (64 bits)</strong>
-- <strong>Ubuntu Linux 20.04 / 22.04</strong>
-- <strong>macOS Monterey o superior</strong></p>
-<p><code class="xref download docutils literal notranslate"><span class="pre">Descargar</span> <span class="pre">aplicación</span> <span class="pre">de</span> <span class="pre">escritorio</span></code></p>
+<section id="renabot-mobile">
+<h2>RENABOT Mobile<a class="headerlink" href="#renabot-mobile" title="Link to this heading"></a></h2>
+<p><strong>RENABOT Mobile</strong> es la aplicación complementaria para teléfonos y tabletas.</p>
+<p>Su objetivo es permitir una interacción rápida con RENABOT sin necesidad de
+utilizar un computador.</p>
+<p>La aplicación está orientada principalmente al programación y realización
+de actividades sencillas con el Renabot.</p>
+<p>La aplicación móvil incluye:</p>
+<ul class="simple">
+<li><p>Programación por bloques.</p></li>
+<li><p>Tutoriales de construcción.</p></li>
+<li><p>Configuración del robot.</p></li>
+<li><p>Prácticas.</p></li>
+</ul>
 </section>
-<section id="aplicacion-movil">
-<h3>Aplicación móvil<a class="headerlink" href="#aplicacion-movil" title="Link to this heading"></a></h3>
-<p>La aplicación móvil está disponible para:
-- <strong>Android (9.0 o superior)</strong></p>
-<p><code class="xref download docutils literal notranslate"><span class="pre">Descargar</span> <span class="pre">aplicación</span> <span class="pre">móvil</span></code></p>
-</section>
-<section id="arduino-ide">
-<h3>Arduino IDE<a class="headerlink" href="#arduino-ide" title="Link to this heading"></a></h3>
-<p>Enlace de descargar, AppImage
-<a class="reference external" href="https://www.arduino.cc/en/software/">arduino</a></p>
-</section>
+<section id="renabot-suite-y-renabot-mobile">
+<h2>RENABOT Suite y RENABOT Mobile<a class="headerlink" href="#renabot-suite-y-renabot-mobile" title="Link to this heading"></a></h2>
+<p>Las dos aplicaciones se complementan entre sí.</p>
+<p><strong>RENABOT Suite</strong> está orientado al desarrollo completo de proyectos de robótica,
+mientras que <strong>RENABOT Mobile</strong> facilita la interacción rápida con el robot.</p>
+<p>De forma general:</p>
+<table class="fit-table docutils align-default">
+<colgroup>
+<col style="width: 54.1%" />
+<col style="width: 23.0%" />
+<col style="width: 23.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Función</p></th>
+<th class="head"><p>Renabot Suite</p></th>
+<th class="head"><p>Renabot Móvil</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Programación por bloques</p></td>
+<td><p>✓</p></td>
+<td><p>✓</p></td>
+</tr>
+<tr class="row-odd"><td><p>Control del robot</p></td>
+<td><p>✓</p></td>
+<td><p>✓</p></td>
+</tr>
+<tr class="row-even"><td><p>Visualización de sensores</p></td>
+<td><p>✓</p></td>
+<td><p>Parcial</p></td>
+</tr>
+<tr class="row-odd"><td><p>Programación ESP32</p></td>
+<td><p>✓</p></td>
+<td><p>x</p></td>
+</tr>
+<tr class="row-even"><td><p>Tutoriales y Actividades educativas</p></td>
+<td><p>✓</p></td>
+<td><p>x</p></td>
+</tr>
+<tr class="row-odd"><td><p>Prácticas</p></td>
+<td><p>✓</p></td>
+<td><p>x</p></td>
+</tr>
+</tbody>
+</table>
+<p>Además, el Renabot es compatible con múltiples lenguajes y entornos de programación, lo que lo
+convierte en una plataforma flexible para el aprendizaje de la robótica.
+Puede ser utilizado con:</p>
+<ul class="simple">
+<li><p><strong>Arduino IDE</strong> (C/C++).</p></li>
+<li><p><strong>Espressif IDE</strong> para desarrollos avanzados en ESP32.</p></li>
+<li><p><strong>MicroPython</strong>, orientado a programación ágil y didáctica.</p></li>
+<li><p><strong>Blockly</strong>, con bloques gráficos diseñados específicamente para simplificar la programación educativa.</p></li>
+</ul>
+<p>De esta manera, los estudiantes y docentes pueden elegir el entorno que mejor se adapte a su nivel y objetivos de aprendizaje.</p>
 </section>
 </section>
 

@@ -10,7 +10,7 @@
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=23a32747" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=82c69470" />
 
   
       <script src="../../_static/jquery.js?v=5d32c60e"></script>
@@ -24,7 +24,7 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Índice" href="../../genindex.html" />
     <link rel="search" title="Búsqueda" href="../../search.html" />
-    <link rel="next" title="Software y Programación" href="../tema_3/0_software.html" />
+    <link rel="next" title="Ecosistema de software RENABOT" href="../tema_3/0_software.html" />
     <link rel="prev" title="Construcción del Renabot" href="../tema_1/0_construccion.html" /> 
 </head>
 
@@ -86,7 +86,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Software</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../tema_3/0_software.html">Software y Programación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tema_3/0_software.html">Ecosistema de software RENABOT</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Configuración y Uso</span></p>
 <ul>
@@ -123,28 +123,32 @@
 <h1>Componentes Electrónicos<a class="headerlink" href="#componentes-electronicos" title="Link to this heading"></a></h1>
 <section id="placa-de-control">
 <h2>Placa de Control<a class="headerlink" href="#placa-de-control" title="Link to this heading"></a></h2>
-<p>La placa de control del RENABOT contiene un diseño PCB/SMD optimizado para educación.
-Permite la integración de motores, sensores y actuadores de manera ordenada, con conectores accesibles y pines de expansión para futuros proyectos.
+<p>La placa de control del Renabot contiene un diseño PCB/SMD optimizado para educación.
+Permite la integración de motores, sensores y actuadores de manera ordenada, con conectores accesibles
+y pines de expansión para futuros proyectos.
 Está basada en un microcontrolador <code class="docutils literal notranslate"><span class="pre">ESP32</span> <span class="pre">WROOM</span></code>, lo que brinda flexibilidad para programar
-el robot con distintos entornos como Arduino IDE, Micro-Python o FreeRTOS.</p>
+el robot con distintos entornos como Arduino IDE, Micro-Python.</p>
 <figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../_images/placa_control.svg"><img alt="modelorobot" src="../../_images/placa_control.svg" style="width: 400px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Cerebro del Renabot</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+<p><span class="caption-text">Placa de control Renabot ESP32-STEM Avig Tech</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p><a class="reference external" href="https://avigtech-labs.github.io/ESP32-STEM/">Repositorio ESP32-STEM</a></p>
 <section id="caracteristicas">
 <h3>Características<a class="headerlink" href="#caracteristicas" title="Link to this heading"></a></h3>
-<p>La placa de control del RENABOT ha sido diseñada con un ensamblaje de montaje superficial, lo que garantiza un acabado compacto, ligero y confiable.
-Sus dimensiones son 95 x 92 x 2 mm, cuenta con recubrimiento protector para mayor durabilidad y resistencia, y está optimizada para integrar de forma ordenada los diferentes módulos del robot en formato
+<p>La placa de control del RENABOT ha sido diseñada con un ensamblaje de montaje superficial,
+lo que garantiza un acabado compacto, ligero y confiable.
+Sus dimensiones son 95 x 92 x 2 mm, cuenta con recubrimiento
+protector para mayor durabilidad y resistencia, y está optimizada para integrar de forma
+ordenada los diferentes módulos del robot en formato
 plug and play.</p>
 <figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../_images/circuito.svg"><img alt="circuito" src="../../_images/circuito.svg" style="width: 400px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">ESP32-STEM</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+<p><span class="caption-text">ESP32-STEM Avig Tech</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>Entre los principales elementos que incorpora se encuentran:</p>
@@ -186,26 +190,22 @@ plug and play.</p>
 <td><p>Expansión de 16 entradas analógicas/digitales usando 4 pines de control.</p></td>
 </tr>
 <tr class="row-even"><td><p>7</p></td>
-<td><p>Driver de motores TB6612FNG</p></td>
+<td><p>Driver de motores de doble canal</p></td>
 <td><p>Controlador de motores DC de doble canal. Permite controlar dirección y velocidad mediante señales PWM desde el ESP32. Voltaje de operacion de 2.5 a 13 [v] y 1.2 [A] nominal por canal.</p></td>
 </tr>
 <tr class="row-odd"><td><p>8</p></td>
-<td><p>Expansor GPIO PCF8574T</p></td>
-<td><p>Expansor de pines digitales mediante comunicación I2C, utilizado para aumentar la cantidad de entradas/salidas disponibles.</p></td>
-</tr>
-<tr class="row-even"><td><p>9</p></td>
 <td><p>Sensores LDR</p></td>
 <td><p>El sensor LDR (Light Dependent Resistor) integrado en la placa posee unas dimensiones de 5 mm de diámetro.</p></td>
 </tr>
-<tr class="row-odd"><td><p>10</p></td>
+<tr class="row-even"><td><p>9</p></td>
 <td><p>Switch SMD</p></td>
-<td><p>Entrada para la selección de conexión con el RENA-BOT, como cliente WiFi o punto de acceso WiFi.</p></td>
+<td><p>Entrada para la selección de conexión con el Renabot, como cliente WiFi o punto de acceso WiFi.</p></td>
 </tr>
-<tr class="row-even"><td><p>11</p></td>
+<tr class="row-odd"><td><p>10</p></td>
 <td><p>Puente USB a UART</p></td>
 <td><p>Chip encargado de la conversión USB a comunicación serial UART, utilizado para la programación y depuración del ESP32.</p></td>
 </tr>
-<tr class="row-odd"><td><p>12</p></td>
+<tr class="row-even"><td><p>11</p></td>
 <td><p>LED RGB</p></td>
 <td><p>LED SMD RGB.</p></td>
 </tr>
@@ -215,27 +215,34 @@ plug and play.</p>
 </section>
 <section id="sensores">
 <h2>Sensores<a class="headerlink" href="#sensores" title="Link to this heading"></a></h2>
-<p>El RENA-BOT incluye la siguiente lista de sensores, los cuales permiten que el robot interactúe con su entorno y ejecute diferentes actividades educativas:</p>
+<p>El Renabot incluye la siguiente lista de sensores, los cuales permiten que el robot interactúe
+con su entorno y ejecute diferentes actividades educativas:</p>
 <section id="seguidor-de-linea">
 <h3>Seguidor de línea<a class="headerlink" href="#seguidor-de-linea" title="Link to this heading"></a></h3>
 <figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../_images/s_qtr81.svg"><img alt="sensor_qtr8" src="../../_images/s_qtr81.svg" style="width: 400px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Sensor QTR8 en el RENA-BOT</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+<p><span class="caption-text">Sensor seguidor de línea</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-<p>El sensor <code class="docutils literal notranslate"><span class="pre">QTR8</span></code> está compuesto por un arreglo de 8 sensores infrarrojos (IR) que permiten detectar el contraste entre superficies claras y oscuras.
-Funciona emitiendo luz infrarroja y midiendo la cantidad de reflexión en el suelo: superficies claras reflejan más y las oscuras menos.</p>
-<p>Características técnicas:
-- Tipo: arreglo de sensores IR reflectivos.
-- Canales: 8 independientes.
-- Salida: analógica.
-- Voltaje de operación: 3.3 V.</p>
-<p>Uso en el RENA-BOT:
-- Seguimiento de trayectorias y circuitos impresos en el suelo.
-- Implementación de robots seguidores de línea en competiciones educativas.
-- Desarrollo de proyectos como laberintos y rutinas de navegación autónoma.</p>
+<p>El sensor <code class="docutils literal notranslate"><span class="pre">seguidor</span> <span class="pre">de</span> <span class="pre">línea</span></code> está compuesto por un arreglo de 8 sensores infrarrojos (IR)
+que permiten detectar el contraste entre superficies claras y oscuras.
+Funciona emitiendo luz infrarroja y midiendo la cantidad de reflexión
+en el suelo: superficies claras reflejan más y las oscuras menos.</p>
+<p>Características técnicas:</p>
+<ul class="simple">
+<li><p>Tipo: arreglo de sensores IR reflectivos.</p></li>
+<li><p>Canales: 8 independientes.</p></li>
+<li><p>Salida: analógica.</p></li>
+<li><p>Voltaje de operación: 3.3 V.</p></li>
+</ul>
+<p>Uso en el Renabot:</p>
+<ul class="simple">
+<li><p>Seguimiento de trayectorias y circuitos educativos.</p></li>
+<li><p>Implementación de robots seguidores de línea en competiciones educativas.</p></li>
+<li><p>Desarrollo de proyectos como laberintos y rutinas de navegación autónoma.</p></li>
+</ul>
 </section>
 <section id="sensor-de-distancia">
 <h3>Sensor de distancia<a class="headerlink" href="#sensor-de-distancia" title="Link to this heading"></a></h3>
@@ -243,18 +250,23 @@ Funciona emitiendo luz infrarroja y midiendo la cantidad de reflexión en el sue
 <a class="reference internal image-reference" href="../../_images/sensor_ultra.svg"><img alt="sensor_qtr8" src="../../_images/sensor_ultra.svg" style="width: 400px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Sensor ultrasónico en el RENABOT</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+<p><span class="caption-text">Sensor ultrasónico</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-<p>El sensor ultrasónico HC-SR04 mide la distancia hasta un objeto enviando un pulso ultrasónico y calculando el tiempo que tarda en reflejarse.</p>
-<p>Características técnicas:
-- Rango de medición: 2 cm a 400 cm.
-- Precisión: ±3 mm.
-- Ángulo de detección: ~15°.
-- Voltaje de operación: 5 V.</p>
-<p>Uso en el RENA-BOT:
-- Evitación de obstáculos durante el recorrido.
-- Implementación de sistemas de detención automática cuando un objeto se acerca.</p>
+<p>El sensor ultrasónico HC-SR04 mide la distancia hasta un objeto enviando un pulso ultrasónico
+y calculando el tiempo que tarda en reflejarse.</p>
+<p>Características técnicas:</p>
+<ul class="simple">
+<li><p>Rango de operaci{on: 4 cm a 110 cm.</p></li>
+<li><p>Resolución de salida del sistema: 0,1 cm.</p></li>
+<li><p>Ángulo de detección: ~15°.</p></li>
+<li><p>Voltaje de operación: 5 V.</p></li>
+</ul>
+<p>Uso en el Renabot:</p>
+<ul class="simple">
+<li><p>Evitación de obstáculos durante el recorrido.</p></li>
+<li><p>Implementación de sistemas de detención automática cuando un objeto se acerca.</p></li>
+</ul>
 </section>
 <section id="sensor-de-intensidad-luminica">
 <h3>Sensor de intensidad lumínica<a class="headerlink" href="#sensor-de-intensidad-luminica" title="Link to this heading"></a></h3>
@@ -267,14 +279,18 @@ Funciona emitiendo luz infrarroja y midiendo la cantidad de reflexión en el sue
 </figure>
 <p>El sensor <strong>LDR (Light Dependent Resistor)</strong> varía su resistencia eléctrica según la cantidad de luz que incide sobre él.
 Se utiliza como un divisor de tensión, conectado a una entrada analógica del microcontrolador.</p>
-<p>Características técnicas:
-- Rango espectral: 400 – 700 nm (luz visible).
-- Tiempo de respuesta: 20 – 30 ms.
-- Voltaje de operación: 3.3 V – 5 V.</p>
-<p>Uso en el RENA-BOT:
-- Detectar niveles de luz y oscuridad.
-- Encender automáticamente LEDs cuando baja la iluminación.
-- Ejercicios de programación donde el robot reaccione a condiciones ambientales.</p>
+<p>Características técnicas:</p>
+<ul class="simple">
+<li><p>Rango espectral: 400 – 700 nm (luz visible).</p></li>
+<li><p>Tiempo de respuesta: 20 – 30 ms.</p></li>
+<li><p>Voltaje de operación: 3.3 V – 5 V.</p></li>
+</ul>
+<p>Uso en el Renabot:</p>
+<ul class="simple">
+<li><p>Detectar niveles de luz y oscuridad.</p></li>
+<li><p>Encender automáticamente LEDs cuando baja la iluminación.</p></li>
+<li><p>Ejercicios de programación donde el robot reaccione a condiciones ambientales.</p></li>
+</ul>
 </section>
 <section id="modulo-sensor-de-temperatura-lm35dz">
 <h3>Módulo Sensor de Temperatura  LM35dz<a class="headerlink" href="#modulo-sensor-de-temperatura-lm35dz" title="Link to this heading"></a></h3>
@@ -288,8 +304,8 @@ Se utiliza como un divisor de tensión, conectado a una entrada analógica del m
 <p>El sensor de temperatura LM35DZ es un sensor analógico de precisión que proporciona una
 salida de voltaje lineal directamente proporcional a la temperatura medida. A diferencia
 de otros sensores que requieren calibraciones complejas, el LM35DZ entrega una señal fácil de interpretar,
-lo que lo convierte en una excelente opción para proyectos educativos y de automatización.
-Características técnicas:</p>
+lo que lo convierte en una excelente opción para proyectos educativos y de automatización.</p>
+<p>Características técnicas:</p>
 <ul class="simple">
 <li><p>Rango de medición: aproximadamente 0 °C a +100 °C.</p></li>
 <li><p>Tipo de salida: analógica.</p></li>
@@ -313,20 +329,22 @@ Características técnicas:</p>
 <a class="reference internal image-reference" href="../../_images/mpu.svg"><img alt="sensor_qtr8" src="../../_images/mpu.svg" style="width: 400px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">MPU6050</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
+<p><span class="caption-text">Unidad de Medición Inercial</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>El <strong>MPU6050</strong> es un sensor inercial de seis grados de libertad (6DOF) que integra un acelerómetro de tres ejes y un giroscopio de tres ejes en un solo dispositivo. Permite medir aceleraciones, inclinaciones y velocidades angulares, siendo ampliamente utilizado en aplicaciones de robótica, navegación y control de movimiento.</p>
-<p>Características técnicas:
-- Sensor 6DOF (3 ejes de aceleración + 3 ejes de velocidad angular).
-- Comunicación: I2C.
-- Voltaje de operación: 3.3 V – 5 V.
-- Rango del acelerómetro: ±2g, ±4g, ±8g, ±16g.
-- Rango del giroscopio: ±250, ±500, ±1000, ±2000 °/s.
-- Convertidor ADC de 16 bits.
-- Frecuencia de actualización configurable.
-- Sensor de temperatura integrado.</p>
-<p>Uso en el RENA-BOT:
+<p>Características técnicas:</p>
+<ul class="simple">
+<li><p>Sensor 6DOF (3 ejes de aceleración + 3 ejes de velocidad angular).</p></li>
+<li><p>Comunicación: I2C.</p></li>
+<li><p>Voltaje de operación: 3.3 V – 5 V.</p></li>
+<li><p>Rango del acelerómetro: ±2g, ±4g, ±8g, ±16g.</p></li>
+<li><p>Rango del giroscopio: ±250, ±500, ±1000, ±2000 °/s.</p></li>
+<li><p>Convertidor ADC de 16 bits.</p></li>
+<li><p>Frecuencia de actualización configurable.</p></li>
+<li><p>Sensor de temperatura integrado.</p></li>
+</ul>
+<p>Uso en el Renabot:
 - Medición de inclinación y orientación del robot.
 - Implementación de sistemas de balanceo y estabilización.
 - Detección de movimientos y cambios de posición.
@@ -531,7 +549,6 @@ identificar de forma sencilla la conexión de cada componente.</p>
 <a class="reference internal image-reference" href="../../_images/conexiones.svg"><img alt="sensor_qtr8" src="../../_images/conexiones.svg" style="width: 400px;" />
 </a>
 </figure>
-<p>continúa aprendiendo sobre el RENABOT en la sección Software y Programación</p>
 </section>
 </section>
 
@@ -540,7 +557,7 @@ identificar de forma sencilla la conexión de cada componente.</p>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
         <a href="../tema_1/0_construccion.html" class="btn btn-neutral float-left" title="Construcción del Renabot" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
-        <a href="../tema_3/0_software.html" class="btn btn-neutral float-right" title="Software y Programación" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../tema_3/0_software.html" class="btn btn-neutral float-right" title="Ecosistema de software RENABOT" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

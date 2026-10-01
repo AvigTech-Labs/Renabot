@@ -5,10 +5,11 @@ Componentes Electrónicos
 Placa de Control
 ----------------
 
-La placa de control del RENABOT contiene un diseño PCB/SMD optimizado para educación.  
-Permite la integración de motores, sensores y actuadores de manera ordenada, con conectores accesibles y pines de expansión para futuros proyectos.  
+La placa de control del Renabot contiene un diseño PCB/SMD optimizado para educación.  
+Permite la integración de motores, sensores y actuadores de manera ordenada, con conectores accesibles 
+y pines de expansión para futuros proyectos.  
 Está basada en un microcontrolador ``ESP32 WROOM``, lo que brinda flexibilidad para programar 
-el robot con distintos entornos como Arduino IDE, Micro-Python o FreeRTOS.  
+el robot con distintos entornos como Arduino IDE, Micro-Python.  
 
 
 .. figure:: ./img/placa_control.svg
@@ -16,15 +17,18 @@ el robot con distintos entornos como Arduino IDE, Micro-Python o FreeRTOS.
    :align: center
    :width: 400px
    
-   Cerebro del Renabot
+   Placa de control Renabot ESP32-STEM Avig Tech
 
 `Repositorio ESP32-STEM <https://avigtech-labs.github.io/ESP32-STEM/>`_
 
 Características
 ~~~~~~~~~~~~~~~
 
-La placa de control del RENABOT ha sido diseñada con un ensamblaje de montaje superficial, lo que garantiza un acabado compacto, ligero y confiable.  
-Sus dimensiones son 95 x 92 x 2 mm, cuenta con recubrimiento protector para mayor durabilidad y resistencia, y está optimizada para integrar de forma ordenada los diferentes módulos del robot en formato
+La placa de control del RENABOT ha sido diseñada con un ensamblaje de montaje superficial, 
+lo que garantiza un acabado compacto, ligero y confiable.  
+Sus dimensiones son 95 x 92 x 2 mm, cuenta con recubrimiento 
+protector para mayor durabilidad y resistencia, y está optimizada para integrar de forma 
+ordenada los diferentes módulos del robot en formato
 plug and play.  
 
 .. figure:: ./img/circuito.svg
@@ -32,7 +36,7 @@ plug and play.
    :align: center
    :width: 400px
    
-   ESP32-STEM
+   ESP32-STEM Avig Tech
 
 Entre los principales elementos que incorpora se encuentran: 
 
@@ -63,28 +67,26 @@ Entre los principales elementos que incorpora se encuentran:
      - Multiplexor analógico 74HC4067 
      - Expansión de 16 entradas analógicas/digitales usando 4 pines de control.
    * - 7
-     - Driver de motores TB6612FNG
+     - Driver de motores de doble canal
      - Controlador de motores DC de doble canal. Permite controlar dirección y velocidad mediante señales PWM desde el ESP32. Voltaje de operacion de 2.5 a 13 [v] y 1.2 [A] nominal por canal.
    * - 8
-     - Expansor GPIO PCF8574T
-     - Expansor de pines digitales mediante comunicación I2C, utilizado para aumentar la cantidad de entradas/salidas disponibles.
-   * - 9
      - Sensores LDR 
      - El sensor LDR (Light Dependent Resistor) integrado en la placa posee unas dimensiones de 5 mm de diámetro.
-   * - 10
+   * - 9
      - Switch SMD 
-     - Entrada para la selección de conexión con el RENA-BOT, como cliente WiFi o punto de acceso WiFi.
-   * - 11
+     - Entrada para la selección de conexión con el Renabot, como cliente WiFi o punto de acceso WiFi.
+   * - 10
      - Puente USB a UART
      - Chip encargado de la conversión USB a comunicación serial UART, utilizado para la programación y depuración del ESP32.
-   * - 12 
+   * - 11 
      - LED RGB
      - LED SMD RGB.
 
 Sensores
 --------
 
-El RENA-BOT incluye la siguiente lista de sensores, los cuales permiten que el robot interactúe con su entorno y ejecute diferentes actividades educativas:  
+El Renabot incluye la siguiente lista de sensores, los cuales permiten que el robot interactúe 
+con su entorno y ejecute diferentes actividades educativas:  
 
 Seguidor de línea
 ~~~~~~~~~~~~~~~~~
@@ -94,19 +96,23 @@ Seguidor de línea
    :align: center
    :width: 400px
    
-   Sensor QTR8 en el RENA-BOT
+   Sensor seguidor de línea
 
-El sensor ``QTR8`` está compuesto por un arreglo de 8 sensores infrarrojos (IR) que permiten detectar el contraste entre superficies claras y oscuras.  
-Funciona emitiendo luz infrarroja y midiendo la cantidad de reflexión en el suelo: superficies claras reflejan más y las oscuras menos.  
+El sensor ``seguidor de línea`` está compuesto por un arreglo de 8 sensores infrarrojos (IR) 
+que permiten detectar el contraste entre superficies claras y oscuras.  
+Funciona emitiendo luz infrarroja y midiendo la cantidad de reflexión 
+en el suelo: superficies claras reflejan más y las oscuras menos.  
 
 Características técnicas:  
+
 - Tipo: arreglo de sensores IR reflectivos.  
 - Canales: 8 independientes.  
 - Salida: analógica. 
 - Voltaje de operación: 3.3 V.  
 
-Uso en el RENA-BOT:  
-- Seguimiento de trayectorias y circuitos impresos en el suelo.  
+Uso en el Renabot:  
+
+- Seguimiento de trayectorias y circuitos educativos.  
 - Implementación de robots seguidores de línea en competiciones educativas.  
 - Desarrollo de proyectos como laberintos y rutinas de navegación autónoma.  
 
@@ -118,17 +124,20 @@ Sensor de distancia
    :align: center
    :width: 400px
 
-   Sensor ultrasónico en el RENABOT
+   Sensor ultrasónico
 
-El sensor ultrasónico HC-SR04 mide la distancia hasta un objeto enviando un pulso ultrasónico y calculando el tiempo que tarda en reflejarse.  
+El sensor ultrasónico HC-SR04 mide la distancia hasta un objeto enviando un pulso ultrasónico 
+y calculando el tiempo que tarda en reflejarse.  
 
-Características técnicas:  
-- Rango de medición: 2 cm a 400 cm.  
-- Precisión: ±3 mm.  
+Características técnicas: 
+
+- Rango de operaci{on: 4 cm a 110 cm.
+- Resolución de salida del sistema: 0,1 cm.
 - Ángulo de detección: ~15°.  
 - Voltaje de operación: 5 V.  
 
-Uso en el RENA-BOT:  
+Uso en el Renabot:  
+
 - Evitación de obstáculos durante el recorrido.  
 - Implementación de sistemas de detención automática cuando un objeto se acerca.   
 
@@ -146,11 +155,13 @@ El sensor **LDR (Light Dependent Resistor)** varía su resistencia eléctrica se
 Se utiliza como un divisor de tensión, conectado a una entrada analógica del microcontrolador.  
 
 Características técnicas:  
+
 - Rango espectral: 400 – 700 nm (luz visible).  
 - Tiempo de respuesta: 20 – 30 ms.  
 - Voltaje de operación: 3.3 V – 5 V.  
 
-Uso en el RENA-BOT:  
+Uso en el Renabot:  
+
 - Detectar niveles de luz y oscuridad.  
 - Encender automáticamente LEDs cuando baja la iluminación.  
 - Ejercicios de programación donde el robot reaccione a condiciones ambientales.  
@@ -169,6 +180,7 @@ El sensor de temperatura LM35DZ es un sensor analógico de precisión que propor
 salida de voltaje lineal directamente proporcional a la temperatura medida. A diferencia 
 de otros sensores que requieren calibraciones complejas, el LM35DZ entrega una señal fácil de interpretar, 
 lo que lo convierte en una excelente opción para proyectos educativos y de automatización.
+
 Características técnicas:
 
 - Rango de medición: aproximadamente 0 °C a +100 °C.
@@ -194,11 +206,12 @@ Módulo Sensor MPU6050
    :align: center
    :width: 400px
    
-   MPU6050
+   Unidad de Medición Inercial
 
 El **MPU6050** es un sensor inercial de seis grados de libertad (6DOF) que integra un acelerómetro de tres ejes y un giroscopio de tres ejes en un solo dispositivo. Permite medir aceleraciones, inclinaciones y velocidades angulares, siendo ampliamente utilizado en aplicaciones de robótica, navegación y control de movimiento.
 
 Características técnicas:
+
 - Sensor 6DOF (3 ejes de aceleración + 3 ejes de velocidad angular).
 - Comunicación: I2C.
 - Voltaje de operación: 3.3 V – 5 V.
@@ -208,7 +221,7 @@ Características técnicas:
 - Frecuencia de actualización configurable.
 - Sensor de temperatura integrado.
 
-Uso en el RENA-BOT:
+Uso en el Renabot:
 - Medición de inclinación y orientación del robot.
 - Implementación de sistemas de balanceo y estabilización.
 - Detección de movimientos y cambios de posición.
@@ -429,5 +442,3 @@ identificar de forma sencilla la conexión de cada componente.
    :alt: sensor_qtr8
    :align: center
    :width: 400px
-
-continúa aprendiendo sobre el RENABOT en la sección Software y Programación
