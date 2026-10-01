@@ -1,20 +1,41 @@
-Software y Programación 
-=======================
+Ecosistema de software RENABOT
+===================================
 
-El Renabot es compatible con múltiples lenguajes y entornos de programación, lo que lo convierte en una plataforma flexible para el aprendizaje de la robótica.  
-Puede ser utilizado con:
+Renabot cuenta con un conjunto de herramientas de software diseñadas para facilitar
+la programación, configuración y uso del robot tanto desde un computador como desde
+un dispositivo móvil.
 
-- **Arduino IDE** (C/C++).  
-- **Espressif IDE** para desarrollos avanzados en ESP32.  
-- **MicroPython**, orientado a programación ágil y didáctica.  
-- **Blockly**, con bloques gráficos diseñados específicamente para simplificar la programación educativa.  
+El ecosistema está compuesto principalmente por:
 
-De esta manera, los estudiantes y docentes pueden elegir el entorno que mejor se adapte a su nivel y objetivos de aprendizaje.
+* **RENABOT Suite**, la aplicación principal para computador.
+* **RENABOT Mobile**, la aplicación complementaria para dispositivos móviles.
 
-Modo Programador
------------------
+Ambas herramientas permiten interactuar con Renabot de acuerdo con el tipo de
+actividad que se desee realizar.
 
-A través de bloques de programación (Blockly) el usuario puede manipular el comportamiento del RENA-BOT.  
+
+Renabot Suite
+-------------
+
+**RENABOT Suite** es la aplicación de escritorio compatible con Linux 
+y windows para trabajar con Renabot.
+
+Desde esta aplicación el usuario puede acceder a diferentes herramientas para
+programar, simular, configurar y monitorear el robot.
+
+.. image:: ./img/renabot_suite.png
+   :alt: Interfaz de RENABOT Suite
+   :align: center
+   :width: 90%
+
+
+Programación con bloques
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Renabot Suite incorpora un entorno de programación gráfica basado en bloques.
+
+Este entorno permite crear programas desde actividades sencillas hasta algoritmos
+con lógica, sensores y estructuras de control.
 
 .. figure:: ./img/programador.jpg
    :alt: modelorobot
@@ -27,12 +48,12 @@ Descripción del programa:
    :align: center
 
 
-Bloques de programación del RENABOT
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Bloques de programación del RENABOT**
 
-Los bloques personalizados de Blockly permiten a los estudiantes activar el robot en diferentes modos y desarrollar algoritmos de forma visual e intuitiva.  
+Los bloques personalizados permiten a los estudiantes activar 
+el robot en diferentes modos y desarrollar algoritmos de forma visual e intuitiva.  
 
-Descripción de bloques: 
+Bloques Disponibles: 
 
 .. list-table::
    :header-rows: 1
@@ -164,32 +185,167 @@ Descripción de bloques:
      - Comparador
 
 
-Esto permite pasar de la programación visual a la codificación real, generando código fuente en Python o C++ de manera automática.
 
-Descargas
----------
+Programación basada en Arduino
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Aplicación de escritorio
+Renabot Suite también dispone de herramientas para trabajar con programación de la ESP32.
+
+Este módulo está orientado a usuarios que desean avanzar desde la programación por
+bloques hacia el desarrollo de aplicaciones con microcontroladores.
+
+Permite trabajar con conceptos como:
+
+* Entradas y salidas digitales.
+* Entradas analógicas.
+* Sensores.
+* Actuadores.
+* Servomotores.
+* Motores.
+* Variables.
+* Estructuras de control.
+
+
+Visualización de sensores (Dashboard)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Renabot Suite permite visualizar la información generada por el robot mediante
+paneles gráficos.
+
+Los datos de sensores pueden presentarse utilizando diferentes elementos de
+visualización, como:
+
+* Indicadores numéricos.
+* Gráficos de línea.
+* Gráficos de barras.
+* Indicadores tipo ``gauge``.
+
+Esto facilita la observación del comportamiento del robot durante una práctica.
+
+
+Actividades y recursos educativos
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Renabot Suite también funciona como una herramienta de apoyo para el aprendizaje
+de robótica.
+
+La aplicación puede incluir:
+
+* Prácticas guiadas.
+* Tutoriales.
+* Material de apoyo.
+* Guías de construcción.
+* Ejemplos de programación.
+* Recursos para docentes y estudiantes.
+
+De esta forma, el usuario puede acceder desde una misma aplicación a las
+herramientas necesarias para construir, programar y experimentar con RENABOT.
+
+
+Configuración de Renabot
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-La aplicación de escritorio es compatible con los siguientes sistemas operativos:  
-- **Windows 10 / 11 (64 bits)**  
-- **Ubuntu Linux 20.04 / 22.04**  
-- **macOS Monterey o superior**  
+Desde RENABOT Suite también se pueden realizar tareas de configuración y
+mantenimiento del robot.
 
+Dependiendo del módulo utilizado, el usuario puede acceder a herramientas para:
 
-:download:`Descargar aplicación de escritorio <_static/rena-bot-desktop.zip>`
+* Configurar la comunicación con RENABOT.
+* Verificar la conexión del robot.
+* Configurar dispositivos.
 
-Aplicación móvil
-~~~~~~~~~~~~~~~~
+Guías de construcción
+~~~~~~~~~~~~~~~~~~~~~~~~
 
-La aplicación móvil está disponible para:  
-- **Android (9.0 o superior)**  
+Utilizando modelos 3D del Renabot esta aplicación presenta un tutorial del armado de los diferentes
+modos de construcción del Renabot.
 
-:download:`Descargar aplicación móvil <_static/rena-bot-app.apk>`
-
-Arduino IDE
+Pŕacticas 
 ~~~~~~~~~~~
 
-Enlace de descargar, AppImage
-`arduino <https://www.arduino.cc/en/software/>`__
+El Renabot tiene integrado 5 diferentes actividades programadas, que pueden ser utilizadas
+según la necesidad del curso o proyecto. Las actividades incluidas son:
+
+* Seguidor de línea
+* Notas musicales
+* Control manual
+* Control por voz
+* Andamiaje Robótico
+
+Funcionamiento sin Internet
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Las principales herramientas de RENABOT Suite están diseñadas para funcionar de
+manera local.
+
+Esto permite utilizar, todos los recursos sin depender permanentemente de una conexión a Internet.
+
+
+
+RENABOT Mobile
+--------------
+
+**RENABOT Mobile** es la aplicación complementaria para teléfonos y tabletas.
+
+Su objetivo es permitir una interacción rápida con RENABOT sin necesidad de
+utilizar un computador.
+
+La aplicación está orientada principalmente al programación y realización
+de actividades sencillas con el Renabot.
+
+La aplicación móvil incluye:
+
+* Programación por bloques.
+* Tutoriales de construcción.
+* Configuración del robot.
+* Prácticas.
+
+
+RENABOT Suite y RENABOT Mobile
+------------------------------
+
+Las dos aplicaciones se complementan entre sí.
+
+**RENABOT Suite** está orientado al desarrollo completo de proyectos de robótica,
+mientras que **RENABOT Mobile** facilita la interacción rápida con el robot.
+
+De forma general:
+
+.. list-table::
+   :header-rows: 1
+   :widths: 66 28 28
+   :class: fit-table
+
+   * - Función
+     - Renabot Suite
+     - Renabot Móvil
+   * - Programación por bloques 
+     - ✓
+     - ✓
+   * - Control del robot
+     - ✓
+     - ✓
+   * - Visualización de sensores 
+     - ✓
+     - Parcial
+   * - Programación ESP32
+     - ✓
+     - x
+   * - Tutoriales y Actividades educativas 
+     - ✓
+     - x
+   * - Prácticas
+     - ✓ 
+     - x
+
+
+Además, el Renabot es compatible con múltiples lenguajes y entornos de programación, lo que lo 
+convierte en una plataforma flexible para el aprendizaje de la robótica.  
+Puede ser utilizado con:
+
+- **Arduino IDE** (C/C++).  
+- **Espressif IDE** para desarrollos avanzados en ESP32.  
+- **MicroPython**, orientado a programación ágil y didáctica.  
+- **Blockly**, con bloques gráficos diseñados específicamente para simplificar la programación educativa.  
+
+De esta manera, los estudiantes y docentes pueden elegir el entorno que mejor se adapte a su nivel y objetivos de aprendizaje.

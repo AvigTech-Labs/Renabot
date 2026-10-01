@@ -1,0 +1,27 @@
+Descargas
+---------
+
+Aplicación de escritorio
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+La aplicación de escritorio es compatible con los siguientes sistemas operativos:  
+
+- **Windows 10 / 11 (64 bits)**  
+- **Ubuntu Linux 20.04 / 22.04**  
+
+
+:download:`Descargar aplicación de escritorio <_static/rena-bot-desktop.zip>`
+
+Aplicación móvil
+~~~~~~~~~~~~~~~~
+
+La aplicación móvil está disponible para:  
+- **Android (9.0 o superior)**  
+
+:download:`Descargar aplicación móvil <_static/rena-bot-app.apk>`
+
+Arduino IDE
+~~~~~~~~~~~
+
+Enlace de descargar, AppImage
+`arduino <https://www.arduino.cc/en/software/>`__

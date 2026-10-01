@@ -13,14 +13,18 @@ Su desarrollo busca apoyar tanto a la educación formal como a la educación ext
    :align: center
    :width: 400px
 
-   RENA-Bot modelos 
+   Modelos del Renabot
 
-Propósito del RENABOT
+Propósito del Renabot
 --------------------------
 
-El RENABOT no es solo un kit de robótica, sino un programa integral que propone la integración de la robótica educativa como herramienta pedagógica para reforzar las destrezas y objetivos del currículo nacional del Ministerio de Educación del Ecuador, desde Preparatoria hasta el nivel Superior de Educación General Básica (EGB).  
+El Renabot no es solo un kit de robótica, sino un diseño integral que propone el uso de la robótica 
+educativa como herramienta pedagógica para reforzar las destrezas y objetivos del currículo nacional 
+del Ministerio de Educación del Ecuador, desde Preparatoria hasta el nivel Superior de Educación General Básica (EGB).  
 
-El uso del robot móvil diferencial con sensores y actuadores permite que los estudiantes aprendan de manera activa, desarrollando pensamiento lógico, habilidades de resolución de problemas y trabajo colaborativo, mientras cumplen con los objetivos de aprendizaje establecidos por el Ministerio.  
+El uso del robot móvil diferencial con sensores y actuadores 
+permite que los estudiantes aprendan de manera activa, desarrollando pensamiento lógico, habilidades de 
+resolución de problemas y trabajo colaborativo, mientras cumplen con los objetivos de aprendizaje establecidos por el Ministerio.  
 
 Características principales
 -------------------------------
@@ -30,6 +34,17 @@ Características principales
 - Conectividad WiFi.  
 - Arquitectura basada en un robot móvil diferencial, con capacidad de expansión a nuevos sensores y actuadores.  
 - Documentación y software educativo diseñados para acompañar el aprendizaje paso a paso.  
+
+Complementos 
+------------
+
+- Plataforma de uso y documentación compatible con sistemas operativos basados en Linux y Windows.
+- Aplicación móvil.
+- Expansión de sensores compatibles.
+- Utilería para clases didácticas.
+- Prácticas de laboratorio para Unidades Educativas.
+- Documentación para diseño de prácticas profesionales.
+
 
 Ámbitos de aplicación
 -------------------------
@@ -49,7 +64,9 @@ El Renabot fomenta:
 - La colaboración y el trabajo en equipo en entornos de aprendizaje práctico.  
 
 
-De esta manera, el Renabot no solo introduce a los niños y jóvenes en la robótica, sino que también abre el camino hacia la investigación, la innovación y la preparación para los desafíos tecnológicos del futuro.  
+De esta manera, el Renabot no solo introduce a los niños y jóvenes en la robótica, sino que también abre el camino hacia la investigación, 
+la innovación y la preparación para los desafíos tecnológicos del futuro.  
 
 .. note::
-   Asegúrese de revisar las versiones de los diferentes paquetes disponibles, ya que cada componente cuenta con soporte específico en la documentación.
+   Asegúrese de revisar las versiones de los diferentes paquetes disponibles, ya que cada componente cuenta con soporte 
+   específico en la documentación.
