@@ -237,7 +237,7 @@ Modo Velocista transportador
    :align: center
    :width: 400px
 
-	Rena transportador
+   Rena transportador
 
 La versión transportador del Renabot utiliza los Guardafangos como piezas del 
 gripper que permiten transportar objetos.
@@ -260,7 +260,7 @@ Modo Todoterreno
    :align: center
    :width: 400px
 
-	Rena todoterreno
+   Rena todoterreno
 
 En esta configuración, el Renabot adopta un diseño de movilidad con orugas, 
 lo que lo convierte en un robot todoterreno capaz de desplazarse de manera eficiente sobre superficies 
@@ -282,7 +282,7 @@ Modo Explorador
    :align: center
    :width: 400px
 
-	Rena explorador
+   Rena explorador
 
 En esta configuración, el Renabot utiliza el sistema de locomoción del modo todoterreno 
 e incorpora una estructura adicional que eleva el sensor ultrasónico, montado sobre un 
