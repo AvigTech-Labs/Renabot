@@ -58,7 +58,7 @@ Bloques Disponibles:
 .. list-table::
    :header-rows: 1
    :widths: 40 66 25
-   :class: fit-table
+   :class: fit-table longtable
 
    * - Bloque
      - Descripción

@@ -18,7 +18,6 @@ extensions = [
     'sphinx_copybutton',
     'sphinx.ext.mathjax',
     'sphinx_tabs.tabs',
-    'sphinxcontrib.rsvgconverter',
 ]
 templates_path = ['_templates']
 exclude_patterns = []
